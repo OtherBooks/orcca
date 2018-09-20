@@ -1,0 +1,1045 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *********************************************************************-->
+<!-- Copyright 2016-2018                                                  -->
+<!-- Portland Community College                                           -->
+<!--                                                                      -->
+<!-- This file is part of Open Resources for Community College Algebra    -->
+<!-- (ORCCA).                                                             -->
+<!-- *********************************************************************-->
+<section permid="Sbn" xml:id="section-set-notation-and-types-of-numbers">
+  <title>Set Notation and Types of Numbers</title>
+  <objectives permid="Frw">
+    <title>PCC Course Content and Outcome Guide</title>
+    <ul permid="uSr">
+      <li permid="fJt"><xref ref="mth60-classify-numbers" /></li>
+    </ul>
+  </objectives>
+
+  <introduction permid="lyF">
+    <p permid="prA">
+      When we talk about <em>how many</em>
+      or <em>how much</em> of something we have,
+      it often makes sense to use different types of numbers.
+      For example, if we are counting dogs in a shelter,
+      the possibilities are only <m>0,1,2,\ldots</m>.
+      (It would be difficult to have <m>\frac{1}{2}</m> of a dog.)
+      On the other hand if you were weighing a dog in pounds,
+      it doesn't make sense to only allow yourself to work with whole numbers.
+      The dog might weigh something like <m>28.35</m> pounds.
+      These examples highlight how certain kinds of numbers are appropriate for certain situations.
+      We'll classify various types of numbers in this section.
+    </p>
+
+    <figure permid="VyJ">
+      <caption>Alternative Video Lesson</caption>
+      <video youtubeplaylist="PLmuZCPhWPt-fjLJ-5Kbh8VnyxrTreDJWv" />
+    </figure>
+  </introduction>
+
+  <subsection permid="yiw">
+    <title>Set Notation</title>
+    <p permid="xFT">
+      What is the mathematical difference between these three <q>lists?</q>
+      <me permid="GZF">
+        28, 31, 30\qquad\{28, 31, 30\}\qquad(28, 31, 30)
+      </me>
+      To a mathematician, the last one,
+      <m>(28, 31, 30)</m> is an <em>ordered</em> triple.
+      What matters is not merely the three numbers,
+      but <em>also</em> the order in which they come.
+      The ordered triple <m>(28, 31, 30)</m> is not the same as <m>(30, 31, 28)</m>;
+      they have the same numbers in them,
+      but the order has changed.
+      For some context, February has <m>28</m> days;
+      <em>then</em> March has <m>31</m> days;
+      <em>then</em> April has <m>30</m> days.
+      The order of the three numbers is meaningful in that context.
+    </p>
+
+    <p permid="dNc">
+      With curly braces and <m>\{28, 31, 30\}</m>,
+      a mathematician sees a collection of numbers and does not particularly care in which order they are written.
+      Such a collection is called a <term>set</term>.
+          <idx><h>set</h></idx>
+      All that matters is that these numbers are part of a collection.
+      They've been <em>written</em> in some particular order because that's necessary to write them down.
+      But you might as well have put the three numbers in a bag and shaken up the bag.
+      For some context,
+      maybe your favorite three NBA players have jersey numbers <m>30</m>,
+      <m>31</m>, and <m>28</m>, and you like them all equally well.
+      It doesn't really matter what order you use to list them.
+    </p>
+
+    <p permid="JUl">
+      So we can say:
+      <md permid="ngO">
+        <mrow>\{28, 31, 30\}\amp=\{30, 31, 28\}\amp(28, 31, 30)\amp\neq(30, 31, 28)</mrow>
+      </md>
+    </p>
+
+    <p permid="qbu">
+      What about just writing <m>28, 31, 30</m>?
+      This list of three numbers is ambiguous.
+      Without the curly braces or parentheses,
+      it's unclear to a reader if the order is important. <term>Set notation</term>
+          <idx><h>set notation</h></idx>
+      is the use of curly braces to surround a list/collection of numbers,
+      and we will use set notation frequently in this section.
+    </p>
+
+    <exercise permid="HCi">
+      <title>Set Notation</title>
+      <introduction permid="buZ">
+        <p permid="BFS">
+          Practice using
+          (and not using)
+          set notation.
+        </p>
+      </introduction>
+      <webwork>
+      <setup>
+      <pg-code>Context("Interval");
+      $set=Set("{403,404,500}");
+      $setev=$set->cmp(cmp_class=>'a set');
+      Context("Point");
+      Context()->parens->set('{'=>{type=>'Set'});
+      $ord=Point("(500,404,403)");
+      $ordev=$ord->cmp(cmp_class=>'an ordered triple');</pg-code>
+      </setup>
+      <statement>
+        <p permid="NUk">
+          According to Google,
+          the three most common error codes from visiting a web site are <c>403</c>,
+          <c>404</c>, and <c>500</c>.
+
+          <ol permid="aZA">
+            <li permid="LQC">
+              <p permid="nXM">
+                Without knowing which error code is most common,
+                express this set mathematically.
+              </p>
+
+              <p permid="UeV">
+                <var name="$set" evaluator="$setev" width="30" />
+              </p>
+            </li>
+
+            <li permid="rXL">
+              <p permid="Ame">
+                Error code <c>500</c> is the most common.
+                Error code <c>403</c> is the least common of these three.
+                And that leaves <c>404</c> in the middle.
+                Express the error codes in a mathematical way that appreciates how frequently they happen,
+                from most often to least often.
+              </p>
+
+              <p permid="gtn">
+                <var name="$ord" evaluator="$ordev" width="30" />
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution permid="xMX">
+        <p permid="Hve">
+          <ol permid="CwQ">
+            <li permid="YeU">
+              <p permid="MAw">
+                Since we only have to describe a collection of three numbers and their order doesn't matter,
+                we can write <var name="$set" />.
+              </p>
+            </li>
+
+            <li permid="Emd">
+              <p permid="sHF">
+                Now we must describe the same three numbers and we want readers to know that the order we are writing the numbers matters.
+                We can write <var name="$ord" />.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution></webwork>
+    </exercise>
+  </subsection>
+
+  <subsection permid="epF">
+    <title>Different Number Sets</title>
+    <idx><h>types of numbers</h></idx>
+
+    <p permid="WiD">
+      In the introduction,
+      we mentioned how different sets of numbers are appropriate for different situations.
+      Here are the basic sets of numbers that are used in basic algebra.
+    </p>
+
+    <p permid="CpM">
+      <dl permid="zCk">
+        <li permid="DgK">
+          <title>Natural Numbers</title>
+              <idx><h>natural numbers</h></idx>
+
+          <p permid="YOO">
+            When we count, we begin:
+            <m>1, 2, 3, \dots</m> and continue on in that pattern.
+            These numbers are known as <term>natural numbers</term>.
+          </p>
+
+          <p permid="EVX">
+            <m>\mathbb{N}=\{1,2,3,\dots \}</m>
+          </p>
+        </li>
+
+        <li permid="jnT">
+          <title>Whole Numbers</title>
+              <idx><h>whole numbers</h></idx>
+
+          <p permid="ldg">
+            If we include zero, then we have the set of
+            <term>whole numbers</term>.
+          </p>
+
+          <p permid="Rkp">
+            <m>\{0,1,2,3,\dots \}</m> has no standard symbol,
+            but some options are <m>\mathbb{N}_0</m>,
+            <m>\mathbb{N}\cup\{0\}</m>, and <m>\mathbb{Z}_{\geq0}</m>.
+          </p>
+        </li>
+
+        <li permid="Pvc">
+          <title>Integers</title>
+              <idx><h>integers</h></idx>
+
+          <p permid="xry">
+            If we include the negatives of whole numbers,
+            then we have the set of <term>integers</term>.
+          </p>
+
+          <p permid="dyH">
+            <m>\mathbb{Z}=\{\dots,-3,-2,-1,0,1,2,3,\dots \}</m>.
+          </p>
+
+          <p permid="JFQ">
+            A <m>\mathbb{Z}</m> is used because one word in German for
+            <q>numbers</q> is <q>Zahlen.</q>
+          </p>
+        </li>
+
+        <li permid="vCl">
+          <title>Rational Numbers</title>
+              <idx><h>rational numbers</h></idx>
+
+          <p permid="pMZ">
+            A <term>rational number</term> is any number that <em>can</em>
+            be written as a fraction of integers,
+            where the denominator is nonzero.
+            Alternatively, a <term>rational number</term>
+            is any number that <em>can</em>
+            be written with a decimal that terminates or that repeats.
+          </p>
+
+          <p permid="VUi">
+            <m>\mathbb{Q}=\left\{0,1,-1,2,\frac{1}{2},-\frac{1}{2},-2,3,\frac{1}{3},-\frac{1}{3},-3,\frac{3}{2},\frac{2}{3}\ldots\right\}</m>
+          </p>
+
+          <p permid="Cbr">
+            <m>\mathbb{Q}=\left\{0,1,-1,2,0.5,-0.5,-2,3,0.\overline{3},-0.\overline{3},-3,1.5,0.\overline{6}\ldots\right\}</m>
+          </p>
+
+          <p permid="iiA">
+            A <m>\mathbb{Q}</m> is used because fractions are
+            <em>q</em>uotients of integers.
+          </p>
+        </li>
+
+        <li permid="bJu">
+          <title>Irrational Numbers</title>
+              <idx><h>irrational numbers</h></idx>
+
+          <p permid="OpJ">
+            Any number that <em>cannot</em>
+            be written as a fraction of integers belongs to the set of
+            <term>irrational numbers</term>.
+            Another way to say this is that any number whose decimal places goes on forever without repeating is an
+            <term>irrational number</term>.
+            Some examples include <m>\pi\approx3.1415926\ldots</m>,
+            <m>\sqrt{15}\approx3.87298\ldots</m>,
+            <m>e\approx2.71828\ldots</m>
+          </p>
+
+          <p permid="uwS">
+            There is no standard symbol for the set of irrational numbers.
+          </p>
+        </li>
+
+        <li permid="HQD">
+          <title>Real Numbers</title>
+              <idx><h>real numbers</h></idx>
+
+          <p permid="aEb">
+            Any number that can be marked somewhere on a number line is a <term>real number</term>.
+            Real numbers might be the only numbers you are familiar with.
+            For a number to <em>not</em> be real,
+            you have to start considering things called
+            <em>complex numbers</em>,
+            which are not our concern right now.
+          </p>
+
+          <p permid="GLk">
+            The set of real numbers can be denoted with <m>\mathbb{R}</m> for short.
+          </p>
+        </li>
+      </dl>
+    </p>
+
+    <figure permid="iwV">
+      <caption>Types of Numbers</caption>
+      <image permid="kmi" source="images/types-of-numbers" width="62%" archive="pdf png svg tex">
+        <description>a disc represents all real numbers; the disc is separated into two areas: one for irrational numbers with examples like pi, e, sqrt(15), and 1.010010001..., and the other for rational numbers with examples like 3/17, 1.25, and 4.3 repeating; within the rational area, there is a disc representing integers, with -42 as an example; within the integer area there is a region representing whole numbers with 0 as an example; within the whole numbers area there is a region representing natural numbers, with 23 as an example</description>
+      </image>
+
+    </figure>
+
+    <warning permid="WpH">
+      <title>Rational Numbers in Other Forms</title>
+      <p permid="QOQ">
+        Any number that <em>can</em> be written as a ratio of integers is rational,
+        even if it's not written that way at first.
+        For example,
+        these numbers might not look rational to you at first glance:
+        <m>-4</m>, <m>\sqrt{9}</m>, <m>0\pi</m>,
+        and <m>\sqrt[3]{\sqrt{5}+2}-\sqrt[3]{\sqrt{5}-2}</m>.
+        But they are all rational,
+        because they can respectively be written as <m>\frac{-4}{1}</m>,
+        <m>\frac{3}{1}</m>, <m>\frac{0}{1}</m>, and <m>\frac{1}{1}</m>.
+      </p>
+    </warning>
+
+    <example permid="nJr">
+      <title>Determine If Numbers Are This Type or That Type</title>
+      <statement>
+        <p permid="wVZ">
+          Determine which numbers from the set
+          <m>\left\{-102, -7.25, 0, \frac{\pi}{4}, 2, \frac{10}{3}, \sqrt{19}, \sqrt{25}, 10.\overline{7} \right\}</m> are natural numbers,
+          whole numbers,
+          integers,
+          rational numbers, irrational numbers, and real numbers.
+        </p>
+      </statement>
+      <solution permid="RFO">
+        <p permid="nCn">
+          All of these numbers are real numbers,
+          because all of these numbers can be positioned on the real number line.
+        </p>
+
+        <p permid="TJw">
+          Each real number is either rational or irrational,
+          and not both. <m>-102</m>, <m>-7.25</m>, <m>0</m>,
+          and <m>2</m> are rational because we can see directly that their decimal expressions terminate. <m>10.\overline{7}</m> is also rational,
+          because its decimal expression repeats.
+          <m>\frac{10}{3}</m> is rational because it is a ratio of integers.
+          And last but not least, <m>\sqrt{25}</m> is rational,
+          because that's the same thing as <m>5</m>.
+        </p>
+
+        <p permid="zQF">
+          This leaves only <m>\frac{\pi}{4}</m> and
+          <m>\sqrt{19}</m> as irrational numbers.
+          Their decimal expressions go on forever without entering a repetitive cycle.
+        </p>
+
+        <p permid="fXO">
+          Only <m>-102</m>, <m>0</m>, <m>2</m>, and <m>\sqrt{25}</m>
+          (which is really <m>5</m>)
+          are integers.
+        </p>
+
+        <p permid="MeX">
+          Of these, only <m>0</m>, <m>2</m>,
+          and <m>\sqrt{25}</m> are whole numbers,
+          because whole numbers excludes the negative integers.
+        </p>
+
+        <p permid="smg">
+          Of these, only <m>2</m> and <m>\sqrt{25}</m> are natural numbers,
+          because the natural numbers exclude <m>0</m>.
+        </p>
+      </solution>
+    </example>
+
+    <exercise permid="zXJ">
+      <webwork source="BasicAlgebra/NumberBasics/TypesOfNumbers60.pg" seed="2"/>
+    </exercise>
+
+    <exercise permid="geS">
+
+      <introduction permid="TQA">
+        <p permid="hNb">
+          In the introduction,
+          we mentioned that the different types of numbers are appropriate in different situation.
+          Which number set do you think is most appropriate in each of the following situations?
+        </p>
+      </introduction>
+      <webwork>
+      <setup>
+      <pg-code>$natural=PopUp(['?','natural number','whole number','integer','rational number','irrational number','real number'],1);
+      $whole=PopUp(['?','natural number','whole number','integer','rational number','irrational number','real number'],2);
+      $integer=PopUp(['?','natural number','whole number','integer','rational number','irrational number','real number'],3);
+      $rational=PopUp(['?','natural number','whole number','integer','rational number','irrational number','real number'],4);
+      $irrational=PopUp(['?','natural number','whole number','integer','rational number','irrational number','real number'],5);
+      $real=PopUp(['?','natural number','whole number','integer','rational number','irrational number','real number'],6);</pg-code>
+      </setup>
+      <statement>
+        <p permid="ubt">
+          <ol permid="HgJ" label="a.">
+            <li permid="ktm">
+              <p permid="mSt">
+                The number of people in a math class that play the ukulele.
+              </p>
+
+              <p permid="SZC">
+                This number is best considered as a <var name="$whole" form="popup" />.
+              </p>
+            </li>
+
+            <li permid="QAv">
+              <p permid="zgL">
+                The hypotenuse's length in a given right triangle.
+              </p>
+
+              <p permid="fnU">
+                This number is best considered as a <var name="$real" form="popup" />.
+              </p>
+            </li>
+
+            <li permid="wHE">
+              <p permid="Lvd">
+                The proportion of people in a math class that have a cat.
+              </p>
+
+              <p permid="rCm">
+                This number is best considered as a <var name="$rational" form="popup" />.
+              </p>
+            </li>
+
+            <li permid="cON">
+              <p permid="XJv">
+                The number of people in the room with you who have the same birthday as you.
+              </p>
+
+              <p permid="DQE">
+                This number is best considered as a <var name="$natural" form="popup" />.
+              </p>
+            </li>
+
+            <li permid="IVW">
+              <p permid="jXN">
+                The total revenue
+                (in dollars)
+                generated for ticket sales at a Timbers soccer game.
+              </p>
+
+              <p permid="QeW">
+                This number is best considered as a <var name="$rational" form="popup" />.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution permid="dUg">
+        <p permid="Ytp">
+          <ol permid="iDZ" label="a.">
+            <li permid="pdf">
+              <p permid="wmf">
+                The number of people who play the ukulele could be <m>0,1,2,\dots</m>,
+                so the whole numbers are the appropriate set.
+              </p>
+            </li>
+
+            <li permid="Vko">
+              <p permid="cto">
+                A hypotenuse's length could be <m>1</m>,
+                <m>1.2</m>, <m>\sqrt{2}</m>
+                (which is irrational),
+                or any other positive number.
+                So the real numbers are the appropriate set.
+              </p>
+            </li>
+
+            <li permid="Brx">
+              <p permid="IAx">
+                This proportion will be a ratio of integers,
+                as both the total number of people in the class and the number of people who have a cat are integers.
+                So the rational numbers are the appropriate set.
+              </p>
+            </li>
+
+            <li permid="hyG">
+              <p permid="oHG">
+                We know that the number of people must be a counting number,
+                and since <em>you</em> are in the room with yourself,
+                there is at least one person in that room with your birthday.
+                So the natural numbers are the appropriate set.
+              </p>
+            </li>
+
+            <li permid="NFP">
+              <p permid="UOP">
+                The total revenue will be some number of dollars and cents,
+                such as <m>\$631{,}897.15</m>,
+                which is a terminating decimal and thus a rational number.
+                So the rational numbers are the appropriate set.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution></webwork>
+    </exercise>
+  </subsection>
+
+  <subsection permid="KwO">
+    <title>Converting Repeating Decimals to Fractions</title>
+    <p permid="OEe">
+      We have learned that a terminating decimal number is a rational number.
+      It's easy to convert a terminating decimal number into a fraction of integers:
+      you just need to multiply and divide by one of the numbers in the set <m>\{10,100,1000,\ldots\}</m>.
+      For example, when we say the number <m>0.123</m> out loud,
+      we say <q>one hundred and twenty-three thousandths.</q>
+      While that's a lot to say,
+      it makes it obvious that this number can be written as a ratio:
+      <me permid="TnX">
+        0.123=\frac{123}{1000}
+      </me>.
+      Similarly,
+      <me permid="zvg">
+        21.28=\frac{2128}{100}=\frac{532\cdot4}{25\cdot4}=\frac{532}{25}
+      </me>,
+      demonstrating how <em>any</em> terminating decimal can be written as a fraction.
+    </p>
+
+    <p permid="uLn">
+      Repeating decimals can also be written as a fraction.
+      To understand how, use a calculator to find the decimal for, say,
+      <m>\frac{73}{99}</m> and <m>\frac{189}{999}</m> You will find that
+      <me permid="fCp">
+        \frac{73}{99}=0.73737373\ldots=0.\overline{73}\qquad\frac{189}{999}=0.189189189\ldots=0.\overline{189}
+      </me>.
+      The pattern is that dividing a number by a number from
+      <m>\{9,99,999,\ldots\}</m> with the same number of digits will create a repeating decimal that starts as <q><m>0</m>.</q>
+      and then repeats the numerator.
+      We can use this observation to reverse engineer some fractions from repeating decimals.
+    </p>
+
+    <exercise permid="stk">
+      <webwork>
+      <setup>
+      <pg-code>Context("LimitedFraction");</pg-code>
+      </setup>
+      <statement>
+        <p permid="aiC">
+          <ol permid="nnS" label="a.">
+            <li permid="tMY">
+              <p permid="AVY">
+                Write the rational number <m>0.772772772\ldots</m> as a fraction.
+              </p>
+
+              <p permid="hdh">
+                <var name="'772/999'" width="10" />
+              </p>
+            </li>
+
+            <li permid="ZUh">
+              <p permid="Nkq">
+                Write the rational number <m>0.69696969\ldots</m> as a fraction.
+              </p>
+
+              <p permid="trz">
+                <var name="'23/33'" width="10" />
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution permid="Kbp">
+        <p permid="EAy">
+          <ol permid="OLi" label="a.">
+            <li permid="Gbq">
+              <p permid="ZyI">
+                The <em>three</em>-digit number <m>772</m> repeats after the decimal.
+                So we will make use of the <em>three</em>-digit denominator <m>999</m>.
+                And we have <m>\frac{772}{999}</m>.
+              </p>
+            </li>
+
+            <li permid="miz">
+              <p permid="FFR">
+                The <em>two</em>-digit number <m>69</m> repeats after the decimal.
+                So we will make use of the <em>two</em>-digit denominator <m>99</m>.
+                And we have <m>\frac{69}{99}</m>.
+                But this fraction can be reduced to <m>\frac{23}{33}</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution></webwork>
+    </exercise>
+
+    <p permid="aSw">
+      Converting a repeating decimal to a fraction is not always quite this straightforward.
+      There are complications if the number takes a few digits before it begins repeating.
+      For your interest, here is one example on how to do that.
+    </p>
+
+    <example permid="Mmb">
+      <p permid="ddi">
+        Can we convert the repeating decimal <m>9.134343434\ldots=9.1\overline{34}</m> to a fraction?
+        The trick is to separate its terminating part from its repeating part,
+        like this:
+        <me permid="LJy">
+          9.1+0.034343434\ldots
+        </me>.
+        Now note that the terminating part is <m>\frac{91}{10}</m>,
+        and the repeating part is almost like our earlier examples,
+        except it has an extra <m>0</m> right after the decimal.
+        So we have:
+        <me permid="rQH">
+          \frac{91}{10}+\frac{1}{10}\cdot0.34343434\ldots
+        </me>.
+        With what we learned in the earlier examples and basic fraction arithmetic,
+        we can continue:
+        <md permid="XXQ">
+          <mrow>9.134343434\ldots\amp=\frac{91}{10}+\frac{1}{10}\cdot0.34343434\ldots</mrow>
+          <mrow>\amp=\frac{91}{10}+\frac{1}{10}\cdot\frac{34}{99}</mrow>
+          <mrow>\amp=\frac{91}{10}+\frac{34}{990}</mrow>
+          <mrow>\amp=\frac{91\multiplyright{99}}{10\multiplyright{99}}+\frac{34}{990}</mrow>
+          <mrow>\amp=\frac{9009}{990}+\frac{34}{990}=\frac{9043}{990}</mrow>
+        </md>
+      </p>
+
+      <p permid="Jkr">
+        Check that this is right by entering
+        <m>\frac{9043}{990}</m> into a calculator and seeing if it returns the decimal we started with,
+        <m>9.134343434\ldots</m>.
+      </p>
+    </example>
+  </subsection>
+
+  <exercises permid="qDX">
+    <exercisegroup permid="WLg" cols="2">
+      <title>Review and Warmup</title>
+      <exercise permid="YAt">
+        <webwork source="BasicMath/FractionPercentDecimal/DecimalToFraction30.pg" />
+      </exercise>
+
+      <exercise permid="EHC">
+        <webwork source="BasicMath/FractionPercentDecimal/DecimalToFraction30.pg" />
+      </exercise>
+
+      <exercise permid="kOL">
+        <webwork source="BasicMath/FractionPercentDecimal/DecimalToFraction35.pg" />
+      </exercise>
+
+      <exercise permid="QVU">
+        <webwork source="BasicMath/FractionPercentDecimal/DecimalToFraction35.pg" />
+      </exercise>
+
+      <exercise permid="xdd">
+        <webwork source="BasicMath/FractionPercentDecimal/DecimalToFraction40.pg" />
+      </exercise>
+
+      <exercise permid="dkm">
+        <webwork source="BasicMath/FractionPercentDecimal/DecimalToFraction40.pg" />
+      </exercise>
+
+      <exercise permid="Jrv">
+        <webwork source="BasicMath/FractionPercentDecimal/FractionToDecimal60.pg" />
+      </exercise>
+
+      <exercise permid="pyE">
+        <webwork source="BasicMath/FractionPercentDecimal/FractionToDecimal60.pg" />
+      </exercise>
+
+      <exercise permid="VFN">
+        <webwork source="BasicMath/FractionPercentDecimal/FractionToDecimal70.pg" />
+      </exercise>
+
+      <exercise permid="BMW">
+        <webwork source="BasicMath/FractionPercentDecimal/FractionToDecimal70.pg" />
+      </exercise>
+
+    </exercisegroup>
+    <exercisegroup permid="CSp" cols="2">
+      <title>Set Notation</title>
+      <exercise permid="hUf">
+        <webwork >
+        <setup>
+        <pg-code>$a=random(1,9,1);
+        $a=2 if ($envir{problemSeed}==1);
+        $b=$a**2;
+        Context("Interval");
+        $set=Set("{-$a,$a}");
+        $setev=$set->cmp(cmp_class=>'a set');
+        Context()->parens->set('('=>{type=>'Point'});</pg-code>
+        </setup>
+        <statement>
+          <p permid="GpL">
+            There are two numbers that you can square to get <m><var name="$b"/></m>.
+            Express this collection of two numbers using set notation.
+          </p>
+
+          <p permid="mwU">
+            <var name="$set" evaluator="$setev" width="30" />
+          </p>
+        </statement></webwork>
+      </exercise>
+
+      <exercise permid="Obo">
+        <webwork >
+        <setup>
+        <pg-code>Context("Interval");
+        $set=Set("{2,4,6,8}");
+        $setev=$set->cmp(cmp_class=>'a set');
+        Context()->parens->set('('=>{type=>'Point'});</pg-code>
+        </setup>
+        <statement>
+          <p permid="SEd">
+            There are four positive, even, one-digit numbers.
+            Express this collection of four numbers using set notation.
+          </p>
+
+          <p permid="yLm">
+            <var name="$set" evaluator="$setev" width="30" />
+          </p>
+        </statement></webwork>
+      </exercise>
+
+      <exercise permid="uix">
+        <webwork >
+        <setup>
+        <pg-code>Context("Interval");
+        $set=Set("{16,25,36,49,64,81}");
+        $setev=$set->cmp(cmp_class=>'a set');
+        Context()->parens->set('('=>{type=>'Point'});</pg-code>
+        </setup>
+        <statement>
+          <p permid="eSv">
+            There are six two-digit perfect square numbers.
+            Express this collection of six numbers using set notation.
+          </p>
+
+          <p permid="KZE">
+            <var name="$set" evaluator="$setev" width="30" />
+          </p>
+        </statement></webwork>
+      </exercise>
+
+      <exercise permid="apG">
+        <webwork >
+        <setup>
+        <pg-code>@a=map{$_+1}NchooseK(6,3);
+        @a=(1,2,5) if ($envir{problemSeed}==1);
+        $sum=$a[0]**2+$a[1]**2+$a[2]**2;
+        Context("Interval");
+        $set=Set("{$a[0],$a[1],$a[2]}");
+        $setev=$set->cmp(cmp_class=>'a set');
+        Context()->parens->set('('=>{type=>'Point'});</pg-code>
+        </setup>
+        <statement>
+          <p permid="rgN">
+            There is a set of three small positive integers where you can square all three numbers,
+            then add the results, and get <m><var name="$sum"/></m>.
+            Express this collection of three numbers using set notation.
+          </p>
+
+          <p permid="XnW">
+            <var name="$set" evaluator="$setev" width="30" />
+          </p>
+        </statement></webwork>
+      </exercise>
+
+    </exercisegroup>
+    <exercisegroup permid="iZy" cols="2">
+      <title>Types of Numbers</title>
+      <exercise permid="GwP">
+        <webwork source="BasicAlgebra/NumberBasics/TypesOfNumbers10.pg" />
+      </exercise>
+
+      <exercise permid="mDY">
+        <webwork source="BasicAlgebra/NumberBasics/TypesOfNumbers10.pg" />
+      </exercise>
+
+      <exercise permid="SLh">
+        <webwork source="BasicAlgebra/NumberBasics/TypesOfNumbers20.pg" />
+      </exercise>
+
+      <exercise permid="ySq">
+        <webwork source="BasicAlgebra/NumberBasics/TypesOfNumbers20.pg" />
+      </exercise>
+
+      <exercise permid="eZz">
+        <webwork source="BasicAlgebra/NumberBasics/TypesOfNumbers30.pg" />
+      </exercise>
+
+      <exercise permid="LgI">
+        <webwork source="BasicAlgebra/NumberBasics/TypesOfNumbers30.pg" />
+      </exercise>
+
+      <exercise permid="rnR">
+        <webwork source="BasicAlgebra/NumberBasics/TypesOfNumbers40.pg" />
+      </exercise>
+
+      <exercise permid="Xva">
+        <webwork source="BasicAlgebra/NumberBasics/TypesOfNumbers40.pg" />
+      </exercise>
+
+      <exercise permid="DCj">
+        <webwork source="BasicAlgebra/NumberBasics/TypesOfNumbers50.pg" />
+      </exercise>
+
+      <exercise permid="jJs">
+        <webwork source="BasicAlgebra/NumberBasics/TypesOfNumbers50.pg" />
+      </exercise>
+
+      <exercise permid="PQB">
+        <webwork source="Library/Mizzou/College_Algebra/Real_Numbers/Number_Systems/Determine_Number_Type_TF_01.pg" />
+      </exercise>
+
+      <exercise permid="vXK">
+        <webwork source="Library/Mizzou/College_Algebra/Real_Numbers/Number_Systems/Determine_Number_Type_TF_02.pg" />
+      </exercise>
+
+    </exercisegroup>
+
+    <exercise permid="ceT">
+      <webwork>
+      <setup>
+      <pg-code>$natural=PopUp(['?','natural number','whole number','integer','rational number','irrational number','real number'],1);
+      $whole=PopUp(['?','natural number','whole number','integer','rational number','irrational number','real number'],2);
+      $integer=PopUp(['?','natural number','whole number','integer','rational number','irrational number','real number'],3);
+      $rational=PopUp(['?','natural number','whole number','integer','rational number','irrational number','real number'],4);
+      $irrational=PopUp(['?','natural number','whole number','integer','rational number','irrational number','real number'],5);
+      $real=PopUp(['?','natural number','whole number','integer','rational number','irrational number','real number'],6);</pg-code>
+      </setup>
+      <statement>
+        <p permid="Dvf">
+          In each situation, which number set do you think is most appropriate?
+        </p>
+
+        <p permid="jCo">
+          <ol permid="Tvb" label="a.">
+            <li permid="SpI">
+              <p permid="lNa">
+                The number of dogs a student has owned throughout their lifetime.
+              </p>
+
+              <p permid="RUj">
+                This number is best considered as a <var name="$whole" form="popup" />.
+              </p>
+            </li>
+
+            <li permid="ywR">
+              <p permid="ybs">
+                The difference between the projected annual expenditures and the actual annual expenditures for a given company.
+              </p>
+
+              <p permid="eiB">
+                This number is best considered as a <var name="$rational" form="popup" />.
+              </p>
+            </li>
+
+            <li permid="eEa">
+              <p permid="KpK">
+                The length around swimming pool in the shape of a half circle with radius <m>10\,\text{ft}</m>.
+              </p>
+
+              <p permid="qwT">
+                This number is best considered as a <var name="$irrational" form="popup" />.
+              </p>
+            </li>
+
+            <li permid="KLj">
+              <p permid="WEc">
+                The proportion of students at a college who own a car.
+              </p>
+
+              <p permid="CLl">
+                This number is best considered as a <var name="$rational" form="popup" />.
+              </p>
+            </li>
+
+            <li permid="qSs">
+              <p permid="iSu">
+                The width of a sheet of paper, in inches.
+              </p>
+
+              <p permid="OZD">
+                This number is best considered as a <var name="$rational" form="popup" />.
+              </p>
+            </li>
+
+            <li permid="WZB">
+              <p permid="vgM">
+                The number of people eating in a non-empty restaurant.
+              </p>
+
+              <p permid="bnV">
+                This number is best considered as a <var name="$natural" form="popup" />.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement></webwork>
+    </exercise>
+
+    <exercise permid="Imc">
+      <webwork source="BasicAlgebra/NumberBasics/TypesOfNumbers60.pg" />
+    </exercise>
+
+    <exercisegroup permid="PgH">
+      <title>Writing Decimals as Fractions</title>
+      <exercise permid="otl">
+        <webwork>
+        <setup>
+        <pg-code>Context("Fraction-NoDecimals");
+        $d=random(0.1,9.9,0.1)+random(1,9,1)/100;
+        $f=Fraction($d);</pg-code>
+        </setup>
+        <statement>
+          <p permid="PJx">
+            Write the rational number <m><var name="$d" /></m> as a fraction.
+          </p>
+
+          <p permid="vQG">
+            <var name="$f" width="10" />
+          </p>
+        </statement></webwork>
+      </exercise>
+
+      <exercise permid="UAu">
+        <webwork>
+        <setup>
+        <pg-code>Context("Fraction-NoDecimals");
+        $d=random(10.1,99.9,0.01)+random(1,9,1)/1000;
+        $f=Fraction($d);</pg-code>
+        </setup>
+        <statement>
+          <p permid="bXP">
+            Write the rational number <m><var name="$d" /></m> as a fraction.
+          </p>
+
+          <p permid="IeY">
+            <var name="$f" width="10" />
+          </p>
+        </statement></webwork>
+      </exercise>
+
+      <exercise permid="AHD">
+        <webwork >
+        <setup>
+        <pg-code>Context("Fraction-NoDecimals");
+        $n=random(10,80,10)+random(1,9,1);
+        $f=Fraction($n,99);</pg-code>
+        </setup>
+        <statement>
+          <p permid="omh">
+            Write the rational number <m>0.\overline{<var name="$n" />}=0.<var name="$n" /><var name="$n" />\ldots</m> as a fraction.
+          </p>
+
+          <p permid="Utq">
+            <var name="$f" width="10" />
+          </p>
+        </statement></webwork>
+      </exercise>
+
+      <exercise permid="gOM">
+        <webwork >
+        <setup>
+        <pg-code>Context("Fraction-NoDecimals");
+        $n=random(10,980,10)+random(1,9,1);
+        $f=Fraction($n,999);</pg-code>
+        </setup>
+        <statement>
+          <p permid="AAz">
+            Write the rational number <m>0.\overline{<var name="$n" />}=0.<var name="$n" /><var name="$n" />\ldots</m> as a fraction.
+          </p>
+
+          <p permid="gHI">
+            <var name="$f" width="10" />
+          </p>
+        </statement></webwork>
+      </exercise>
+
+      <exercise permid="MVV">
+        <webwork >
+        <setup>
+        <pg-code>Context("Fraction-NoDecimals");
+        $n=random(10,80,10)+random(1,9,1);
+        $t=random(1,9,1)+random(1,9,1)/10;
+        $f=Fraction($t+$n/99);</pg-code>
+        </setup>
+        <statement>
+          <p permid="MOR">
+            Write the rational number <m><var name="$t" />\overline{<var name="$n" />}=<var name="$t" /><var name="$n" /><var name="$n" />\ldots</m> as a fraction.
+          </p>
+
+          <p permid="sWa">
+            <var name="$f" width="10" />
+          </p>
+        </statement></webwork>
+      </exercise>
+
+      <exercise permid="tde">
+        <webwork >
+        <setup>
+        <pg-code>Context("Fraction-NoDecimals");
+        $n=random(100,800,10)+random(1,9,1);
+        $t=random(1,9,1)+random(1,9,1)/10;
+        $f=Fraction($t+$n/999);</pg-code>
+        </setup>
+        <statement>
+          <p permid="Zdj">
+            Write the rational number <m><var name="$t" />\overline{<var name="$n" />}=<var name="$t" /><var name="$n" /><var name="$n" />\ldots</m> as a fraction.
+          </p>
+
+          <p permid="Fks">
+            <var name="$f" width="10" />
+          </p>
+        </statement></webwork>
+      </exercise>
+
+    </exercisegroup>
+    <exercisegroup permid="vnQ">
+      <title>Challenge</title>
+      <exercise permid="Zkn">
+<!-- Kara's challenge problem -->
+        <webwork>
+        <setup>
+        <pg-code>$rational = PopUp(['?','rational','irrational'], 1);
+        $irrational = PopUp(['?','rational','irrational'], 2);</pg-code>
+        </setup>
+        <statement>
+          <p permid="lrB">
+            Imagine making up a number according to the following pattern.
+            After the decimal point, write the natural numbers 1, 2, 3, 4, 5, etc.
+            The decimal digits will extend infinitely according to my pattern.
+            <me permid="EeZ">
+              0.12345\ldots
+            </me>
+            Is the number a rational number or an irrational number?
+          </p>
+
+          <p permid="RyK">
+            <var name="$irrational" form="popup"/>
+          </p>
+        </statement>
+        <solution permid="qiy">
+          <p permid="kHH">
+            The number is irrational.
+            The decimal will never end and it will never repeat.
+          </p>
+        </solution></webwork>
+      </exercise>
+
+    </exercisegroup>
+  </exercises>
+</section>
+

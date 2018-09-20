@@ -1,0 +1,2743 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *********************************************************************-->
+<!-- Copyright 2016-2018                                                  -->
+<!-- Portland Community College                                           -->
+<!--                                                                      -->
+<!-- This file is part of Open Resources for Community College Algebra    -->
+<!-- (ORCCA).                                                             -->
+<!-- *********************************************************************-->
+<section permid="GLx" xml:id="section-simplifying-expressions">
+  <title>Simplifying Expressions</title>
+  <objectives permid="drQ">
+    <title>PCC Course Content and Outcome Guide</title>
+    <ul permid="ebK">
+      <li permid="cWr"><xref ref="mth60-apply-algebraic-properties" /></li>
+
+      <li permid="JdA">
+        <xref ref="mth60-recognize-identities-and-inverses" />
+      </li>
+
+      <li permid="pkJ">
+        <xref ref="mth60-simplify-algebraic-expressions" />
+      </li>
+
+      <li permid="VrS"><xref ref="mth60-apply-exponent-rules" /></li>
+
+      <li permid="Bzb">
+        <xref ref="mth60-recognize-equivalent-and-non-equivalent-expressions" />
+      </li>
+    </ul>
+  </objectives>
+
+  <introduction permid="JyZ">
+    <p permid="nRi">
+      We know that if we have two apples and add three more,
+      then our result is the same as if we'd had three apples and added two more.
+      In this section,
+      we'll formally define and extend these basic properties we know about numbers to variable expressions.
+    </p>
+
+    <figure permid="TYr">
+      <caption>Alternative Video Lesson</caption>
+      <video youtubeplaylist="PLmuZCPhWPt-eWHhy-jpMtWZhqAJalUdFX" />
+    </figure>
+  </introduction>
+
+  <subsection permid="mSG">
+    <title>Identities and Inverses</title>
+    <p permid="DKa">
+      We will start with some definitions.
+      The number <m>0</m> is called the
+      <term>additive identity</term>.
+          <idx><h>addition</h><h>additive identity</h></idx>
+          <idx><h>identity</h><h>additive</h></idx>
+      If the sum of two numbers is the additive identity, <m>0</m>,
+      these two numbers are called <term>additive inverses</term>.
+          <idx><h>addition</h><h>inverses</h></idx>
+          <idx><h>inverses</h><h>additive</h></idx>
+      For example, <m>2</m> is the additive inverse of <m>-2</m>,
+      and the additive inverse of <m>-2</m> is <m>2</m>.
+    </p>
+
+    <p permid="jRj">
+      Similarly, the number <m>1</m> is called the
+      <term>multiplicative identity</term>.
+          <idx><h>multiplication</h><h>multiplicative identity</h></idx>
+          <idx><h>identity</h><h>multiplicative</h></idx>
+      If the product of two numbers is the multiplicative identity,
+      <m>1</m>,
+      these two numbers are called <term>multiplicative inverses</term>.
+          <idx><h>multiplication</h><h>inverses</h></idx>
+          <idx><h>inverses</h><h>multiplicative</h></idx>
+      For example,
+      <m>2</m> is the multiplicative inverse of <m>\frac{1}{2}</m>,
+      and the multiplicative inverse of
+      <m>-\frac{2}{3}</m> is <m>-\frac{3}{2}</m>.
+      The multiplicative inverse is also called <term>reciprocal</term>.
+          <idx><h>reciprocal</h></idx>
+    </p>
+  </subsection>
+
+  <subsection permid="SZP">
+    <title>Introduction to Algebraic Properties</title>
+    <paragraphs permid="hdu">
+      <title>Commutative Property</title>
+      <p permid="PYs">
+        When we compute the area of a rectangle,
+        we generally multiply the length by the width.
+        Does the result change if we multiply the width by the length?
+      </p>
+
+      <figure permid="APu">
+        <caption>Horizontal and Vertical Rectangles</caption>
+        <image permid="UmM" width="70%">
+          <description>two rectangles; the left rectangle is 3 cm wide by 2 cm high; its area is marked by Area=3*2=6; the right rectangle is 2 cm wide by 3 cm high; its area is marked by Area=2*3=6</description>
+
+            <latex-image>
+                <![CDATA[\begin{tikzpicture}
+                    \draw[red,fill=yellow] (0,3) -- (0,0) -- (4,0) -- (4,3) -- cycle; %horizontal
+                        \node[below] at (2,0) {$4$ cm};
+                        \node[right] at (4,1.5) {$3$ cm};
+                        \node[] at (2,1.5) {$\begin{aligned}A\amp=4\cdot3\\\amp=12\,(\text{cm}^2)\end{aligned}$};
+                    \draw[red,fill=yellow] (7,4) -- (7,0) -- (10,0) -- (10,4) -- cycle; %vertical
+                        \node[below] at (8.5,0) {$3$ cm};
+                        \node[right] at (10,2) {$4$ cm};
+                        \node[] at (8.5,2) {$\begin{aligned}A\amp=3\cdot4\\\amp=12\,(\text{cm}^2)\end{aligned}$};
+                        \end{tikzpicture}
+                ]]>
+            </latex-image>
+        </image>
+
+      </figure>
+
+      <p permid="wfB">
+        We can see <m>3\cdot2=2\cdot3</m>.
+        If we denote the length of a rectangle with <m>\ell</m> and the width with <m>w</m>,
+        this implies <m>\ell w=w\ell</m>.
+        This is referred to as the <term>commutative property of multiplication</term>.
+        The commutative property also applies to addition, as in <m>1+2=2+1</m>,
+        where it is called the <term>commutative property of addition</term>.
+        However, there is no commutative property of subtraction or division,
+        as <m>2-1\ne1-2</m>, and <m>\frac{4}{2}\ne\frac{2}{4}</m>.
+      </p>
+    </paragraphs>
+
+    <paragraphs permid="NkD">
+      <title>Associative Property</title>
+      <p permid="cmK">
+        Let's extend that example to a rectangular prism with width <m>w=4\,\text{cm}</m>,
+        depth <m>d=3\,\text{cm}</m>, and height <m>h=2\,\text{cm}</m>.
+        To compute the volume of this solid,
+        we multiply the width, depth and height,
+        which we write as <m>wdh</m>.
+      </p>
+
+      <p permid="ItT">
+        In the following figure, on the left side,
+        we multiply the length and width first,
+        and then multiply the height;
+        on the right side, we multiply the width and height first,
+        and then multiply the length.
+        Let's compare the products.
+      </p>
+
+      <sidebyside permid="ybF" widths="35% 35%">
+        <figure permid="bCQ">
+          <caption><m>(4\cdot3)\cdot2=24</m></caption>
+          <image permid="AtV">
+            <description>a rectangular prism; its length is 4 cm, width is 3 cm, and height is 2 cm; one face representing the length and width is highlighted</description>
+
+            <latex-image>
+                <![CDATA[\begin{tikzpicture}%(x,z,y)
+                    \node[white] at (2,0,0) {.};
+                    \draw[red] (0,0,0) -- ++(-4,0,0) -- ++(0,-2,0) -- ++(4,0,0) -- cycle; %front face
+                    \draw[red] (0,0,0) -- ++(0,0,-3) -- ++(0,-2,0) -- ++(0,0,3) -- cycle; %side
+                    \draw[red,fill=firstcolor!20] (0,0,0) -- ++(-4,0,0) -- ++(0,0,-3) -- ++(4,0,0) -- cycle; %top
+                            \node[above] at (-2,0,0) {$4\,\text{cm}$};
+                            \node[above,rotate=90] at (0,-1,0) {$2\,\text{cm}$};
+                            \node[above,rotate=45] at (0,0,-1.5) {$3\,\text{cm}$};
+                        \end{tikzpicture}
+                ]]>
+            </latex-image>
+          </image>
+
+        </figure>
+
+        <figure permid="HJZ">
+          <caption><m>4\cdot(3\cdot2)=24</m></caption>
+          <image permid="gBe">
+            <description>a rectangular prism; its length is 4 cm, width is 3 cm, and height is 2 cm; one face representing the width and height is highlighted</description>
+
+            <latex-image>
+                <![CDATA[\begin{tikzpicture}%(x,z,y)
+                    \node[white] at (2,0,0) {.};
+                    \draw[red] (0,0,0) -- ++(-4,0,0) -- ++(0,-2,0) -- ++(4,0,0) -- cycle; %front face
+                    \draw[red,fill=firstcolor!20] (0,0,0) -- ++(0,0,-3) -- ++(0,-2,0) -- ++(0,0,3) -- cycle; %side
+                    \draw[red] (0,0,0) -- ++(-4,0,0) -- ++(0,0,-3) -- ++(4,0,0) -- cycle; %top
+                            \node[above] at (-2,0,0) {$4\,\text{cm}$};
+                            \node[above,rotate=90] at (0,-1,0) {$2\,\text{cm}$};
+                            \node[above,rotate=45] at (0,0,-1.5) {$3\,\text{cm}$};
+                        \end{tikzpicture}
+                ]]>
+            </latex-image>
+          </image>
+
+        </figure>
+      </sidebyside>
+
+      <p permid="oBc">
+        We can see <m>(wd)h=w(dh)</m>.
+        This is known as the <term>associative property of multiplication</term>.
+        The associative property also applies to addition,
+        as in <m>(1+2)+3=1+(2+3)</m>,
+        which is called the <term>associative property of addition</term>.
+        However, there is no associative property of subtraction,
+        as <m>(3-2)-1\ne3-(2-1)</m>.
+      </p>
+    </paragraphs>
+
+    <paragraphs permid="trM">
+      <title>Distributive Property</title>
+      <p permid="UIl">
+        The final property we'll explore is called the
+        <term>distributive property</term>,
+        which involves both multiplication and addition.
+        To conceptualize this property,
+        let's consider what happens if we buy 3 boxes that each contain one apple and one pear.
+        This will have the same total cost as if we'd bought 3 apples and 3 pears.
+        We write this algebraically:
+        <me permid="OSZ">
+          3(a+p)=3a+3p
+        </me>.
+        Visually, we can see that it's just a means of re-grouping:
+        <m>3(\apple+ \pear) = 3(\apple)+ 3(\pear)</m>.
+      </p>
+    </paragraphs>
+
+  </subsection>
+
+  <subsection permid="zgY">
+    <title>Summary of Algebraic Properties</title>
+    <list xml:id="list-algebraic-properties">
+      <caption>Algebraic Properties</caption>
+      <idx><h>properties</h><h>commutative property of multiplication</h></idx>
+      <idx><h>multiplication</h><h>commutative property of</h></idx>
+      <idx><h>commutative property</h><h>of multiplication</h></idx>
+      <idx><h>properties</h><h>associative property of multiplication</h></idx>
+      <idx><h>multiplication</h><h>associative property of</h></idx>
+      <idx><h>associative property</h><h>of multiplication</h></idx>
+      <idx><h>properties</h><h>commutative property of addition</h></idx>
+      <idx><h>addition</h><h>commutative property of</h></idx>
+      <idx><h>commutative property</h><h>of addition</h></idx>
+      <idx><h>properties</h><h>associative property of addition</h></idx>
+      <idx><h>addition</h><h>associative property of</h></idx>
+      <idx><h>associative property</h><h>of addition</h></idx>
+      <idx><h>properties</h><h>distributive property</h></idx>
+      <idx><h>distributive property</h></idx>
+
+      <introduction permid="eiO">
+        <p permid="AfA">
+          Let <m>a</m>, <m>b</m>, and <m>c</m> represent real numbers,
+          variables, or algebraic expressions.
+          Then the following properties hold:
+        </p>
+      </introduction>
+
+      <dl permid="EtH">
+        <li permid="RGo" xml:id="item-commutative-property-of-multiplication">
+          <title>Commutative Property of Multiplication</title>
+          <p permid="Wqh">
+            <m>a\cdot b=b\cdot a</m>
+          </p>
+        </li>
+
+        <li permid="xNx" xml:id="item-associative-property-of-multiplication">
+          <title>Associative Property of Multiplication</title>
+          <p permid="Cxq">
+            <m>a\cdot(b\cdot c)=(a\cdot b)\cdot c</m>
+          </p>
+        </li>
+
+        <li permid="dUG" xml:id="item-commutative-property-of-addition">
+          <title>Commutative Property of Addition</title>
+          <p permid="iEz">
+            <m>a+b=b+a</m>
+          </p>
+        </li>
+
+        <li permid="KbP" xml:id="item-associative-property-of-addition">
+          <title>Associative Property of Addition</title>
+          <p permid="OLI">
+            <m>a+(b+c)=(a+b)+c</m>
+          </p>
+        </li>
+
+        <li permid="qiY" xml:id="item-distributive-property">
+          <title>Distributive Property</title>
+          <p permid="uSR">
+            <m>a(b+c)=ab+ac</m>
+          </p>
+        </li>
+      </dl>
+    </list>
+
+    <p permid="gWD">
+      Let's practice these properties in the following exercises.
+    </p>
+
+    <exercise permid="KpX">
+      <webwork>
+      <pg-macros><macro-file>contextLimitedPolynomial.pl</macro-file></pg-macros>
+      <setup>
+      <pg-code>Context("Numeric");
+      Context()->variables->are(c=>'Real',m=>'Real',n=>'Real',q=>'Real',r=>'Real',x=>'Real');
+      Context()->reduction->set('(-x)-y'=>0);
+      Context()->reduction->set('(-x)+y'=>0);
+      $giv1=Formula("53m");
+      $ans1=Formula("m*53");
+      $evaluator1=$ans1->cmp(checker => sub {
+      my ($correct,$student,$ans) = @_;
+      Value->Error("This is the original expression") if ($student eq $giv1);
+      Value->Error("This expression is algebraically equivalent to the given expression, but it is not what an application of the commutative property of multiplication would give you") if (($student == $correct) and ($student ne $correct));
+      return ($student eq $correct);
+      });
+      Context()->flags->set(reduceConstants=>0);
+      Context()->lists->set(AbsoluteValue => {open => "(", close => ")"});
+      Context()->parens->set("(" => {removable=>0, type => "AbsoluteValue", close => ")"});
+      $giv2 = Formula("3*(5 n)");
+      $ans2=Formula("(3*5)*n");
+      $alt2=Formula("15*n");
+      $evaluator2=$ans2->cmp(checker => sub {
+      my ($correct,$student,$ans) = @_;
+      # Because of the absolute value hack for parens, make sure to test at both pos and neg input:
+      $student->{test_at} = [[0,0,-1,0,0,0],[0,0,1,0,0,0]];
+      $correct->{test_at} = [[0,0,-1,0,0,0],[0,0,1,0,0,0]];
+      Value->Error("This expression is algebraically equivalent to the given expression, but it is not what an application of the associative property of multiplication would give you") if (($student == $giv2) or (($student == $correct) and ($student ne $correct) and ($student ne $alt2)));
+      return (($student eq $correct) or ($student eq $alt2));
+      });
+      $giv3=Formula("q+84");
+      $ans3=Formula("84+q");
+      $evaluator3=$ans3->cmp(checker => sub {
+      my ($correct,$student,$ans) = @_;
+      Value->Error("This is the original expression") if ($student eq $giv3);
+      Value->Error("This expression is algebraically equivalent to the given expression, but it is not what an application of the commutative property of addition would give you") if (($student == $correct) and ($student ne $correct));
+      return ($student eq $correct);
+      });
+      $giv4=Compute("x+(20+c)");
+      $amb4=Compute("x+20+c");
+      $ans4=Compute("(x+20)+c");
+      $evaluator4=$ans4->cmp(checker => sub {
+      my ($correct,$student,$ans) = @_;
+      # Because of the absolute value hack for parens, make sure to test at both pos and neg input:
+      $giv4->{test_at} = [[-20-1,0,0,0,0,-20-1],[-20-1,0,0,0,0,-20+1],[-20+1,0,0,0,0,-20-1],[-20+1,0,0,0,0,-20+1]];
+      $student ->{test_at} = [[-20-1,0,0,0,0,-20-1],[-20-1,0,0,0,0,-20+1],[-20+1,0,0,0,0,-20-1],[-20+1,0,0,0,0,-20+1]];
+      $amb4->{test_at} = [[-20-1,0,0,0,0,-20-1],[-20-1,0,0,0,0,-20+1],[-20+1,0,0,0,0,-20-1],[-20+1,0,0,0,0,-20+1]];
+      $correct->{test_at} = [[-20-1,0,0,0,0,-20-1],[-20-1,0,0,0,0,-20+1],[-20+1,0,0,0,0,-20-1],[-20+1,0,0,0,0,-20+1]];
+      Value->Error("This expression is algebraically equivalent to the given expression, but it is not what an application of the associative property of addition would give you") if (($student == $giv4) or ($student == $amb4) or (($student == $correct) and ($student ne $correct)));
+      return ($student eq $correct);
+      });
+      $giv5=Compute("3*(r+7)")->reduce;
+      $ans5=Compute("3*r+3*7")->reduce;
+      Context("LimitedPolynomial-Strict");
+      Context()->variables->are(r=>'Real');
+      $ans5=Compute($ans5);</pg-code>
+      </setup>
+      <statement>
+        <p permid="MtS">
+          <ol permid="uZV" label="a.">
+            <li permid="qZW">
+              <p permid="baa">
+                Use the commutative property of multiplication to write an equivalent expression to <m><var name="$giv1" /></m>.
+              </p>
+
+              <p permid="Hhj">
+                <var name="$ans1" evaluator="$evaluator1" width="10"/>
+              </p>
+            </li>
+
+            <li permid="Xhf">
+              <p permid="nos">
+                Use the associative property of multiplication to write an equivalent expression to <m><var name="$giv2" /></m>.
+              </p>
+
+              <p permid="TvB">
+                <var name="$ans2" evaluator="$evaluator2" width="10"/>
+              </p>
+            </li>
+
+            <li permid="Doo">
+              <p permid="zCK">
+                Use the commutative property of addition to write an equivalent expression to <m><var name="$giv3" /></m>.
+              </p>
+
+              <p permid="fJT">
+                <var name="$ans3" evaluator="$evaluator3" width="10"/>
+              </p>
+            </li>
+
+            <li permid="jvx">
+              <p permid="LRc">
+                Use the associative property of addition to write an equivalent expression to <m><var name="$giv4" /></m>.
+              </p>
+
+              <p permid="rYl">
+                <var name="$ans4" evaluator="$evaluator4" width="10"/>
+              </p>
+            </li>
+
+            <li permid="PCG">
+              <p permid="Yfu">
+                Use the distributive property to write an equivalent expression to <m><var name="$giv5" /></m> that has no grouping symbols.
+              </p>
+
+              <p permid="EmD">
+                <var name="$ans5" width="10"/>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution permid="axk">
+        <p permid="kmI">
+          <ol permid="wfo" label="a.">
+            <li permid="vJP">
+              <p permid="ktM">
+                To use the commutative property of multiplication,
+                we change the order in which two factors are multiplied:
+                <md permid="vai">
+                  <mrow>\amp\phantom{{}={}}53m</mrow>
+                  <mrow>\amp=m\cdot 53</mrow>
+                </md>.
+              </p>
+            </li>
+
+            <li permid="bQY">
+              <p permid="QAV">
+                To use the associative property of multiplication,
+                we leave factors written in their original order,
+                but change the grouping symbols so that a different multiplication has higher priority:
+                <md permid="bhr">
+                  <mrow>\amp\phantom{{}={}}3(5n)</mrow>
+                  <mrow>\amp=(3\cdot5)n</mrow>
+                </md>.
+                You may further simplify by carrying out the multiplication between the two numbers:
+                <md permid="HoA">
+                  <mrow>\amp\phantom{{}={}}3(5n)</mrow>
+                  <mrow>\amp=(3\cdot5)n</mrow>
+                  <mrow>\amp=15n</mrow>
+                </md>.
+              </p>
+            </li>
+
+            <li permid="HYh">
+              <p permid="wIe">
+                To use the commutative property of addition,
+                we change the order in which two terms are added:
+                <md permid="nvJ">
+                  <mrow>\amp\phantom{{}={}}q+84</mrow>
+                  <mrow>\amp=84+q</mrow>
+                </md>.
+              </p>
+            </li>
+
+            <li permid="ofq">
+              <p permid="cPn">
+                To use the associative property of addition,
+                we leave terms written in their original order,
+                but change the grouping symbols so that a different addition has higher priority:
+                <md permid="TCS">
+                  <mrow>\amp\phantom{{}={}}x+(20+c)</mrow>
+                  <mrow>\amp=(x+20)+c</mrow>
+                </md>.
+              </p>
+            </li>
+
+            <li permid="Umz">
+              <p permid="IWw">
+                To use the distributive property,
+                we multiply the number outside the parentheses, <m>3</m>,
+                with each term inside the parentheses:
+                <md permid="zKb">
+                  <mrow>\amp\phantom{{}={}}3(r+7)\amp</mrow>
+                  <mrow>\amp=3\cdot r+3\cdot7</mrow>
+                  <mrow>\amp=3r+21</mrow>
+                </md>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution></webwork>
+    </exercise>
+  </subsection>
+
+  <subsection permid="foh">
+    <title>Applying the Commutative, Associative, and Distributive Properties</title>
+    <paragraphs permid="ZyV">
+      <title>Like Terms</title>
+      <p permid="NdM">
+        One of the main ways that we will use the commutative,
+        associative,
+        and distributive properties is to simplify expressions.
+        In order to do this, we need to recognize <term>like terms</term>,
+        as discussed in <xref ref="section-combining-like-terms">Section</xref>.
+        We combine like terms when we take an expression lilke <m>2a+3a</m> and write the result as <m>5a</m>.
+        The formal process actually involves using the distributive property:
+        <md permid="fRk">
+          <mrow>2a+3a \amp=(2+3)a</mrow>
+          <mrow>\amp=5a</mrow>
+        </md>
+        In practice, however,
+        it's more helpful to think of this as having <m>2</m> of an object and then an additional <m>3</m> of that same object.
+        In total, we then have <m>5</m> of that object.
+      </p>
+    </paragraphs>
+
+    <example permid="qxg">
+      <statement>
+        <p permid="qLO">
+          Where possible,
+          simplify the following expressions by combining like terms.
+
+          <ol permid="KiT" label="a." cols="4">
+            <li permid="AtI">
+              <p permid="pdF">
+                <m>6c+12c-5c</m>
+              </p>
+            </li>
+
+            <li permid="gAR">
+              <p permid="VkO">
+                <m>-5q^2-3q^2</m>
+              </p>
+            </li>
+
+            <li permid="MIa">
+              <p permid="BrX">
+                <m>x-5y+4x</m>
+              </p>
+            </li>
+
+            <li permid="sPj">
+              <p permid="hzg">
+                <m>2x-3y+4z</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution permid="pGi">
+        <p permid="QtR">
+          <ol permid="cmx" label="a.">
+            <li permid="YWs">
+              <p permid="NGp">
+                All three terms are like terms, so they may combined.
+                We combine them two at a time:
+                <md permid="LYt">
+                  <mrow>6c+12c-5c \amp=18c-5c</mrow>
+                  <mrow>\amp=13c</mrow>
+                </md>
+              </p>
+            </li>
+
+            <li permid="FdB">
+              <p permid="tNy">
+                The two terms <m>-5q^2</m> and <m>-3q^2</m> are like terms,
+                so we may combine them:
+                <md permid="sfC">
+                  <mrow>-5q^2-3q^2 \amp=-8q^2</mrow>
+                </md>
+              </p>
+            </li>
+
+            <li permid="lkK">
+              <p permid="ZUH">
+                The two terms <m>x</m> and <m>4x</m> are like terms,
+                while the other term is different.
+                Using the associative and commutative properties of addition in the first step allows us to place the two like terms next to each other,
+                and then combine them:
+                <md permid="YmL">
+                  <mrow>x-5y+4x \amp=x+4x+(-5y)</mrow>
+                  <mrow>\amp=1x+4x+(-5y)</mrow>
+                  <mrow>\amp=5x-5y</mrow>
+                </md>
+              </p>
+
+              <p permid="GbQ">
+                Note the expression <m>x</m> is the same as <m>1x</m>.
+                Usually we don't write the <q><m>1</m></q> as it is implied.
+                However, it's helpful when combining like terms to remember that <m>x=1x</m>.
+                (Similarly, <m>-x</m> is equal to <m>-1x</m>,
+                which can be helpful when combining <m>-x</m> with like terms.)
+              </p>
+            </li>
+
+            <li permid="RrT">
+              <p permid="miZ">
+                The expression <m>2x-3y+4z</m> cannot be simplified as there are no like terms.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <paragraphs permid="FGe">
+      <title>Adding Expressions</title>
+      <p permid="tkV">
+        When we add an expression like <m>4x-5</m> to an expression like <m>3x-7</m>,
+        we write them as follows:
+        <me permid="EtU">
+          (4x-5)+(3x-7)
+        </me>
+        In order to remove the given sets of parentheses and apply the commutative property of addition,
+        we will rewrite the subtraction operation as
+        <q>adding the opposite</q>:
+        <me permid="kBd">
+          4x+(-5)+3x+(-7)
+        </me>
+        At this point we can apply the commutative property of addition and then combine like terms.
+        Here's how the entire problem will look:
+        <md permid="QIm">
+          <mrow>(4x-5)+(3x-7)\amp=4x+(-5)+3x+(-7)</mrow>
+          <mrow>\amp=4x+3x+(-5)+(-7)</mrow>
+          <mrow>\amp=7x+(-12)</mrow>
+          <mrow>\amp=7x-12</mrow>
+        </md>
+      </p>
+    </paragraphs>
+
+    <remark>
+      <p permid="Zse">
+        Once we become more comfortable simplifying such expressions,
+        we will simply write this kind of simplification in one step:
+        <me permid="wPv">
+          (4x-5)+(3x-7)=7x-12
+        </me>
+      </p>
+    </remark>
+
+    <example permid="WEp">
+      <statement>
+        <p permid="WSX">
+          Use the associative, commutative,
+          and distributive properties to simplify the following expressions as much as possible.
+
+          <ol permid="qqc" label="a." cols="2">
+            <li permid="xzc">
+              <p permid="Sqi">
+                <m>(2x+3)+(4x+5)</m>
+              </p>
+            </li>
+
+            <li permid="dGl">
+              <p permid="yxr">
+                <m>(-5x+3)+(4x-7)</m>
+              </p>
+            </li>
+            <!-- <li><p><m>(-2x-1)+(-4x-9)</m></p></li> -->
+          </ol>
+        </p>
+      </statement>
+      <solution permid="VNr">
+        <p permid="wBa">
+          <ol permid="ItG" label="a.">
+            <li permid="JNu">
+              <p permid="eEA">
+                We will remove parentheses, and then combine like terms:
+                <md permid="cWE">
+                  <mrow>(2x+3)+(4x+5) \amp=2x+3+4x+5</mrow>
+                  <mrow>\amp=2x+4x+3+5</mrow>
+                  <mrow>\amp=6x+8</mrow>
+                </md>
+              </p>
+            </li>
+
+            <li permid="pUD">
+              <p permid="KLJ">
+                We will remove parentheses, and then combine like terms:
+                <md permid="JdN">
+                  <mrow>(-5x+3)+(4x-7)\amp=-5x+3+4x+(-7)</mrow>
+                  <mrow>\amp=-x+(-4)</mrow>
+                  <mrow>\amp=-x-4</mrow>
+                </md>
+              </p>
+            </li>
+<!--                     <li><p>We will remove parentheses, and then combine like terms:<md>
+                        <mrow>(-2x-1)+(-4x-9) \amp=-2x+(-1)+(-4x)+(-9)</mrow>
+                        <mrow>\amp=-2x+(-4x)+(-1)+(-9)</mrow>
+                        <mrow>\amp=-6x+(-10)</mrow>
+                        <mrow>\amp=-6x-10</mrow>
+                    </md></p></li> -->
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <paragraphs permid="lNn">
+      <title>Applying the Distributive Property with Negative Coefficients</title>
+      <p permid="Fzn">
+        Applying the distributive property in an expression such as <m>2(3x+4)</m> is fairly straightforward,
+        in that this becomes <m>2(3x)+2(4)</m> which we then simplify to <m>6x+8</m>.
+        Applying the distributive property is a little trickier when subtraction or a negative constant is involved,
+        for example,
+        with the expression <m>2(3x-4)</m>.
+        Recalling that subtraction is defined as
+        <q>adding the opposite,</q>
+        we can change the subtraction of positive <m>4</m> to the addition of negative <m>4</m>:
+        <me permid="pkW">
+          2\big(3x+(-4)\big)
+        </me>
+        Now when we distribute, we obtain:
+        <me permid="Vsf">
+          2(3x)+2(-4)
+        </me>
+        As a final step, we see that this simplifies to:
+        <me permid="Bzo">
+          6x-8
+        </me>
+      </p>
+    </paragraphs>
+
+    <remark>
+      <p permid="lGw">
+        We can also extend the distributive property to use subtraction,
+        and state that <m>a(b-c)=ab-ac</m>.
+        With this property, we would simplify <m>2(3x-4)</m> more efficiently:
+        <md permid="hGx">
+          <mrow>2(3x-4) \amp=2(3x)-2(4)</mrow>
+          <mrow>\amp=6x-8</mrow>
+        </md>
+        In general, we will use this approach.
+      </p>
+    </remark>
+
+    <example permid="CLy">
+      <statement>
+        <p permid="Dag">
+          Apply the distributive property to each expression and simplify it as much as possible.
+
+          <ol permid="Wxl" label="a." cols="2">
+            <li permid="WbM">
+              <p permid="qSS">
+                <m>-3(5x+7)</m>
+              </p>
+            </li>
+
+            <li permid="CiV">
+              <p permid="Xab">
+                <m>2(-4x-1)</m>
+              </p>
+            </li>
+<!--                     <li><p><m>-4(2x-3)</m></p></li>
+                    <li><p><m>-7(-x-9)</m></p></li> -->
+          </ol>
+        </p>
+      </statement>
+      <solution permid="BUA">
+        <p permid="cIj">
+          <ol permid="oAP" label="a." cols="2">
+            <li permid="iqe">
+              <p permid="Dhk">
+                We will distribute <m>-3</m> to the <m>5x</m> and <m>7</m>:
+                <md permid="NNG">
+                  <mrow>-3(5x+7)\amp=-3(5x)+(-3)(7)</mrow>
+                  <mrow>\amp=-15x-21</mrow>
+                </md>
+              </p>
+            </li>
+
+            <li permid="Oxn">
+              <p permid="jot">
+                We will distribute <m>2</m> to the <m>-4x</m> and <m>-1</m>:
+                <md permid="tUP">
+                  <mrow>2(-4x-1)\amp=2(-4x)-2(1)</mrow>
+                  <mrow>\amp=-8x-2</mrow>
+                </md>
+              </p>
+            </li>
+<!--                     <li><p>We will distribute <m>-4</m> into the parentheses:<md>
+                        <mrow>-4(2x-3)\amp=-4(2x)-(-4)(3)</mrow>
+                        <mrow>\amp=-8x+12</mrow>
+                    </md></p></li>
+                    <li><p>We will distribute <m>-7</m> into the parentheses:<md>
+                        <mrow>-7(-x-9)\amp=-7(-x)-(-7)(9)</mrow>
+                        <mrow>\amp=7x+63</mrow>
+                    </md></p></li> -->
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <exercise permid="OZQ">
+      <webwork source="BasicAlgebra/AlgebraicProperties/DistributiveProperty20.pg" />
+    </exercise>
+
+    <paragraphs permid="RUw">
+      <title>Subtracting Expressions</title>
+      <p permid="RNF">
+        To subtract one expression from another expression,
+        such as <m>(5x+9)-(3x+2)</m>,
+        we will again rely on the fact that subtraction is defined as
+        <q>adding the opposite.</q>
+        To add the <em>opposite</em> of an expression,
+        we will technically distribute a constant factor of <m>-1</m> and simplify from there:
+        <md permid="abY">
+          <mrow>(5x+9)-(3x+2)\amp=(5x+9)+(-1)(3x+2)</mrow>
+          <mrow>\amp=5x+9+(-1)(3x)+(-1)(2)</mrow>
+          <mrow>\amp=5x+9+(-3x)+(-2)</mrow>
+          <mrow>\amp=2x+7</mrow>
+        </md>
+      </p>
+    </paragraphs>
+
+    <remark>
+      <p permid="xUO">
+        The above example demonstrates <em>how</em>
+        we apply the distributive property in order to subtract two expressions.
+        But in practice, it can be pretty cumbersome.
+        A shorter (and often clearer) approach is to instead subtract every term in the expression we are subtracting,
+        which is shown like this:
+        <md permid="Gjh">
+          <mrow>(5x+9)-(3x+2)\amp=5x+9-3x-2</mrow>
+          <mrow>\amp=2x+7</mrow>
+        </md>
+        In general, we'll use this approach.
+      </p>
+    </remark>
+
+    <example permid="iSH">
+      <statement>
+        <p permid="jhp">
+          Use the associative, commutative,
+          and distributive properties to simplify the following expressions as much as possible.
+
+          <ol permid="CEu" label="a." cols="2">
+            <li permid="uEw">
+              <p permid="PvC">
+                <m>(-6x+4)-(3x-7)</m>
+              </p>
+            </li>
+
+            <li permid="aLF">
+              <p permid="vCL">
+                <m>(-2x-5)-(-4x-6)</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution permid="ibJ">
+        <p permid="IPs">
+          <ol permid="UHY" label="a.">
+            <li permid="GSO">
+              <p permid="bJU">
+                We will remove parentheses using the distributive property,
+                and then combine like terms:
+                <md permid="mqq">
+                  <mrow>(-6x+4)-(3x-7) \amp=-6x+4-3x-(-7)</mrow>
+                  <mrow>\amp=-6x+4-3x+7</mrow>
+                  <mrow>\amp=-9x+11</mrow>
+                </md>
+              </p>
+            </li>
+
+            <li permid="mZX">
+              <p permid="HRd">
+                We will remove parentheses using the distributive property,
+                and then combine like terms:
+                <md permid="Sxz">
+                  <mrow>(-2x-5)-(-4x-6)\amp=-2x-5-(-4x)-(-6)</mrow>
+                  <mrow>\amp=-2x-5+4x+6</mrow>
+                  <mrow>\amp=2x+1</mrow>
+                </md>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection permid="Lvq">
+    <title>The Role of the Order of Operations in Applying the Commutative, Associative, and Distributive Properties</title>
+    <p permid="ebX">
+      When simplifying an expression such as <m>3+4(5x+7)</m>,
+      we need to respect the order of operations.
+      Since the terms inside the parentheses are not like terms,
+      there is nothing to simplify there.
+      The next highest priority operation is multiplying the <m>4</m> by <m>(5x+7)</m>.
+      This must be done <em>before</em>
+      anything happens with the adding of that <m>3</m>.
+      We cannot say <m>3+4(5x+7)=\highlight{7}(5x+7)</m>,
+      because that would mean we treated the addition as having higher priority than the multiplication.
+    </p>
+
+    <p permid="Kjg">
+      So to simplify <m>3+4(5x+7)</m>,
+      we will first examine the multiplication of <m>4</m> with <m>(5x+7)</m>,
+      and here we may apply the distributive property.
+      After that, we will use the commutative and associative properties:
+      <md permid="yEI">
+        <mrow>3+4(5x+7)\amp=3+4(5x)+4(7)</mrow>
+        <mrow>\amp=3+20x+28</mrow>
+        <mrow>\amp=20x+3+28</mrow>
+        <mrow>\amp=20x+31</mrow>
+      </md>
+    </p>
+
+    <example permid="vgZ">
+      <statement>
+        <p permid="Poy">
+          Simplify the following expressions using the commutative,
+          associative, and distributive properties.
+
+          <ol permid="iLD" label="a." cols="3">
+            <li permid="Thg">
+              <p permid="nYm">
+                <m>4-(3x-9)</m>
+              </p>
+            </li>
+
+            <li permid="zop">
+              <p permid="Ufv">
+                <m>5x+9(-2x+3)</m>
+              </p>
+            </li>
+
+            <li permid="fvy">
+              <p permid="AmE">
+                <m>5(x-9)+4(x+4)</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution permid="OiS">
+        <p permid="oWB">
+          <ol permid="APh" label="a.">
+            <li permid="LCH">
+              <p permid="gtN">
+                We will remove parentheses using the distributive property,
+                and then combine like terms:
+                <md permid="eLR">
+                  <mrow>4-(3x-9) \amp=4-3x-(-9)</mrow>
+                  <mrow>\amp=4-3x+9</mrow>
+                  <mrow>\amp=-3x+13</mrow>
+                </md>
+              </p>
+            </li>
+
+            <li permid="rJQ">
+              <p permid="MAW">
+                We will remove parentheses using the distributive property,
+                and then combine like terms:
+                <md permid="KTa">
+                  <mrow>5x+9(-2x+3)\amp=5x+9(-2x)+9(3)</mrow>
+                  <mrow>\amp=5x-18x+27</mrow>
+                  <mrow>\amp=-13x+27</mrow>
+                </md>
+              </p>
+            </li>
+
+            <li permid="XQZ">
+              <p permid="sIf">
+                We will remove parentheses using the distributive property,
+                and then combine like terms:
+                <md permid="raj">
+                  <mrow>5(x-9)+4(x+4)\amp=5x-45+4x+16</mrow>
+                  <mrow>\amp=9x-29</mrow>
+                </md>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <exercise permid="boi">
+      <webwork source="BasicAlgebra/AlgebraicProperties/DistributiveProperty50.pg" />
+    </exercise>
+  </subsection>
+
+  <subsection permid="rCz">
+    <title>Rules of Exponents and Simplifying</title>
+    <p permid="qqp">
+      In <xref ref="section-introduction-to-exponent-rules">Section</xref>,
+      we introduced three exponent rules.
+      We continue to use these rules when simplifying expressions.
+      Sometimes though, students incorrectly apply <q>rules</q>
+      of exponents where they have misremembered the actual rule.
+      Let's summarize what we can and cannot do.
+    </p>
+<!-- The following content belongs in the previous section and is already covered there. I'm not deleting this in case someone determines these are actually better examples to use in that section than what is currently there. -->
+<!--         <example>
+            <statement>
+                <p>Simplify the following expressions using the rules of exponents.<ol label="a." cols="2">
+                    <li><p><m>-2t^3\cdot 4t^5</m></p></li>
+                    <li><p><m>5\left(v^4\right)^2</m></p></li>
+                    <li><p><m>-(3u)^2</m></p></li>
+                    <li><p><m>(-3u)^2</m></p></li>
+                </ol></p>
+            </statement>
+            <solution>
+                <p><ol label="a.">
+                    <li>
+                        <p>To simplify <m>-2t^3\cdot 4t^5</m>, we want to multiply and simplify the constant factors and then apply the <xref ref="item-product-to-sum-exponent-rule"  text="title" />:<md>
+                            <mrow>-2t^3\cdot 4t^5 \amp=-2\cdot 4 \cdot t^3\cdot t^5</mrow>
+                            <mrow>\amp=-8t^{3+5}</mrow>
+                            <mrow>\amp=-8t^8</mrow>
+                        </md></p>
+                    </li>
+                    <li>
+                        <p>To start simplifying <m>5\left(v^4\right)^2</m>, we want to first recognize that the number <m>5</m> is outside the parentheses to which the exponent of <m>2</m> applies. According to the order of operations, we will first apply the exponent in <m>\left(v^4\right)^2</m>, and then multiply <m>5</m>. In applying this exponent, we'll use <xref ref="item-exponent-on-an-exponent-rule" text="title" />:<md>
+                            <mrow>5\left(v^4\right)^2 \amp=5\left(v^{4\cdot 2}\right)</mrow>
+                            <mrow>\amp=5v^8</mrow>
+                        </md></p>
+                    </li>
+                    <li>
+                        <p>As we simplify <m>-(3u)^2</m>, we will again note that the exponent of <m>2</m> only applies to the part inside the parentheses. So we will first simplify <m>(3u)^2</m> according to the <xref ref="item-exponent-on-a-product-rule" text="title" />:<md>
+                            <mrow>-(3u)^2\amp=-\left(3^2\cdot u^2\right)</mrow>
+                            <mrow>\amp=-\left(9u^2\right)</mrow>
+                            <mrow>\amp=-9u^2</mrow>
+                        </md></p>
+                    </li>
+                    <li>
+                        <p>In this problem, the exponent of <m>2</m> applies to <m>(-3u)</m>. We have:<md>
+                            <mrow>(-3u)^2\amp=(-3)^2\cdot u^2</mrow>
+                            <mrow>\amp=9u^2</mrow>
+                        </md></p>
+                    </li>
+                </ol></p>
+            </solution>
+        </example> -->
+    <p permid="Wxy">
+      When we add/subtract two expressions,
+      we can only combine <em>like</em> terms.
+      For example:
+
+      <ul permid="kAQ" cols="3">
+        <li permid="hGk">
+          <p permid="YPo">
+            <m>3x-x=2x</m>
+          </p>
+        </li>
+
+        <li permid="NNt">
+          <p permid="EWx">
+            <m>t^2+t^2=2t^2</m>
+          </p>
+        </li>
+
+        <li permid="tUC">
+          <p permid="ldG">
+            <m>q^2+q</m> cannot be combined.
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    <p permid="CEH">
+      However, we can multiply two expressions regardless of whether or not they are like terms.
+      For example:
+
+      <ul permid="QHZ" cols="3">
+        <li permid="abL">
+          <p permid="RkP">
+            <m>x\cdot x=x^2</m>
+          </p>
+        </li>
+
+        <li permid="GiU">
+          <p permid="xrY">
+            <m>t^2\cdot t^3=t^5</m>
+          </p>
+        </li>
+
+        <li permid="mqd">
+          <p permid="dzh">
+            <m>(q^2)(q)=q^3</m>
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    <p permid="iLQ">
+      Consider:
+
+      <ul permid="wPi">
+        <li permid="Sxm">
+          <p permid="JGq">
+            When we combine like terms that have a variable,
+            the exponent doesn't change, as in <m>x^2+x^2=2x^2</m>.
+          </p>
+        </li>
+
+        <li permid="yEv">
+          <p permid="pNz">
+            When we multiply powers of a variable that use the same variable,
+            the exponent <em>will</em> change,
+            as in <m>(x^2)(x^2)=x^4</m>.
+          </p>
+        </li>
+
+        <li permid="eLE">
+          <p permid="VUI">
+            We <em>cannot</em> combine <q>unlike terms,</q>
+            as something like <m>x^2+x</m> is as simplified as it can be.
+          </p>
+        </li>
+
+        <li permid="KSN">
+          <p permid="CbR">
+            We <em>can</em> multiply powers with different exponents,
+            as in <m>(x^2)(x)=x^3</m>.
+          </p>
+        </li>
+      </ul>
+
+      The next few examples test your understanding of these concepts.
+    </p>
+
+    <example permid="Hvr">
+      <statement>
+        <p permid="vvH">
+          Simplify the following expressions using the rules of exponents and the distributive property.
+
+          <ol permid="OSM" label="a." cols="4">
+            <li permid="DYi">
+              <p permid="ija">
+                <m>3x^2+2x+x^2</m>
+              </p>
+            </li>
+
+            <li permid="kfr">
+              <p permid="Oqj">
+                <m>(3x^2)(2x)(x^2)</m>
+              </p>
+            </li>
+
+            <li permid="QmA">
+              <p permid="uxs">
+                <m>2x(3x+4)</m>
+              </p>
+            </li>
+            <!-- <li><p><m>3x^2(5x-2)</m></p></li> -->
+            <li permid="wtJ">
+              <p permid="aEB">
+                <m>x^3-3x^2(5x-2)</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution permid="uqb">
+        <p permid="VdK">
+          <ol permid="gWq" label="a.">
+            <li permid="cAS">
+              <p permid="GLK">
+                We will combine like terms <m>3x^2</m> and <m>x^2</m>:
+                <md permid="Xhs">
+                  <mrow>3x^2+2x+x^2\amp=4x^2+2x</mrow>
+                </md>
+              </p>
+            </li>
+
+            <li permid="IIb">
+              <p permid="mST">
+                We will apply the <xref ref="item-product-to-sum-exponent-rule" text="title" />:
+                <md permid="DoB">
+                  <mrow>(3x^2)(2x)(x^2)\amp=6x^5</mrow>
+                </md>
+              </p>
+            </li>
+
+            <li permid="oPk">
+              <p permid="Tac">
+                To simplify <m>2x(3x+4)</m>, we want to first distribute <m>2x</m>,
+                and then we can apply the <xref ref="item-product-to-sum-exponent-rule" text="title" />:
+                <md permid="jvK">
+                  <mrow>2x(3x+4)\amp=2x(3x)+2x(4)</mrow>
+                  <mrow>\amp=6x^2+8x</mrow>
+                </md>
+              </p>
+            </li>
+<!--                     <li>
+                        <p>We will use the distributive property first, and then apply the <xref ref="item-product-to-sum-exponent-rule" text="title" />:<md>
+                            <mrow>3x^2(5x-2)\amp=3x^2(5x)-3x^2(2)</mrow>
+                            <mrow>\amp=15x^3-6x^2</mrow>
+                        </md></p>
+                    </li> -->
+            <li permid="UWt">
+              <p permid="zhl">
+                We will use the distributive property first,
+                apply the <xref ref="item-product-to-sum-exponent-rule" text="title" />, and combine like terms:
+                <md permid="PCT">
+                  <mrow>x^3-3x^2(5x-2)\amp=x^3-3x^2(5x)-(-3x^2)(2)</mrow>
+                  <mrow>\amp=x^3-15x^3+6x^2</mrow>
+                  <mrow>\amp=-14x^3+6x^2</mrow>
+                </md>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+  </subsection>
+
+  <exercises permid="XJI">
+    <exercisegroup permid="DQR" cols="3">
+      <title>Review and Warmup</title>
+      <exercise permid="TJJ">
+        <webwork>
+        <setup>
+        <pg-code>Context("Numeric");
+        Context()->noreduce('(-x)+y','(-x)-y');
+        Context()->variables->are(x=>'Real',y=>'Real',z=>'Real',t=>'Real',s=>'Real');
+        @answer = (1,2,2,3,3,4,4)[NchooseK(7,4)];
+        for $i (0..3) {
+        $expression[$i] = Formula("0");
+        my @vars;
+        my @exps;
+        for $j (1..$answer[$i]) {
+        my $nextvar = list_random('x','y','z','t','s');
+        my $nextexp;
+        do {$nextexp = list_random(0,1,1,1,2,2);} until ($exps[$j-2] != 0 or $nextexp != 0);
+        push(@vars,$nextvar);
+        push(@exps,$nextexp);
+        $string = non_zero_random(-9,9,1).$vars[$j-1].'^'.$exps[$j-1];
+        $expression[$i] = Compute("$expression[$i]+ $string")->reduce->reduce;
+        }
+        }
+        $exp0=$expression[0];
+        $exp1=$expression[1];
+        $exp2=$expression[2];
+        $exp3=$expression[3];</pg-code>
+        </setup>
+        <statement>
+          <p permid="sBb">
+            Count the number of terms in each expression.
+
+            <ol permid="bhe" label="a.">
+              <li permid="BdC">
+                <p permid="fou">
+                  <m><var name="$exp0" /></m>
+                </p>
+
+                <p permid="LvD">
+                  <var name="$answer[d]" width="25" />
+                </p>
+              </li>
+
+              <li permid="hkL">
+                <p permid="rCM">
+                  <m><var name="$exp1" /></m>
+                </p>
+
+                <p permid="XJV">
+                  <var name="$answer[d]" width="25" />
+                </p>
+              </li>
+
+              <li permid="NrU">
+                <p permid="DRe">
+                  <m><var name="$exp2" /></m>
+                </p>
+
+                <p permid="jYn">
+                  <var name="$answer[d]" width="25" />
+                </p>
+              </li>
+
+              <li permid="tzd">
+                <p permid="Qfw">
+                  <m><var name="$exp3" /></m>
+                </p>
+
+                <p permid="wmF">
+                  <var name="$answer[d]" width="25" />
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <solution permid="GEt">
+          <p permid="BkT">
+            <ol permid="Ndz" label="a.">
+              <li permid="ZGm">
+                <p permid="ctO">
+                  This expression has <m><var name="$answers[0]" /></m> terms.
+                </p>
+              </li>
+
+              <li permid="FNv">
+                <p permid="IAX">
+                  This expression has <m><var name="$answers[1]" /></m> terms.
+                </p>
+              </li>
+
+              <li permid="lUE">
+                <p permid="oIg">
+                  This expression has <m><var name="$answers[2]" /></m> terms.
+                </p>
+              </li>
+
+              <li permid="SbN">
+                <p permid="UPp">
+                  This expression has <m><var name="$answers[3]" /></m> terms.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </solution></webwork>
+      </exercise>
+
+      <exercise permid="zQS">
+        <webwork>
+        <setup>
+        <pg-code>Context("Numeric");
+        Context()->noreduce('(-x)+y','(-x)-y');
+        Context()->variables->are(x=>'Real',y=>'Real',z=>'Real',t=>'Real',s=>'Real');
+        @answer = (1,2,2,3,3,4,4)[NchooseK(7,4)];
+        for $i (0..3) {
+        $expression[$i] = Formula("0");
+        my @vars;
+        my @exps;
+        for $j (1..$answer[$i]) {
+        my $nextvar = list_random('x','y','z','t','s');
+        my $nextexp;
+        do {$nextexp = list_random(0,1,1,1,2,2);} until ($exps[$j-2] != 0 or $nextexp != 0);
+        push(@vars,$nextvar);
+        push(@exps,$nextexp);
+        $string = non_zero_random(-9,9,1).$vars[$j-1].'^'.$exps[$j-1];
+        $expression[$i] = Compute("$expression[$i]+ $string")->reduce->reduce;
+        }
+        }
+        $exp0=$expression[0];
+        $exp1=$expression[1];
+        $exp2=$expression[2];
+        $exp3=$expression[3];</pg-code>
+        </setup>
+        <statement>
+          <p permid="YIk">
+            Count the number of terms in each expression.
+
+            <ol permid="Hon" label="a.">
+              <li permid="yiW">
+                <p permid="AWy">
+                  <m><var name="$exp0" /></m>
+                </p>
+
+                <p permid="hdH">
+                  <var name="$answer[d]" width="25" />
+                </p>
+              </li>
+
+              <li permid="eqf">
+                <p permid="NkQ">
+                  <m><var name="$exp1" /></m>
+                </p>
+
+                <p permid="trZ">
+                  <var name="$answer[d]" width="25" />
+                </p>
+              </li>
+
+              <li permid="Kxo">
+                <p permid="Zzi">
+                  <m><var name="$exp2" /></m>
+                </p>
+
+                <p permid="FGr">
+                  <var name="$answer[d]" width="25" />
+                </p>
+              </li>
+
+              <li permid="qEx">
+                <p permid="lNA">
+                  <m><var name="$exp3" /></m>
+                </p>
+
+                <p permid="RUJ">
+                  <var name="$answer[d]" width="25" />
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <solution permid="mLC">
+          <p permid="hsc">
+            <ol permid="tkI" label="a.">
+              <li permid="WLG">
+                <p permid="ybS">
+                  This expression has <m><var name="$answers[0]" /></m> terms.
+                </p>
+              </li>
+
+              <li permid="CSP">
+                <p permid="ejb">
+                  This expression has <m><var name="$answers[1]" /></m> terms.
+                </p>
+              </li>
+
+              <li permid="iZY">
+                <p permid="Kqk">
+                  This expression has <m><var name="$answers[2]" /></m> terms.
+                </p>
+              </li>
+
+              <li permid="Phh">
+                <p permid="qxt">
+                  This expression has <m><var name="$answers[3]" /></m> terms.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </solution></webwork>
+      </exercise>
+
+      <exercise permid="fYb">
+        <webwork>
+        <setup>
+        <pg-code>Context("Numeric");
+        Context()->noreduce('(-x)+y','(-x)-y');
+        Context()->variables->are(x=>'Real',y=>'Real',z=>'Real',t=>'Real',s=>'Real');
+        @termcount = (1,2,2,3,3,4,4)[NchooseK(7,4)];
+        for $i (0..3) {
+        $expression[$i] = Formula("0");
+        $answers[$i] = List();
+        my @vars;
+        my @exps;
+        for $j (1..$termcount[$i]) {
+        my $nextvar = list_random('x','y','z','t','s');
+        my $nextexp;
+        do {$nextexp = list_random(0,1,1,1,2,2);} until ($exps[$j-2] != 0 or $nextexp != 0);
+        push(@vars,$nextvar);
+        push(@exps,$nextexp);
+        $string = non_zero_random(-9,9,0.1).$vars[$j-1].'^'.$exps[$j-1];
+        $expression[$i] = Compute("$expression[$i]+ $string")->reduce->reduce;
+        $answers[$i] = List($answers[$i]->value,Formula("$string")->reduce->reduce);
+        }
+        }
+        $exp0=$expression[0];
+        $exp1=$expression[1];
+        $exp2=$expression[2];
+        $exp3=$expression[3];</pg-code>
+        </setup>
+        <statement>
+          <p permid="EPt">
+            List the terms in each expression.
+
+            <ol permid="nvw" label="a.">
+              <li permid="voq">
+                <p permid="WEC">
+                  <m><var name="$exp0" /></m>
+                </p>
+
+                <p permid="CLL">
+                  <var name="$answers[0]" width="25" />
+                </p>
+              </li>
+
+              <li permid="bvz">
+                <p permid="iSU">
+                  <m><var name="$exp1" /></m>
+                </p>
+
+                <p permid="Pad">
+                  <var name="$answers[1]" width="25" />
+                </p>
+              </li>
+
+              <li permid="HCI">
+                <p permid="vhm">
+                  <m><var name="$exp2" /></m>
+                </p>
+
+                <p permid="bov">
+                  <var name="$answers[2]" width="25" />
+                </p>
+              </li>
+
+              <li permid="nJR">
+                <p permid="HvE">
+                  <m><var name="$exp3" /></m>
+                </p>
+
+                <p permid="nCN">
+                  <var name="$answers[3]" width="25" />
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <solution permid="SSL">
+          <p permid="Nzl">
+            <ol permid="ZrR" label="a.">
+              <li permid="TRa">
+                <p permid="TJW">
+                  The terms are <m><var name="$answers[0]" /></m>.
+                </p>
+              </li>
+
+              <li permid="zYj">
+                <p permid="zRf">
+                  The terms are <m><var name="$answers[1]" /></m>.
+                </p>
+              </li>
+
+              <li permid="gfs">
+                <p permid="fYo">
+                  The terms are <m><var name="$answers[2]" /></m>.
+                </p>
+              </li>
+
+              <li permid="MmB">
+                <p permid="Mfx">
+                  The terms are <m><var name="$answers[3]" /></m>.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </solution></webwork>
+      </exercise>
+
+      <exercise permid="Mfk">
+        <webwork>
+        <setup>
+        <pg-code>Context("Numeric");
+        Context()->noreduce('(-x)+y','(-x)-y');
+        Context()->variables->are(x=>'Real',y=>'Real',z=>'Real',t=>'Real',s=>'Real');
+        @termcount = (1,2,2,3,3,4,4)[NchooseK(7,4)];
+        for $i (0..3) {
+        $expression[$i] = Formula("0");
+        $answers[$i] = List();
+        my @vars;
+        my @exps;
+        for $j (1..$termcount[$i]) {
+        my $nextvar = list_random('x','y','z','t','s');
+        my $nextexp;
+        do {$nextexp = list_random(0,1,1,1,2,2);} until ($exps[$j-2] != 0 or $nextexp != 0);
+        push(@vars,$nextvar);
+        push(@exps,$nextexp);
+        $string = non_zero_random(-9,9,0.1).$vars[$j-1].'^'.$exps[$j-1];
+        $expression[$i] = Compute("$expression[$i]+ $string")->reduce->reduce;
+        $answers[$i] = List($answers[$i]->value,Formula("$string")->reduce->reduce);
+        }
+        }
+        $exp0=$expression[0];
+        $exp1=$expression[1];
+        $exp2=$expression[2];
+        $exp3=$expression[3];</pg-code>
+        </setup>
+        <statement>
+          <p permid="kWC">
+            List the terms in each expression.
+
+            <ol permid="TCF" label="a.">
+              <li permid="stK">
+                <p permid="smG">
+                  <m><var name="$exp0" /></m>
+                </p>
+
+                <p permid="YtP">
+                  <var name="$answers[0]" width="25" />
+                </p>
+              </li>
+
+              <li permid="YAT">
+                <p permid="EAY">
+                  <m><var name="$exp1" /></m>
+                </p>
+
+                <p permid="kIh">
+                  <var name="$answers[1]" width="25" />
+                </p>
+              </li>
+
+              <li permid="EIc">
+                <p permid="QPq">
+                  <m><var name="$exp2" /></m>
+                </p>
+
+                <p permid="wWz">
+                  <var name="$answers[2]" width="25" />
+                </p>
+              </li>
+
+              <li permid="kPl">
+                <p permid="ddI">
+                  <m><var name="$exp3" /></m>
+                </p>
+
+                <p permid="JkR">
+                  <var name="$answers[3]" width="25" />
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <solution permid="yZU">
+          <p permid="tGu">
+            <ol permid="Fza" label="a.">
+              <li permid="QWu">
+                <p permid="psa">
+                  The terms are <m><var name="$answers[0]" /></m>.
+                </p>
+              </li>
+
+              <li permid="xdD">
+                <p permid="Vzj">
+                  The terms are <m><var name="$answers[1]" /></m>.
+                </p>
+              </li>
+
+              <li permid="dkM">
+                <p permid="BGs">
+                  The terms are <m><var name="$answers[2]" /></m>.
+                </p>
+              </li>
+
+              <li permid="JrV">
+                <p permid="hNB">
+                  The terms are <m><var name="$answers[3]" /></m>.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </solution></webwork>
+      </exercise>
+
+      <exercise permid="smt">
+        <webwork>
+        <setup>
+        <pg-code>Context("Numeric");
+        Context()->noreduce('(-x)+y','(-x)-y');
+        Context()->variables->are(x=>'Real',y=>'Real',z=>'Real',t=>'Real',s=>'Real');
+        @termcount = (1,2,2,3,3,4,4)[NchooseK(7,4)];
+        for $i (0..3) {
+        $expression[$i] = Formula("0");
+        $answers[$i] = List();
+        my @vars;
+        my @exps;
+        for $j (1..$termcount[$i]) {
+        my $nextvar = list_random('x','y','z','t','s');
+        my $nextexp;
+        do {$nextexp = list_random(0,1,1,1,2,2);} until ($exps[$j-2] != 0 or $nextexp != 0);
+        push(@vars,$nextvar);
+        push(@exps,$nextexp);
+        $string = non_zero_random(-9,9,0.1).$vars[$j-1].'^'.$exps[$j-1];
+        $expression[$i] = Compute("$expression[$i]+ $string")->reduce->reduce;
+        $answers[$i] = List($answers[$i]->value,Formula("$string")->reduce->reduce);
+        }
+        }
+        $exp0=$expression[0];
+        $exp1=$expression[1];
+        $exp2=$expression[2];
+        $exp3=$expression[3];</pg-code>
+        </setup>
+        <statement>
+          <p permid="RdL">
+            List the terms in each expression.
+
+            <ol permid="zJO" label="a.">
+              <li permid="pze">
+                <p permid="NUK">
+                  <m><var name="$exp0" /></m>
+                </p>
+
+                <p permid="ubT">
+                  <var name="$answers[0]" width="25" />
+                </p>
+              </li>
+
+              <li permid="VGn">
+                <p permid="ajc">
+                  <m><var name="$exp1" /></m>
+                </p>
+
+                <p permid="Gql">
+                  <var name="$answers[1]" width="25" />
+                </p>
+              </li>
+
+              <li permid="BNw">
+                <p permid="mxu">
+                  <m><var name="$exp2" /></m>
+                </p>
+
+                <p permid="SED">
+                  <var name="$answers[2]" width="25" />
+                </p>
+              </li>
+
+              <li permid="hUF">
+                <p permid="yLM">
+                  <m><var name="$exp3" /></m>
+                </p>
+
+                <p permid="eSV">
+                  <var name="$answers[3]" width="25" />
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <solution permid="fhd">
+          <p permid="ZND">
+            <ol permid="lGj" label="a.">
+              <li permid="ObO">
+                <p permid="Lae">
+                  The terms are <m><var name="$answers[0]" /></m>.
+                </p>
+              </li>
+
+              <li permid="uiX">
+                <p permid="rhn">
+                  The terms are <m><var name="$answers[1]" /></m>.
+                </p>
+              </li>
+
+              <li permid="aqg">
+                <p permid="Xow">
+                  The terms are <m><var name="$answers[2]" /></m>.
+                </p>
+              </li>
+
+              <li permid="Gxp">
+                <p permid="DvF">
+                  The terms are <m><var name="$answers[3]" /></m>.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </solution></webwork>
+      </exercise>
+
+      <exercise permid="YtC">
+        <webwork>
+        <setup>
+        <pg-code>Context("Numeric");
+        Context()->noreduce('(-x)+y','(-x)-y');
+        Context()->variables->are(x=>'Real',y=>'Real',z=>'Real',t=>'Real',s=>'Real');
+        @termcount = (1,2,2,3,3,4,4)[NchooseK(7,4)];
+        for $i (0..3) {
+        $expression[$i] = Formula("0");
+        $answers[$i] = List();
+        my @vars;
+        my @exps;
+        for $j (1..$termcount[$i]) {
+        my $nextvar = list_random('x','y','z','t','s');
+        my $nextexp;
+        do {$nextexp = list_random(0,1,1,1,2,2);} until ($exps[$j-2] != 0 or $nextexp != 0);
+        push(@vars,$nextvar);
+        push(@exps,$nextexp);
+        $string = non_zero_random(-9,9,0.1).$vars[$j-1].'^'.$exps[$j-1];
+        $expression[$i] = Compute("$expression[$i]+ $string")->reduce->reduce;
+        $answers[$i] = List($answers[$i]->value,Formula("$string")->reduce->reduce);
+        }
+        }
+        $exp0=$expression[0];
+        $exp1=$expression[1];
+        $exp2=$expression[2];
+        $exp3=$expression[3];</pg-code>
+        </setup>
+        <statement>
+          <p permid="xkU">
+            List the terms in each expression.
+
+            <ol permid="fQX" label="a.">
+              <li permid="mEy">
+                <p permid="jCO">
+                  <m><var name="$exp0" /></m>
+                </p>
+
+                <p permid="PJX">
+                  <var name="$answers[0]" width="25" />
+                </p>
+              </li>
+
+              <li permid="SLH">
+                <p permid="vRg">
+                  <m><var name="$exp1" /></m>
+                </p>
+
+                <p permid="bYp">
+                  <var name="$answers[1]" width="25" />
+                </p>
+              </li>
+
+              <li permid="ySQ">
+                <p permid="Ify">
+                  <m><var name="$exp2" /></m>
+                </p>
+
+                <p permid="omH">
+                  <var name="$answers[2]" width="25" />
+                </p>
+              </li>
+
+              <li permid="eZZ">
+                <p permid="UtQ">
+                  <m><var name="$exp3" /></m>
+                </p>
+
+                <p permid="AAZ">
+                  <var name="$answers[3]" width="25" />
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <solution permid="Lom">
+          <p permid="FUM">
+            <ol permid="RNs" label="a.">
+              <li permid="Lhi">
+                <p permid="gIi">
+                  The terms are <m><var name="$answers[0]" /></m>.
+                </p>
+              </li>
+
+              <li permid="ror">
+                <p permid="MPr">
+                  The terms are <m><var name="$answers[1]" /></m>.
+                </p>
+              </li>
+
+              <li permid="XvA">
+                <p permid="sWA">
+                  The terms are <m><var name="$answers[2]" /></m>.
+                </p>
+              </li>
+
+              <li permid="DCJ">
+                <p permid="ZdJ">
+                  The terms are <m><var name="$answers[3]" /></m>.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </solution></webwork>
+      </exercise>
+
+      <exercise permid="EAL">
+        <webwork>
+        <setup>
+        <pg-code>Context("Numeric");
+        Context()->noreduce('(-x)+y','(-x)-y');
+        Context()->variables->are(x=>'Real',y=>'Real',z=>'Real',t=>'Real',s=>'Real');
+        Context()->operators->set(
+        '+' => {class => 'bizarro::BOP::add', isCommand => 1},
+        '-' => {class => 'bizarro::BOP::subtract', isCommand => 1},
+        );
+        @termcount = (2,2,2,3,3,3,4,4)[NchooseK(8,4)];
+        for $i (0..3) {
+        $expression[$i] = Formula("0");
+        my @vars;
+        my @exps;
+        for $j (1..$termcount[$i]) {
+        my $nextvar = list_random(@vars,@vars,@vars,'x','y','z','t','s');
+        my $nextexp;
+        do {$nextexp = list_random(@exps,@exps,@exps,0,1,1,1,2,2);} until ($exps[$j-2] != 0 or $nextexp != 0);
+        push(@vars,$nextvar);
+        push(@exps,$nextexp);
+        $string = non_zero_random(-9,9,1).$vars[$j-1].'^'.$exps[$j-1];
+        $expression[$i] = Compute("$expression[$i]+$string")->reduce->reduce;
+        }
+        }
+        $exp0=$expression[0];
+        $exp1=$expression[1];
+        $exp2=$expression[2];
+        $exp3=$expression[3];
+        for $i (0..3) {
+        $answers[$i] = Formula($expression[$i]->eval(x=>0,y=>0,z=>0,t=>0,s=>0).'+'.
+        $expression[$i]->D('x')->eval(x=>0,y=>0,z=>0,t=>0,s=>0).'x+'.
+        $expression[$i]->D('y')->eval(x=>0,y=>0,z=>0,t=>0,s=>0).'y+'.
+        $expression[$i]->D('z')->eval(x=>0,y=>0,z=>0,t=>0,s=>0).'z+'.
+        $expression[$i]->D('s')->eval(x=>0,y=>0,z=>0,t=>0,s=>0).'s+'.
+        $expression[$i]->D('t')->eval(x=>0,y=>0,z=>0,t=>0,s=>0).'t+'.
+        $expression[$i]->D('x')->D('x')->eval(x=>0,y=>0,z=>0,t=>0,s=>0).'/2x^2+'.
+        $expression[$i]->D('y')->D('y')->eval(x=>0,y=>0,z=>0,t=>0,s=>0).'/2y^2+'.
+        $expression[$i]->D('z')->D('z')->eval(x=>0,y=>0,z=>0,t=>0,s=>0).'/2z^2+'.
+        $expression[$i]->D('s')->D('s')->eval(x=>0,y=>0,z=>0,t=>0,s=>0).'/2s^2+'.
+        $expression[$i]->D('t')->D('t')->eval(x=>0,y=>0,z=>0,t=>0,s=>0).'/2t^2')->reduce->reduce;
+        $evaluator[$i] = $answers[$i] -> cmp(
+        checker=>sub{
+        my ( $correct, $student, $ansHash ) = @_;
+        return 0 if $ansHash->{isPreview} || $correct != $student;
+        $student = $ansHash->{student_formula};
+        $correct = $correct->{original_formula} if defined $correct->{original_formula};
+        $student = Formula("$student"); $correct = Formula("$correct");
+        return 0 unless ($correct == $student);
+        Context()->flags->set(bizarroAdd=>1,bizarroSub=>1);
+        delete $correct->{test_values}, $student->{test_values};
+        my $OK = (($correct == $student) or ($student == $correct));
+        Context()->flags->set(bizarroAdd=>0,bizarroSub=>0);
+        Value::Error("Your answer is not in the expected form. It might not be fully simplified.") unless $OK;
+        return $OK;
+        });
+        }</pg-code>
+        </setup>
+        <statement>
+          <p permid="dsd">
+            Simplify each expression, if possible, by combining like terms.
+          </p>
+
+          <instruction>If the expression cannot be simplified further, just enter it as it is.</instruction>
+
+          <p permid="Jzm">
+            <ol permid="LYg" label="a.">
+              <li permid="jJS">
+                <p permid="FkS">
+                  <m><var name="$exp0" /></m>
+                </p>
+
+                <p permid="lsb">
+                  <var name="$evaluator[0]" width="25" />
+                </p>
+              </li>
+
+              <li permid="PRb">
+                <p permid="Rzk">
+                  <m><var name="$exp1" /></m>
+                </p>
+
+                <p permid="xGt">
+                  <var name="$evaluator[1]" width="25" />
+                </p>
+              </li>
+
+              <li permid="vYk">
+                <p permid="dNC">
+                  <m><var name="$exp2" /></m>
+                </p>
+
+                <p permid="JUL">
+                  <var name="$evaluator[2]" width="25" />
+                </p>
+              </li>
+
+              <li permid="cft">
+                <p permid="qbU">
+                  <m><var name="$exp3" /></m>
+                </p>
+
+                <p permid="Wjd">
+                  <var name="$evaluator[3]" width="25" />
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement></webwork>
+      </exercise>
+
+      <exercise permid="kHU">
+        <webwork>
+        <setup>
+        <pg-code>Context("Numeric");
+        Context()->noreduce('(-x)+y','(-x)-y');
+        Context()->variables->are(x=>'Real',y=>'Real',z=>'Real',t=>'Real',s=>'Real');
+        Context()->operators->set(
+        '+' => {class => 'bizarro::BOP::add', isCommand => 1},
+        '-' => {class => 'bizarro::BOP::subtract', isCommand => 1},
+        );
+        @termcount = (2,2,2,3,3,3,4,4)[NchooseK(8,4)];
+        for $i (0..3) {
+        $expression[$i] = Formula("0");
+        my @vars;
+        my @exps;
+        for $j (1..$termcount[$i]) {
+        my $nextvar = list_random(@vars,@vars,@vars,'x','y','z','t','s');
+        my $nextexp;
+        do {$nextexp = list_random(@exps,@exps,@exps,0,1,1,1,2,2);} until ($exps[$j-2] != 0 or $nextexp != 0);
+        push(@vars,$nextvar);
+        push(@exps,$nextexp);
+        $string = non_zero_random(-9,9,1).$vars[$j-1].'^'.$exps[$j-1];
+        $expression[$i] = Compute("$expression[$i]+$string")->reduce->reduce;
+        }
+        }
+        $exp0=$expression[0];
+        $exp1=$expression[1];
+        $exp2=$expression[2];
+        $exp3=$expression[3];
+        for $i (0..3) {
+        $answers[$i] = Formula($expression[$i]->eval(x=>0,y=>0,z=>0,t=>0,s=>0).'+'.
+        $expression[$i]->D('x')->eval(x=>0,y=>0,z=>0,t=>0,s=>0).'x+'.
+        $expression[$i]->D('y')->eval(x=>0,y=>0,z=>0,t=>0,s=>0).'y+'.
+        $expression[$i]->D('z')->eval(x=>0,y=>0,z=>0,t=>0,s=>0).'z+'.
+        $expression[$i]->D('s')->eval(x=>0,y=>0,z=>0,t=>0,s=>0).'s+'.
+        $expression[$i]->D('t')->eval(x=>0,y=>0,z=>0,t=>0,s=>0).'t+'.
+        $expression[$i]->D('x')->D('x')->eval(x=>0,y=>0,z=>0,t=>0,s=>0).'/2x^2+'.
+        $expression[$i]->D('y')->D('y')->eval(x=>0,y=>0,z=>0,t=>0,s=>0).'/2y^2+'.
+        $expression[$i]->D('z')->D('z')->eval(x=>0,y=>0,z=>0,t=>0,s=>0).'/2z^2+'.
+        $expression[$i]->D('s')->D('s')->eval(x=>0,y=>0,z=>0,t=>0,s=>0).'/2s^2+'.
+        $expression[$i]->D('t')->D('t')->eval(x=>0,y=>0,z=>0,t=>0,s=>0).'/2t^2')->reduce->reduce;
+        $evaluator[$i] = $answers[$i] -> cmp(
+        checker=>sub{
+        my ( $correct, $student, $ansHash ) = @_;
+        return 0 if $ansHash->{isPreview} || $correct != $student;
+        $student = $ansHash->{student_formula};
+        $correct = $correct->{original_formula} if defined $correct->{original_formula};
+        $student = Formula("$student"); $correct = Formula("$correct");
+        return 0 unless ($correct == $student);
+        Context()->flags->set(bizarroAdd=>1,bizarroSub=>1);
+        delete $correct->{test_values}, $student->{test_values};
+        my $OK = (($correct == $student) or ($student == $correct));
+        Context()->flags->set(bizarroAdd=>0,bizarroSub=>0);
+        Value::Error("Your answer is not in the expected form. It might not be fully simplified.") unless $OK;
+        return $OK;
+        });
+        }</pg-code>
+        </setup>
+        <statement>
+          <p permid="pGv">
+            Simplify each expression, if possible, by combining like terms.
+          </p>
+
+          <instruction>If the expression cannot be simplified further, just enter it as it is.</instruction>
+
+          <p permid="VNE">
+            <ol permid="sfp" label="a.">
+              <li permid="ImC">
+                <p permid="Cqm">
+                  <m><var name="$exp0" /></m>
+                </p>
+
+                <p permid="ixv">
+                  <var name="$evaluator[0]" width="25" />
+                </p>
+              </li>
+
+              <li permid="otL">
+                <p permid="OEE">
+                  <m><var name="$exp1" /></m>
+                </p>
+
+                <p permid="uLN">
+                  <var name="$evaluator[1]" width="25" />
+                </p>
+              </li>
+
+              <li permid="UAU">
+                <p permid="aSW">
+                  <m><var name="$exp2" /></m>
+                </p>
+
+                <p permid="Haf">
+                  <var name="$evaluator[2]" width="25" />
+                </p>
+              </li>
+
+              <li permid="AId">
+                <p permid="nho">
+                  <m><var name="$exp3" /></m>
+                </p>
+
+                <p permid="Tox">
+                  <var name="$evaluator[3]" width="25" />
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement></webwork>
+      </exercise>
+
+    </exercisegroup>
+    <exercisegroup permid="jYa" cols="3">
+
+      <introduction permid="nCA">
+        <p permid="gmJ">
+          These exercises involve the concepts of like terms and the commutative,
+          associative, and distributive properties.
+        </p>
+      </introduction>
+
+      <exercise permid="QPd">
+        <webwork source="BasicAlgebra/AlgebraicProperties/inverses10.pg" />
+      </exercise>
+
+      <exercise permid="wWm">
+        <webwork source="BasicAlgebra/AlgebraicProperties/inverses10.pg" />
+      </exercise>
+
+      <exercise permid="ddv">
+        <webwork source="BasicAlgebra/AlgebraicProperties/inverses20.pg" />
+      </exercise>
+
+      <exercise permid="JkE">
+        <webwork source="BasicAlgebra/AlgebraicProperties/inverses20.pg" />
+      </exercise>
+
+      <exercise permid="prN">
+        <webwork source="BasicAlgebra/AlgebraicProperties/AssociativePropertyAddition10.pg" />
+      </exercise>
+
+      <exercise permid="VyW">
+        <webwork source="BasicAlgebra/AlgebraicProperties/AssociativePropertyAddition10.pg" />
+      </exercise>
+
+      <exercise permid="BGf">
+        <webwork source="BasicAlgebra/AlgebraicProperties/AssociativePropertyAddition20.pg" />
+      </exercise>
+
+      <exercise permid="hNo">
+        <webwork source="BasicAlgebra/AlgebraicProperties/AssociativePropertyAddition20.pg" />
+      </exercise>
+
+      <exercise permid="NUx">
+        <webwork source="BasicAlgebra/AlgebraicProperties/AssociativePropertyMultiplication10.pg" />
+      </exercise>
+
+      <exercise permid="ubG">
+        <webwork source="BasicAlgebra/AlgebraicProperties/AssociativePropertyMultiplication10.pg" />
+      </exercise>
+
+      <exercise permid="aiP">
+        <webwork source="BasicAlgebra/AlgebraicProperties/CommutativePropertyAddition10.pg" />
+      </exercise>
+
+      <exercise permid="GpY">
+        <webwork source="BasicAlgebra/AlgebraicProperties/CommutativePropertyAddition10.pg" />
+      </exercise>
+
+      <exercise permid="mxh">
+        <webwork source="BasicAlgebra/AlgebraicProperties/CommutativePropertyAddition20.pg" />
+      </exercise>
+
+      <exercise permid="SEq">
+        <webwork source="BasicAlgebra/AlgebraicProperties/CommutativePropertyAddition20.pg" />
+      </exercise>
+
+      <exercise permid="yLz">
+        <webwork source="BasicAlgebra/AlgebraicProperties/CommutativePropertyAddition30.pg" />
+      </exercise>
+
+      <exercise permid="eSI">
+        <webwork source="BasicAlgebra/AlgebraicProperties/CommutativePropertyAddition30.pg" />
+      </exercise>
+
+      <exercise permid="KZR">
+        <webwork source="BasicAlgebra/AlgebraicProperties/CommutativePropertyMultiplication10.pg" />
+      </exercise>
+
+      <exercise permid="rha">
+        <webwork source="BasicAlgebra/AlgebraicProperties/CommutativePropertyMultiplication10.pg" />
+      </exercise>
+
+      <exercise permid="Xoj">
+        <webwork source="BasicAlgebra/AlgebraicProperties/CommutativePropertyMultiplication20.pg" />
+      </exercise>
+
+      <exercise permid="Dvs">
+        <webwork source="BasicAlgebra/AlgebraicProperties/CommutativePropertyMultiplication20.pg" />
+      </exercise>
+
+      <exercise permid="jCB">
+        <webwork source="BasicAlgebra/AlgebraicProperties/CommutativePropertyMultiplication30.pg" />
+      </exercise>
+
+      <exercise permid="PJK">
+        <webwork source="BasicAlgebra/AlgebraicProperties/CommutativePropertyMultiplication30.pg" />
+      </exercise>
+
+      <exercise permid="vQT">
+        <webwork source="BasicAlgebra/AlgebraicProperties/DistributiveProperty10.pg" />
+      </exercise>
+
+      <exercise permid="bYc">
+        <webwork source="BasicAlgebra/AlgebraicProperties/DistributiveProperty10.pg" />
+      </exercise>
+
+      <exercise permid="Ifl">
+        <webwork source="BasicAlgebra/AlgebraicProperties/DistributiveProperty20.pg" />
+      </exercise>
+
+      <exercise permid="omu">
+        <webwork source="BasicAlgebra/AlgebraicProperties/DistributiveProperty20.pg" />
+      </exercise>
+
+      <exercise permid="UtD">
+        <webwork source="BasicAlgebra/AlgebraicProperties/DistributiveProperty30.pg" />
+      </exercise>
+
+      <exercise permid="AAM">
+        <webwork source="BasicAlgebra/AlgebraicProperties/DistributiveProperty30.pg" />
+      </exercise>
+
+      <exercise permid="gHV">
+        <webwork source="BasicAlgebra/AlgebraicProperties/DistributiveProperty40.pg" />
+      </exercise>
+
+      <exercise permid="MPe">
+        <webwork source="BasicAlgebra/AlgebraicProperties/DistributiveProperty40.pg" />
+      </exercise>
+
+      <exercise permid="sWn">
+        <webwork source="BasicAlgebra/AlgebraicProperties/DistributiveProperty50.pg" />
+      </exercise>
+
+      <exercise permid="Zdw">
+        <webwork source="BasicAlgebra/AlgebraicProperties/DistributiveProperty50.pg" />
+      </exercise>
+
+      <exercise permid="FkF">
+        <webwork source="BasicAlgebra/AlgebraicProperties/DistributiveProperty60.pg" />
+      </exercise>
+
+      <exercise permid="lrO">
+        <webwork source="BasicAlgebra/AlgebraicProperties/DistributiveProperty60.pg" />
+      </exercise>
+
+      <exercise permid="RyX">
+        <webwork source="BasicAlgebra/AlgebraicProperties/DistributiveProperty70.pg" />
+      </exercise>
+
+      <exercise permid="xGg">
+        <webwork source="BasicAlgebra/AlgebraicProperties/DistributiveProperty70.pg" />
+      </exercise>
+
+      <exercise permid="dNp">
+        <webwork source="BasicAlgebra/AlgebraicProperties/DistributiveProperty80.pg" />
+      </exercise>
+
+      <exercise permid="JUy">
+        <webwork source="BasicAlgebra/AlgebraicProperties/DistributiveProperty80.pg" />
+      </exercise>
+
+      <exercise permid="qbH">
+        <webwork source="BasicAlgebra/AlgebraicProperties/DistributiveProperty90.pg" />
+      </exercise>
+
+      <exercise permid="WiQ">
+        <webwork source="BasicAlgebra/AlgebraicProperties/DistributiveProperty90.pg" />
+      </exercise>
+
+    </exercisegroup>
+    <exercisegroup permid="Qfj" cols="2">
+
+      <exercise permid="CpZ">
+        <webwork source="BasicAlgebra/AlgebraicProperties/AssociativePropertyAddition30.pg" />
+      </exercise>
+
+      <exercise permid="ixi">
+        <webwork source="BasicAlgebra/AlgebraicProperties/AssociativePropertyAddition30.pg" />
+      </exercise>
+
+    </exercisegroup>
+
+    <exercise permid="OEr">
+      <webwork source="BasicAlgebra/AlgebraicProperties/IdentifyProperties10.pg" />
+    </exercise>
+
+    <exercise permid="uLA">
+      <webwork source="BasicAlgebra/AlgebraicProperties/IdentifyProperties10.pg" />
+    </exercise>
+
+    <exercise permid="aSJ">
+      <webwork source="BasicAlgebra/AlgebraicProperties/SimplifyInContext10.pg" />
+    </exercise>
+
+    <exercise permid="GZS">
+      <webwork source="BasicAlgebra/AlgebraicProperties/SimplifyInContext10.pg" />
+    </exercise>
+
+    <exercisegroup permid="wms" cols="3">
+
+      <exercise permid="nhb">
+        <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication0.pg" />
+      </exercise>
+
+      <exercise permid="Tok">
+        <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication0.pg" />
+      </exercise>
+
+      <exercise permid="zvt">
+        <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication5.pg" />
+      </exercise>
+
+      <exercise permid="fCC">
+        <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication5.pg" />
+      </exercise>
+
+      <exercise permid="LJL">
+        <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication10.pg" />
+      </exercise>
+
+      <exercise permid="rQU">
+        <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication10.pg" />
+      </exercise>
+
+      <exercise permid="XYd">
+        <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication15.pg" />
+      </exercise>
+
+      <exercise permid="Efm">
+        <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication15.pg" />
+      </exercise>
+
+    </exercisegroup>
+    <exercisegroup permid="ctB" cols="3">
+
+      <exercise permid="kmv">
+        <webwork source="BasicAlgebra/AlgebraicProperties/ExpressionAlgebraSkill10.pg" />
+      </exercise>
+
+      <exercise permid="QtE">
+        <webwork source="BasicAlgebra/AlgebraicProperties/ExpressionAlgebraSkill10.pg" />
+      </exercise>
+
+      <exercise permid="wAN">
+        <webwork source="BasicAlgebra/AlgebraicProperties/ExpressionAlgebraSkill10.pg" />
+      </exercise>
+
+      <exercise permid="cHW">
+        <webwork source="BasicAlgebra/AlgebraicProperties/ExpressionAlgebraSkill10.pg" />
+      </exercise>
+
+      <exercise permid="IPf">
+        <webwork source="BasicAlgebra/AlgebraicProperties/ExpressionAlgebraSkill20.pg" />
+      </exercise>
+
+      <exercise permid="oWo">
+        <webwork source="BasicAlgebra/AlgebraicProperties/ExpressionAlgebraSkill20.pg" />
+      </exercise>
+
+      <exercise permid="Vdx">
+        <webwork source="BasicAlgebra/AlgebraicProperties/ExpressionAlgebraSkill20.pg" />
+      </exercise>
+
+      <exercise permid="BkG">
+        <webwork source="BasicAlgebra/AlgebraicProperties/ExpressionAlgebraSkill20.pg" />
+      </exercise>
+
+      <exercise permid="hrP">
+        <webwork source="BasicAlgebra/AlgebraicProperties/ExpressionAlgebraSkill30.pg" />
+      </exercise>
+
+      <exercise permid="NyY">
+        <webwork source="BasicAlgebra/AlgebraicProperties/ExpressionAlgebraSkill30.pg" />
+      </exercise>
+
+    </exercisegroup>
+    <exercisegroup permid="IAK" cols="3">
+
+      <exercise permid="tGh">
+        <webwork source="BasicAlgebra/AlgebraicProperties/ExpressionAlgebraSkill40.pg" />
+      </exercise>
+
+      <exercise permid="ZNq">
+        <webwork source="BasicAlgebra/AlgebraicProperties/ExpressionAlgebraSkill40.pg" />
+      </exercise>
+
+      <exercise permid="FUz">
+        <webwork source="BasicAlgebra/AlgebraicProperties/ExpressionAlgebraSkill50.pg" />
+      </exercise>
+
+      <exercise permid="mbI">
+        <webwork source="BasicAlgebra/AlgebraicProperties/ExpressionAlgebraSkill50.pg" />
+      </exercise>
+
+      <exercise permid="SiR">
+        <webwork source="BasicAlgebra/AlgebraicProperties/ExpressionAlgebraSkill60.pg" />
+      </exercise>
+
+      <exercise permid="yqa">
+        <webwork source="BasicAlgebra/AlgebraicProperties/ExpressionAlgebraSkill60.pg" />
+      </exercise>
+
+      <exercise permid="exj">
+        <webwork source="BasicAlgebra/AlgebraicProperties/ExpressionAlgebraSkill70.pg" />
+      </exercise>
+
+      <exercise permid="KEs">
+        <webwork source="BasicAlgebra/AlgebraicProperties/ExpressionAlgebraSkill70.pg" />
+      </exercise>
+
+      <exercise permid="qLB">
+        <webwork source="BasicAlgebra/AlgebraicProperties/ExpressionAlgebraSkill80.pg" />
+      </exercise>
+
+      <exercise permid="WSK">
+        <webwork source="BasicAlgebra/AlgebraicProperties/ExpressionAlgebraSkill80.pg" />
+      </exercise>
+
+      <exercise permid="CZT">
+        <webwork source="BasicAlgebra/AlgebraicProperties/ExpressionAlgebraSkill90.pg" />
+      </exercise>
+
+      <exercise permid="jhc">
+        <webwork source="BasicAlgebra/AlgebraicProperties/ExpressionAlgebraSkill90.pg" />
+      </exercise>
+
+    </exercisegroup>
+    <exercisegroup permid="oHT" cols="3">
+
+      <exercise permid="Pol">
+        <webwork source="BasicAlgebra/AlgebraicProperties/DistributiveProperty21.pg" />
+      </exercise>
+
+      <exercise permid="vvu">
+        <webwork source="BasicAlgebra/AlgebraicProperties/DistributiveProperty21.pg" />
+      </exercise>
+
+      <exercise permid="bCD">
+        <webwork source="BasicAlgebra/AlgebraicProperties/DistributiveProperty22.pg" />
+      </exercise>
+
+      <exercise permid="HJM">
+        <webwork source="BasicAlgebra/AlgebraicProperties/DistributiveProperty22.pg" />
+      </exercise>
+
+      <exercise permid="nQV">
+        <webwork source="BasicAlgebra/AlgebraicProperties/DistributiveProperty41.pg" />
+      </exercise>
+
+      <exercise permid="TYe">
+        <webwork source="BasicAlgebra/AlgebraicProperties/DistributiveProperty41.pg" />
+      </exercise>
+
+      <exercise permid="Afn">
+        <webwork source="BasicAlgebra/AlgebraicProperties/DistributiveProperty51.pg" />
+      </exercise>
+
+      <exercise permid="gmw">
+        <webwork source="BasicAlgebra/AlgebraicProperties/DistributiveProperty51.pg" />
+      </exercise>
+
+      <exercise permid="MtF">
+        <webwork source="BasicAlgebra/AlgebraicProperties/DistributiveProperty52.pg" />
+      </exercise>
+
+      <exercise permid="sAO">
+        <webwork source="BasicAlgebra/AlgebraicProperties/DistributiveProperty52.pg" />
+      </exercise>
+
+    </exercisegroup>
+    <exercisegroup permid="UPc" cols="2">
+            <!--The following four problems are exaclty the same code. Implement some way to only code once, then "copy" for the other three instances. -->
+      <exercise permid="YHX">
+        <webwork>
+        <pg-macros><macro-file>contextLimitedPolynomial.pl</macro-file></pg-macros>
+        <setup>
+        <pg-code>Context("Numeric");
+        Context()->reduction->set('(-x)-y'=>0);
+        Context()->reduction->set('(-x)+y'=>0);
+        @a=map{($_+1)*random(-1,1,2)}(NchooseK(9,3));
+        @b=map{($_+1)*random(-1,1,2)}(NchooseK(9,3));
+        $left=Formula("$a[0]($a[1]x+$a[2])");
+        $right=Formula("$b[0]($b[1]x+$b[2])");
+        $unsimplified=$left+$right;
+        $unsimplified=$unsimplified->reduce;
+        $simplified=Formula("($a[0]*$a[1]+$b[0]*$b[1])*x+($a[0]*$a[2]+$b[0]*$b[2])")->reduce;
+        $leftdist=Formula("$a[0]*$a[1]x+$a[0]*$a[2]")->reduce;
+        $rightdist=Formula("$b[0]*$b[1]x+$b[0]*$b[2]")->reduce;
+        $termsrearranged=Formula("$a[0]*$a[1]x+$b[0]*$b[1]x+$a[0]*$a[2]+$b[0]*$b[2]")->reduce;
+        Context("LimitedPolynomial-Strict");
+        Context()->reduction->set('(-x)-y'=>0);
+        Context()->reduction->set('(-x)+y'=>0);
+        $simplified=Formula("$simplified");</pg-code>
+        </setup>
+        <statement>
+          <p permid="BUN">
+            Fully simplify <m><var name="$unsimplified" /></m>.
+          </p>
+
+          <p permid="ibW">
+            <var name="$simplified" width="15" />
+          </p>
+        </statement>
+        <solution permid="rvv">
+          <p permid="mbV">
+            <md permid="vKc">
+              <mrow><var name="$unsimplified" />\amp=<var name="$leftdist" />+<var name="$rightdist" /></mrow>
+              <mrow>\amp=<var name="$termsrearranged" /></mrow>
+              <mrow>\amp=<var name="$simplified" /></mrow>
+            </md>
+          </p>
+        </solution></webwork>
+      </exercise>
+
+      <exercise permid="EPg">
+        <webwork>
+        <pg-macros><macro-file>contextLimitedPolynomial.pl</macro-file></pg-macros>
+        <setup>
+        <pg-code>Context("Numeric");
+        Context()->reduction->set('(-x)-y'=>0);
+        Context()->reduction->set('(-x)+y'=>0);
+        @a=map{($_+1)*random(-1,1,2)}(NchooseK(9,3));
+        @b=map{($_+1)*random(-1,1,2)}(NchooseK(9,3));
+        $left=Formula("$a[0]($a[1]x+$a[2])");
+        $right=Formula("$b[0]($b[1]x+$b[2])");
+        $unsimplified=$left+$right;
+        $unsimplified=$unsimplified->reduce;
+        $simplified=Formula("($a[0]*$a[1]+$b[0]*$b[1])*x+($a[0]*$a[2]+$b[0]*$b[2])")->reduce;
+        $leftdist=Formula("$a[0]*$a[1]x+$a[0]*$a[2]")->reduce;
+        $rightdist=Formula("$b[0]*$b[1]x+$b[0]*$b[2]")->reduce;
+        $termsrearranged=Formula("$a[0]*$a[1]x+$b[0]*$b[1]x+$a[0]*$a[2]+$b[0]*$b[2]")->reduce;
+        Context("LimitedPolynomial-Strict");
+        Context()->reduction->set('(-x)-y'=>0);
+        Context()->reduction->set('(-x)+y'=>0);
+        $simplified=Formula("$simplified");</pg-code>
+        </setup>
+        <statement>
+          <p permid="Ojf">
+            Fully simplify <m><var name="$unsimplified" /></m>.
+          </p>
+
+          <p permid="uqo">
+            <var name="$simplified" width="15" />
+          </p>
+        </statement>
+        <solution permid="XCE">
+          <p permid="Sje">
+            <md permid="bRl">
+              <mrow><var name="$unsimplified" />\amp=<var name="$leftdist" />+<var name="$rightdist" /></mrow>
+              <mrow>\amp=<var name="$termsrearranged" /></mrow>
+              <mrow>\amp=<var name="$simplified" /></mrow>
+            </md>
+          </p>
+        </solution></webwork>
+      </exercise>
+
+      <exercise permid="kWp">
+        <webwork>
+        <pg-macros><macro-file>contextLimitedPolynomial.pl</macro-file></pg-macros>
+        <setup>
+        <pg-code>Context("Numeric");
+        Context()->reduction->set('(-x)-y'=>0);
+        Context()->reduction->set('(-x)+y'=>0);
+        @a=map{($_+1)*random(-1,1,2)}(NchooseK(9,3));
+        @b=map{($_+1)*random(-1,1,2)}(NchooseK(9,3));
+        $left=Formula("$a[0]($a[1]x+$a[2])");
+        $right=Formula("$b[0]($b[1]x+$b[2])");
+        $unsimplified=$left+$right;
+        $unsimplified=$unsimplified->reduce;
+        $simplified=Formula("($a[0]*$a[1]+$b[0]*$b[1])*x+($a[0]*$a[2]+$b[0]*$b[2])")->reduce;
+        $leftdist=Formula("$a[0]*$a[1]x+$a[0]*$a[2]")->reduce;
+        $rightdist=Formula("$b[0]*$b[1]x+$b[0]*$b[2]")->reduce;
+        $termsrearranged=Formula("$a[0]*$a[1]x+$b[0]*$b[1]x+$a[0]*$a[2]+$b[0]*$b[2]")->reduce;
+        Context("LimitedPolynomial-Strict");
+        Context()->reduction->set('(-x)-y'=>0);
+        Context()->reduction->set('(-x)+y'=>0);
+        $simplified=Formula("$simplified");</pg-code>
+        </setup>
+        <statement>
+          <p permid="axx">
+            Fully simplify <m><var name="$unsimplified" /></m>.
+          </p>
+
+          <p permid="GEG">
+            <var name="$simplified" width="15" />
+          </p>
+        </statement>
+        <solution permid="DJN">
+          <p permid="yqn">
+            <md permid="HYu">
+              <mrow><var name="$unsimplified" />\amp=<var name="$leftdist" />+<var name="$rightdist" /></mrow>
+              <mrow>\amp=<var name="$termsrearranged" /></mrow>
+              <mrow>\amp=<var name="$simplified" /></mrow>
+            </md>
+          </p>
+        </solution></webwork>
+      </exercise>
+
+      <exercise permid="Rdy">
+        <webwork>
+        <pg-macros><macro-file>contextLimitedPolynomial.pl</macro-file></pg-macros>
+        <setup>
+        <pg-code>Context("Numeric");
+        Context()->reduction->set('(-x)-y'=>0);
+        Context()->reduction->set('(-x)+y'=>0);
+        @a=map{($_+1)*random(-1,1,2)}(NchooseK(9,3));
+        @b=map{($_+1)*random(-1,1,2)}(NchooseK(9,3));
+        $left=Formula("$a[0]($a[1]x+$a[2])");
+        $right=Formula("$b[0]($b[1]x+$b[2])");
+        $unsimplified=$left+$right;
+        $unsimplified=$unsimplified->reduce;
+        $simplified=Formula("($a[0]*$a[1]+$b[0]*$b[1])*x+($a[0]*$a[2]+$b[0]*$b[2])")->reduce;
+        $leftdist=Formula("$a[0]*$a[1]x+$a[0]*$a[2]")->reduce;
+        $rightdist=Formula("$b[0]*$b[1]x+$b[0]*$b[2]")->reduce;
+        $termsrearranged=Formula("$a[0]*$a[1]x+$b[0]*$b[1]x+$a[0]*$a[2]+$b[0]*$b[2]")->reduce;
+        Context("LimitedPolynomial-Strict");
+        Context()->reduction->set('(-x)-y'=>0);
+        Context()->reduction->set('(-x)+y'=>0);
+        $simplified=Formula("$simplified");</pg-code>
+        </setup>
+        <statement>
+          <p permid="mLP">
+            Fully simplify <m><var name="$unsimplified" /></m>.
+          </p>
+
+          <p permid="SSY">
+            <var name="$simplified" width="15" />
+          </p>
+        </statement>
+        <solution permid="jQW">
+          <p permid="exw">
+            <md permid="ofD">
+              <mrow><var name="$unsimplified" />\amp=<var name="$leftdist" />+<var name="$rightdist" /></mrow>
+              <mrow>\amp=<var name="$termsrearranged" /></mrow>
+              <mrow>\amp=<var name="$simplified" /></mrow>
+            </md>
+          </p>
+        </solution></webwork>
+      </exercise>
+
+    </exercisegroup>
+    <exercisegroup permid="AWl">
+      <title>Challenge</title>
+      <exercise permid="xkH">
+<!-- Kara's challenge problem -->
+        <webwork>
+        <setup>
+        <pg-code>do {
+        $a = random(-15,-1,2);
+        $b = random(-10,-2,2);
+        $coefficient = $a + $b;
+        } until ($coefficient &lt; -7);
+        $ax = Formula("$a x")->reduce;
+        $bx = Formula("$b x")->reduce;
+        $complete = Formula("$coefficient*x")->reduce;
+
+        $multians = MultiAnswer($ax, $bx)->with(
+        singleResult => 1,
+        checker => sub {
+        my ( $correct, $student, $self ) = @_;
+        my ( $astu, $bstu ) = @{$student};
+        my ( $acor, $bcor ) = @{$correct};
+
+        if ( $astu == Formula("0")) {Value::Error('None of your values can be zero.')};
+        if ( $bstu == Formula("0")) {Value::Error('None of your values can be zero.')};
+
+        if ($astu+$bstu != $complete) {return 0;} else {return 1};
+
+        }
+        );
+
+        do {
+        $c = random(-15,-1,2);
+        $d = random(-10,-2,2);
+        $expx = random(15,30,5);
+        $coefficient2 = $c + $d;
+        } until ($coefficient2 &lt; -7);
+        $cexp = Formula("$c*(x**$expx)")->reduce;
+        $dexp = Formula("$d*(x**$expx)")->reduce;
+        $complete2 = Formula("$coefficient2*(x**$expx)");
+
+        $multians2 = MultiAnswer($cexp, $dexp)->with(
+        singleResult => 1,
+        checker => sub {
+        my ( $correct, $student, $self ) = @_;
+        my ( $cstu, $dstu ) = @{$student};
+        my ( $ccor, $dcor ) = @{$correct};
+
+        if ( $cstu == 0) {Value::Error('None of your values can be zero.')};
+        if ( $dstu == 0) {Value::Error('None of your values can be zero.')};
+
+        if ($cstu+$dstu != $complete2) {return 0;} else {return 1};
+
+        }
+        );
+
+        $p = list_random(2,3,5,7,11,13,17);
+        $exp1 = random(20,50,5);
+        $exp2 = random(10,30,10);
+        $exp3 = $exp1 + $exp2;
+        $expa = Formula("(x**$exp1)")->reduce;
+        $expb = Formula("(x**$exp2)")->reduce;
+        $num = Formula("$p");
+        $complete3 = Formula("$num*(x**$exp3)");
+
+        $multians3 = MultiAnswer($num, $expa, $expb)->with(
+        singleResult => 1,
+        checker => sub {
+        my ( $correct, $student, $self ) = @_;
+        my ( $numstu, $expastu, $expbstu ) = @{$student};
+        my ( $numcor, $expacor, $expbcor ) = @{$correct};
+
+        if ( $numstu == 1) {Value::Error('None of your values can be one.')};
+        if ( $expastu == 1) {Value::Error('None of your values can be one.')};
+        if ( $expbstu == 1) {Value::Error('None of your values can be one.')};
+
+        if ($numstu*$expastu*$expbstu != $complete3) {return 0;} else {return 1};
+
+        }
+        );</pg-code>
+        </setup>
+        <statement>
+          <p permid="zah">
+            Fill in the blanks with algebraic expressions that make the equation true.
+            You may not use <m>0</m> or <m>1</m> in any of the blank spaces.
+          </p>
+
+          <p permid="fhq">
+            Here is an example: <m> \mathord{?} + \mathord{?} = 8x </m>.
+          </p>
+
+          <p permid="Loz">
+            One possible answer is: <m> 3x + 5x = 8x </m>.
+          </p>
+
+          <p permid="rvI">
+            There are infinitely many correct answers to this problem.
+            <em>*I encourage you to be creative.*</em>
+            After finding a correct answer,
+            see if you can come up with a different answer that is also correct.
+          </p>
+
+          <p permid="XCR">
+            <ol permid="Ymy" label="a.">
+              <li permid="gPm">
+                <p permid="zvG">
+                  <var name="$multians" width="10"/> <m> + </m> <var name="$multians" width="10"/> <m> = <var name="$complete"/></m>
+                </p>
+              </li>
+
+              <li permid="MWv">
+                <p permid="fCP">
+                  <var name="$multians2" width="10"/> <m> + </m> <var name="$multians2" width="10"/> <m> = <var name="$complete2"/></m>
+                </p>
+              </li>
+
+              <li permid="tdE">
+                <p permid="LJY">
+                  <var name="$multians3" width="5"/> <m> \cdot </m> <var name="$multians3" width="5"/> <m> \cdot </m> <var name="$multians3" width="5"/> <m> = <var name="$complete3"/></m>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+        <solution permid="PYf">
+          <p permid="KEF">
+            <ol permid="xUB" label="a.">
+              <li permid="ZkN">
+                <p permid="rRh">
+                  Think about adding like terms.
+                  One possibility is:
+                  <m><var name="$ax"/> + <var name="$bx"/> = <var name="$complete"/></m>.
+                </p>
+              </li>
+
+              <li permid="FrW">
+                <p permid="XYq">
+                  Think about adding like terms.
+                  One possibility is:
+                  <m><var name="$cexp"/> + <var name="$dexp"/> = <var name="$complete2"/></m>.
+                </p>
+              </li>
+
+              <li permid="lzf">
+                <p permid="Efz">
+                  Think about multiplying exponents.
+                  One possibility is:
+                  <m><var name="$num"/> \cdot <var name="$expa"/> \cdot <var name="$expb"/> = <var name="$complete3"/></m>.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </solution></webwork>
+      </exercise>
+
+    </exercisegroup>
+  </exercises>
+</section>
+

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *********************************************************************-->
+<!-- Copyright 2016-2018                                                  -->
+<!-- Portland Community College                                           -->
+<!--                                                                      -->
+<!-- This file is part of Open Resources for Community College Algebra    -->
+<!-- (ORCCA).                                                             -->
+<!-- *********************************************************************-->
+<chapter permid="mTo" xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="chapter-systems-of-linear-equations">
+  <title>Systems of Linear Equations</title>
+    <!--<introduction></introduction>-->
+  <xi:include href="section-solving-systems-of-linear-equations-by-graphing.ptx" />
+  <xi:include href="section-substitution.ptx" />
+  <xi:include href="section-elimination.ptx" />
+  <xi:include href="review-systems-of-linear-equations.ptx" />
+</chapter>
+

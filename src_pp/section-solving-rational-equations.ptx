@@ -1,0 +1,1080 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *********************************************************************-->
+<!-- Copyright 2016-2018                                                  -->
+<!-- Portland Community College                                           -->
+<!--                                                                      -->
+<!-- This file is part of Open Resources for Community College Algebra    -->
+<!-- (ORCCA).                                                             -->
+<!-- *********************************************************************-->
+<section permid="VIa" xml:id="section-solving-rational-equations">
+  <title>Solving Rational Equations</title>
+  <introduction permid="rEz">
+    <figure permid="VAW">
+      <caption>Alternative Video Lesson</caption>
+      <video youtubeplaylist="PL2qOxw8-rmqa2z-INm-8ydWX1AaVX24dW" />
+    </figure>
+  </introduction>
+
+  <subsection permid="BPj">
+    <title>Solving Rational Equations</title>
+    <idx><h>solving</h><h>rational equations</h></idx>
+
+    <p permid="Xqj">
+      To start this section,
+      we will use a scenario we have seen before in <xref ref="example-boat-river-rational-function">Example</xref>:
+    </p>
+
+    <p permid="Dxs">
+      Julia is taking her family on a boat trip <m>12</m> miles down the river and back.
+      The river flows at a speed of <m>2</m> miles per hour and she wants to drive the boat at a constant speed,
+      <m>v</m> miles per hour downstream and back upstream.
+      Due to the current of the river,
+      the actual speed of travel is <m>v+2</m> miles per hour going downstream,
+      and <m>v-2</m> miles per hour going upstream.
+      If Julia plans to spend <m>8</m> hours for the whole trip,
+      how fast should she drive the boat?
+    </p>
+
+    <p permid="jEB">
+      The time it takes Julia to drive the boat downstream is <m>\frac{12}{v+2}</m> hours,
+      and upstream is <m>\frac{12}{v-2}</m> hours.
+      The function to model the whole trip's time is
+      <me permid="ACM">
+        t(v)=\frac{12}{v-2}+\frac{12}{v+2}
+      </me>
+      where <m>t</m> stands for time in hours.
+      The trip will take <m>8</m> hours,
+      so we substitute <m>t(v)</m> with <m>8</m>, and we have:
+      <me permid="gJV">
+        \frac{12}{v-2}+\frac{12}{v+2}=8
+      </me>.
+      Instead of using the function's graph,
+      we will solve this equation algebraically.
+      You may wish to review the technique of eliminating denominators discussed in <xref ref="subsection-eliminating-denominators">Subsection</xref>.
+      We can use the same technique with variable expressions in the denominators.
+      To remove the fractions in this equation,
+      we will multiply both sides of the equation by the least common denominator <m>(v-2)(v+2)</m>,
+      and we have:
+      <md permid="MRe">
+        <mrow>\frac{12}{v-2}+\frac{12}{v+2}\amp=8</mrow>
+        <mrow>\multiplyleft{(v+2)(v-2)}\left(\frac{12}{v-2}+\frac{12}{v+2}\right)\amp=\multiplyleft{(v+2)(v-2)}8</mrow>
+        <mrow>(v+2)\highlight{\cancel{(v-2)}}\cdot\frac{12}{\highlight{\cancel{v-2}}}+\lighthigh{\bcancel{(v+2)}}(v-2)\cdot\frac{12}{\lighthigh{\bcancel{v+2}}}\amp=(v+2)(v-2)\cdot8</mrow>
+        <mrow>12(v+2)+12(v-2)\amp=8(v^2-4)</mrow>
+        <mrow>12v+24+12v-24\amp=8v^2-32</mrow>
+        <mrow>24v\amp=8v^2-32</mrow>
+        <mrow>0\amp=8v^2-24v-32</mrow>
+        <mrow>0\amp=8(v^2-3v-4)</mrow>
+        <mrow>0\amp=8(v-4)(v+1)</mrow>
+      </md>
+      <md permid="sYn">
+        <mrow>v-4\amp=0\amp\amp\text{or}\amp v+1\amp=0</mrow>
+        <mrow>v\amp=4\amp\amp\text{or}\amp v\amp=-1</mrow>
+      </md>
+    </p>
+
+    <remark>
+      <p permid="PLK">
+        At this point,
+        logically all that we know is that the only <em>possible</em>
+        solutions are <m>-1</m> and <m>4</m>.
+        Because of the step where factors were canceled,
+        it's possible that these might not actually be solutions to the original equation.
+        They each might be what is called an
+        <term>extraneous solution</term>.
+            <idx><h>extraneous solution</h></idx>
+        An extraneous solution is a number that would appear to be a solution based on the solving process,
+        but actually does not make the original equation true.
+        Because of this,
+        it is important that these proposed solutions be checked.
+        Note that we're not checking to see if we made a calculation error,
+        but are instead checking to see if the proposed solutions actually solve the original equation.
+      </p>
+    </remark>
+
+    <p permid="vST">
+      We check these values.
+      <md permid="Zfw">
+        <mrow>\frac{12}{\substitute{-1}-2}+\frac{12}{\substitute{-1}+2}\amp\stackrel{?}{=}8\amp\frac{12}{\substitute{4}-2}+\frac{12}{\substitute{4}+2}\amp\stackrel{?}{=}8</mrow>
+        <mrow>\frac{12}{-3}+\frac{12}{1}\amp\stackrel{?}{=}8\amp\frac{12}{2}+\frac{12}{6}\amp\stackrel{?}{=}8</mrow>
+        <mrow>-4+12\amp\stackrel{\checkmark}{=}8\amp6+2\amp\stackrel{\checkmark}{=}8</mrow>
+      </md>
+      Algebraically, both values do check out to be solutions.
+      In the context of this scenario,
+      the boat's speed can't be negative,
+      so we only take the solution <m>4</m>.
+      If Julia drives at <m>4</m> miles per hour,
+      the whole trip would take <m>8</m> hours.
+      This result matches the solution in <xref ref="example-boat-river-rational-function">Example</xref>.
+    </p>
+
+    <p permid="cac">
+      Let's look at another application problem.
+    </p>
+
+    <example permid="LiV">
+      <statement>
+        <p permid="sot">
+          It takes Ku <m>3</m> hours to paint a room and it takes Jacob <m>6</m> hours to paint the same room.
+          If they work together, how long would it take them to paint the room?
+        </p>
+      </statement>
+      <solution permid="XLI">
+        <p permid="lPn">
+          Since it takes Ku <m>3</m> hours to paint the room,
+          he paints <m>\frac{1}{3}</m> of the room each hour.
+          Similarly, Jacob paints <m>\frac{1}{6}</m> of the room each hour.
+          If they work together, they paint
+          <m>\frac{1}{3}+\frac{1}{6}</m> of the room each hour.
+        </p>
+
+        <p permid="RWw">
+          Assume it takes <m>x</m> hours to paint the room if Ku and Jacob work together.
+          This implies they paint <m>\frac{1}{x}</m> of the room together each hour.
+          Now we can write this equation:
+          <me permid="FmF">
+            \frac{1}{3}+\frac{1}{6}=\frac{1}{x}
+          </me>.
+          To clear away denominators,
+          we multiply both sides of the equation by the common denominator of <m>3</m>,
+          <m>6</m> and <m>x</m>, which is <m>6x</m>:
+          <md permid="ltO">
+            <mrow>\frac{1}{3}+\frac{1}{6}\amp=\frac{1}{x}</mrow>
+            <mrow>\multiplyleft{6x}\left(\frac{1}{3}+\frac{1}{6}\right)\amp=\multiplyleft{6\highlight{\cancel{x}}}\frac{1}{\highlight{\cancel{x}}}</mrow>
+            <mrow>6x\cdot\frac{1}{3}+6x\cdot\frac{1}{6}\amp=6</mrow>
+            <mrow>2x+x\amp=6</mrow>
+            <mrow>3x\amp=6</mrow>
+            <mrow>x\amp=2</mrow>
+          </md>
+          Does the possible solution <m>x=2</m> check as an actual solution?
+          <md permid="RAX">
+            <mrow>\frac{1}{3}+\frac{1}{6}\amp\stackrel{?}{=}\frac{1}{\substitute{2}}</mrow>
+            <mrow>\frac{2}{6}+\frac{1}{6}\amp\stackrel{?}{=}\frac{1}{\substitute{2}}</mrow>
+            <mrow>\frac{3}{6}\amp\stackrel{\checkmark}{=}\frac{1}{\substitute{2}}</mrow>
+          </md>
+          It does, so it is a solution.
+          If Ku and Jacob work together,
+          it would take them <m>2</m> hours to paint the room.
+        </p>
+      </solution>
+    </example>
+
+    <p permid="Ihl">
+      Let's look at a few more examples of solving rational equations.
+    </p>
+
+    <example permid="rqe">
+      <statement>
+        <p permid="YvC">
+          Solve for <m>y</m> in <m>\frac{2}{y+1}=\frac{3}{y}</m>.
+        </p>
+      </statement>
+      <solution permid="DSR">
+        <p permid="ydF">
+          The common denominator is <m>y(y+1)</m>.
+          We will multiply both sides of the equation by <m>y(y+1)</m>:
+          <md permid="xIg">
+            <mrow>\frac{2}{y+1}\amp=\frac{3}{y}</mrow>
+            <mrow>\multiplyleft{y\highlight{\cancel{(y+1)}}}\frac{2}{\highlight{\cancel{y+1}}}\amp=\multiplyleft{\lighthigh{\bcancel{y}}(y+1)}\frac{3}{\lighthigh{\bcancel{y}}}</mrow>
+            <mrow>2y\amp=3(y+1)</mrow>
+            <mrow>2y\amp=3y+3</mrow>
+            <mrow>0\amp=y+3</mrow>
+            <mrow>-3\amp=y</mrow>
+          </md>
+          Does the possible solution <m>y=-3</m> check as an actual solution?
+          <md permid="dPp">
+            <mrow>\frac{2}{\substitute{-3}+1}\amp\stackrel{?}{=}\frac{3}{\substitute{-3}}</mrow>
+            <mrow>\frac{2}{-2}\amp\stackrel{\checkmark}{=}-1</mrow>
+          </md>
+          It checks, so <m>-3</m> is a solution.
+          We write the solution set as <m>\{-3\}</m>.
+        </p>
+<!--                 <p>We could have solved this equation by the skill of "cross-multiplication":<md>
+                    <mrow>\frac{2}{y+1}\amp=\frac{3}{y}</mrow>
+                    <mrow>2y\amp=3(y+1)</mrow>
+                    <mrow>\ldots</mrow>
+                </md></p>
+ -->
+      </solution>
+    </example>
+
+    <example permid="Xxn">
+      <statement>
+        <p permid="ECL">
+          Solve for <m>z</m> in <m>z+\frac{1}{z-4}=\frac{z-3}{z-4}</m>.
+        </p>
+      </statement>
+      <solution permid="kaa">
+        <p permid="ekO">
+          The common denominator is <m>z-4</m>.
+          We will multiply both sides of the equation by <m>z-4</m>:
+          <md permid="JWy">
+            <mrow>z+\frac{1}{z-4}\amp=\frac{z-3}{z-4}</mrow>
+            <mrow>\multiplyleft{(z-4)}\left(z+\frac{1}{z-4}\right)\amp=\multiplyleft{\highlight{\cancel{(z-4)}}}\frac{z-3}{\highlight{\cancel{z-4}}}</mrow>
+            <mrow>(z-4)\cdot z+\highlight{\cancel{(z-4)}}\cdot\frac{1}{\highlight{\cancel{z-4}}}\amp=z-3</mrow>
+            <mrow>(z-4)\cdot z+1\amp=z-3</mrow>
+            <mrow>z^2-4z+1\amp=z-3</mrow>
+            <mrow>z^2-5z+4\amp=0</mrow>
+            <mrow>(z-1)(z-4)\amp=0</mrow>
+          </md>
+          <md permid="qdH">
+            <mrow>z-1\amp=0\amp\amp\text{or}\amp z-4\amp=0</mrow>
+            <mrow>z\amp=1\amp\amp\text{or}\amp z\amp=4</mrow>
+          </md>
+          Do the possible solutions <m>z=1</m> and <m>z=4</m> check as actual solutions?
+          <md permid="WkQ">
+            <mrow>\substitute{1}+\frac{1}{\substitute{1}-4}\amp\stackrel{?}{=}\frac{\substitute{1}-3}{\substitute{1}-4}\amp\substitute{4}+\frac{1}{\substitute{4}-4}\amp\stackrel{?}{=}\frac{\substitute{4}-3}{\substitute{4}-4}</mrow>
+            <mrow>1-\frac{1}{3}\amp\stackrel{\checkmark}{=}\frac{-2}{-3}\amp4+\frac{1}{0}\amp\stackrel{\text{no}}{=}\frac{1}{0}</mrow>
+          </md>
+          The possible solution <m>z=4</m> does not actually work,
+          since it leads to division by <m>0</m> in the equation.
+          It is an extraneous solution.
+          However, <m>z=1</m> is a valid solution.
+          The only solution to the equation is <m>1</m>,
+          and thus we can write the solution set as <m>\{1\}</m>.
+        </p>
+      </solution>
+    </example>
+
+    <example permid="DEw">
+      <statement>
+        <p permid="kJU">
+          Solve for <m>p</m> in <m>\frac{3}{p-2}+\frac{5}{p+2}=\frac{12}{p^2-4}</m>.
+        </p>
+      </statement>
+      <solution permid="Qhj">
+        <p permid="KrX">
+          To find the common denominator,
+          we need to factor all denominators if possible:
+          <me permid="CrZ">
+            \frac{3}{p-2}+\frac{5}{p+2}=\frac{12}{(p+2)(p-2)}
+          </me>
+          Now we can see the common denominator is <m>(p+2)(p-2)</m>.
+          We will multiply both sides of the equation by <m>(p+2)(p-2)</m>:
+          <md permid="izi">
+            <mrow>\frac{3}{p-2}+\frac{5}{p+2}\amp=\frac{12}{p^2-4}</mrow>
+            <mrow>\frac{3}{p-2}+\frac{5}{p+2}\amp=\frac{12}{(p+2)(p-2)}</mrow>
+            <mrow>\multiplyleft{(p+2)(p-2)}\left(\frac{3}{p-2}+\frac{5}{p+2}\right)\amp=\multiplyleft{(p+2)(p-2)}\frac{12}{(p+2)(p-2)}</mrow>
+            <mrow>(p+2)\highlight{\cancel{(p-2)}}\cdot\frac{3}{\highlight{\cancel{p-2}}}+\highlight{\bcancel{(p+2)}}(p-2)\cdot\frac{5}{\highlight{\bcancel{p+2}}}\amp=\highlight{\xcancel{(p+2)(p-2)}}\cdot\frac{12}{\highlight{\xcancel{(p+2)(p-2)}}}</mrow>
+            <mrow>3(p+2)+5(p-2)\amp=12</mrow>
+            <mrow>3p+6+5p-10\amp=12</mrow>
+            <mrow>8p-4\amp=12</mrow>
+            <mrow>8p\amp=16</mrow>
+            <mrow>p\amp=2</mrow>
+          </md>
+          Does the possible solution <m>p=2</m> check as an actual solution?
+          <md permid="OGr">
+            <mrow>\frac{3}{\substitute{2}-2}+\frac{5}{\substitute{2}+2}\amp\stackrel{?}{=}\frac{12}{\substitute{2}^2-4}</mrow>
+            <mrow>\frac{3}{0}+\frac{5}{4}\amp\stackrel{\text{no}}{=}\frac{12}{0}</mrow>
+          </md>
+          The possible solution <m>p=2</m> does not actually work,
+          since it leads to division by <m>0</m> in the equation.
+          So this is an extraneous solution,
+          and the equation actually has no solution.
+          We could say that its solution set is the empty set, <m>\emptyset</m>.
+        </p>
+      </solution>
+    </example>
+
+    <example permid="jLF" xml:id="example-solve-rational-equation-drug-injection-algebraically">
+      <statement>
+        <p permid="QRd">
+          Solve <m>C(t)=0.35</m>, where
+          <m>C(t)=\frac{3t}{t^2+8}</m> gives a drug's concentration in milligrams per liter <m>t</m> hours since an injection.
+          (This function was explored in the introduction of <xref ref="section-introduction-to-rational-functions">Section</xref>.)
+        </p>
+      </statement>
+      <solution permid="wos">
+        <p permid="qzg">
+          To solve <m>C(t)=0.35</m>,
+          we'll begin by setting up <m>\frac{3t}{t^2+8}=0.35</m>.
+          We'll begin by identifying that the LCD is <m>t^2+8</m>,
+          and multiply each side of the equation by this:
+          <md permid="uNA">
+            <mrow>\frac{3t}{t^2+8}\amp=0.35</mrow>
+            <mrow>\frac{3t}{\highlight{\cancel{t^2+8}}}\multiplyright{\highlight{\cancel{\left(t^2+8\right)}}}\amp=0.35\multiplyright{\left(t^2+8\right)}</mrow>
+            <mrow>3t\amp=0.35\left(t^2+8\right)</mrow>
+            <mrow>3t\amp=0.35t^2+2.8</mrow>
+          </md>
+          This results in a quadratic equation so we will put it in standard form and use the quadratic formula:
+          <md permid="aUJ">
+            <mrow>0\amp=0.35t^2-3t+2.8</mrow>
+            <mrow>t\amp=\frac{-(-3)\pm \sqrt{(-3)^2-4(0.35)(2.8)}}{2(0.35)}</mrow>
+            <mrow>t\amp=\frac{3\pm \sqrt{5.08}}{0.7}</mrow>
+            <mrow>t\amp\approx 1.066 \text{ or } t\approx 7.506</mrow>
+          </md>
+          Each of these answers should be checked in the original equation;
+          they both work.
+          In context, this means that the drug concentration will reach <m>0.35</m> milligrams per liter about <m>1.066</m> hours after the injection was given,
+          and again <m>7.506</m> hours after the injection was given.
+        </p>
+      </solution>
+    </example>
+        <!-- <remark><p>In <xref ref="example-solve-rational-equation-drug-injection-algebraically">Example</xref>, we could have chosen to multiply each side by <m>100</m> in order to eliminate the decimal coefficients before using the quadratic formula, like this:
+            <md>
+                <mrow>3t\amp=0.35t^2+2.8</mrow>
+                <mrow>3t\multiplyright{100}\amp=0.35(t^2+8)\multiplyright{100}</mrow>
+                <mrow>300t\amp=35(t^2+8)</mrow>
+                <mrow>300t\amp=35t^2+280</mrow>
+                <mrow>0\amp=35t^2-300t+280</mrow>
+            </md>
+        </p></remark> -->
+  </subsection>
+
+  <subsection permid="hWs">
+        <!-- TODO: Check the statements on domain conditions -->
+    <title>Solving Rational Equations for a Specific Variable</title>
+    <p permid="oou">
+      Rational equations can contain many variables and constants and we can solve for any one of them.
+      The process for solving still involves multiplying each side of the equation by the LCD. Instead of having a numerical answer though,
+      our final result will contain other variables and constants.<!-- Constants are usually denoted with subscripts.-->
+    </p>
+
+    <example permid="PSO">
+      <statement>
+        <p permid="wYm">
+          In physics, when two resistances,
+          <m>R_1</m> and <m>R_2</m>, are connected in a parallel circuit,
+          the combined resistance, <m>R</m>,
+          can be calculated by the formula
+          <me permid="HbS">
+            \frac{1}{R}=\frac{1}{R_1}+\frac{1}{R_2}
+          </me>.
+          Solve for <m>R</m> in this formula.
+        </p>
+      </statement>
+      <solution permid="cvB">
+        <p permid="WGp">
+          The common denominator is <m>R R_1 R_2</m>.
+          We will multiply both sides of the equation by <m>R R_1 R_2</m>:
+          <md permid="njb">
+            <mrow>\frac{1}{R}\amp=\frac{1}{R_1}+\frac{1}{R_2}</mrow>
+            <mrow>\multiplyleft{\highlight{\cancel{R}} R_1 R_2}\frac{1}{\highlight{\cancel{R}}}\amp=\multiplyleft{R R_1 R_2}\left(\frac{1}{R_1}+\frac{1}{R_2}\right)</mrow>
+            <mrow>R_1 R_2\amp=R \highlight{\cancel{R_1}} R_2\cdot\frac{1}{\highlight{\cancel{R_1}}}+R R_1 \highlight{\bcancel{R_2}}\cdot\frac{1}{\highlight{\bcancel{R_2}}}</mrow>
+            <mrow>R_1 R_2\amp=R R_2 + R R_1</mrow>
+            <mrow>R_1 R_2\amp=R\left(R_2+R_1\right)</mrow>
+            <mrow>\frac{R_1 R_2}{R_2+R_1}\amp=R</mrow>
+            <mrow>R\amp=\frac{R_1 R_2}{R_1+R_2}</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <example permid="vZX">
+      <statement>
+        <p permid="dfv">
+          Here is the slope formula
+          <me permid="Tqk">
+            m=\frac{y_2-y_1}{x_2-x_1}
+          </me>.
+          Solve for <m>x_1</m> in this formula.
+        </p>
+      </statement>
+      <solution permid="ICK">
+        <p permid="CNy">
+          The common denominator is <m>x_2-x_1</m>.
+          We will multiply both sides of the equation by <m>x_2-x_1</m>:
+          <md permid="zxt">
+            <mrow>m\amp =\frac{y_2-y_1}{x_2-x_1}</mrow>
+            <mrow>\multiplyleft{\left(x_2-x_1\right)}m\amp =\multiplyleft{\highlight{\cancel{\left(x_2-x_1\right)}}}\frac{y_2-y_1}{\highlight{\cancel{x_2-x_1}}}</mrow>
+            <mrow>m x_2-m x_1\amp=y_2-y_1</mrow>
+            <mrow>-m x_1\amp=y_2-y_1-m x_2</mrow>
+            <mrow>\frac{-m x_1}{-m}\amp=\frac{y_2-y_1-m x_2}{-m}</mrow>
+            <mrow>x_1\amp=-\frac{y_2-y_1-m x_2}{m}</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <example permid="chg">
+      <statement>
+        <p permid="JmE">
+          Solve the rational equation <m>x=\frac{4y-1}{2y-3}</m> for <m>y</m>.
+        </p>
+      </statement>
+      <solution permid="oJT">
+        <p permid="iUH">
+          Our first step will be to multiply each side by the LCD, which is simply <m>2y-3</m>.
+          After that, we'll isolate all terms containing <m>y</m>,
+          factor out <m>y</m>, and then finish solving for that variable.
+          <md permid="fEC">
+            <mrow>x\amp=\frac{4y-1}{2y-3}</mrow>
+            <mrow>x\multiplyright{(2y-3)}\amp=\frac{4y-1}{\highlight{\cancel{2y-3}}}\multiplyright{\highlight{\cancel{(2y-3)}}}</mrow>
+            <mrow>2xy-3x\amp=4y-1</mrow>
+            <mrow>2xy\amp=4y-1+3x</mrow>
+            <mrow>2xy-4y\amp=-1+3x</mrow>
+            <mrow>y(2x-4)\amp=3x-1</mrow>
+            <mrow>\divideunder{y\highlight{\cancel{(2x-4)}}}{\highlight{\cancel{2x-4}}}\amp=\divideunder{3x-1}{2x-4}</mrow>
+            <mrow>y\amp=\frac{3x-1}{2x-4}</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection permid="OdB">
+    <title>Solving Rational Equations Using Technology</title>
+    <p permid="UvD">
+      In some instances,
+      it may be difficult to solve rational equations algebraically.
+      We can instead use graphing technology to obtain approximate solutions.
+      Let's look at one such example.
+    </p>
+
+    <example permid="Iop">
+      <statement>
+        <p permid="ptN">
+          Solve the equation <m>\frac{2}{x-3}=\frac{x^3}{8}</m> using graphing technology.
+        </p>
+      </statement>
+      <solution permid="URc">
+        <sidebyside permid="ovy" widths="47% 47%" margins="0%">
+          <p permid="PbQ">
+            We will define <m>f(x)=\frac{2}{x-3}</m> and <m>g(x)=\frac{x^3}{8}</m>,
+            and then look for the points of intersection.
+          </p>
+<!--https://www.desmos.com/calculator/z2bexh90gv-->
+          <figure permid="bqi">
+            <caption>Graph of <m>f(x)=\frac{2}{x-3}</m> and <m>g(x)=\frac{x^3}{8}</m></caption>
+            <image permid="wCN" width="47%">
+              <description></description>
+
+            <latex-image>
+            <![CDATA[\begin{tikzpicture}
+                \begin{axis}[ymin=-10,ymax=10,xmin=-10,xmax=10,
+                            ytick={-8,-6,...,8},
+                            minor ytick={-9,-8,...,9},
+                            xtick={-8,-6,...,8},
+                            minor xtick={-9,-8,...,9},
+                            xlabel={$x$},ylabel={$y$},
+                            clip=false]
+                    \addplot [primarycurve, domain=-10:2.8,samples=50] {2/(x-3)};
+                    \addplot [primarycurve, domain=3.2:10,smooth] {2/(x-3)};
+                    \addplot [secondarycurve, domain=-4.309:4.309] {1/8*x^3};
+                    \addplot [soliddot, above] coordinates {(-1.524,-0.442)} node[above left] {$(-1.524,-0.442)$};
+                    \addplot [soliddot, above] coordinates {(3.405,4.936)} node[right] {$(3.405,4.936)$};
+                \end{axis}
+            \end{tikzpicture}
+            ]]>
+            </latex-image>
+            </image>
+
+          </figure>
+        </sidebyside>
+
+        <p permid="viZ">
+          Since the two functions intersect at approximately
+          <m>(-1.524,-0.442)</m> and <m>(3.405,4.936)</m>,
+          the solutions to <m>\frac{2}{x-3}=\frac{x^3}{8}</m> are approximately <m>-1.524</m> and <m>3.405</m>.
+          We can write the solution set as
+          <m>\{-1.524\ldots, 3.405\ldots\}</m> or in several other forms.
+          It may be important to do <em>something</em>
+          to commuincate that these solutions are approximations.
+          Here we used <m>\ldots</m>,
+          but you could also just say in words that the solutions are approximate.
+        </p>
+<!--                 <p>For this example, it's difficult to see intersection. We can convert the equation and make one side to be <m>0</m>:<md>
+                    <mrow>\frac{2}{x+1}\amp=\frac{3}{x}</mrow>
+                    <mrow>\frac{2}{x+1}-\frac{3}{x}\amp=0</mrow>
+                </md>and then look for the <m>x</m>-intercept of the new function <m>h(x)=\frac{2}{x+1}-\frac{3}{x}</m>:</p>
+
+                 <figure>
+                    <caption>Graph of <m>h(x)=\frac{2}{x+1}-{3}{x}</m></caption>
+                    <image width="47%">
+                        <description></description>
+                        <latex-image>
+                        <![CDATA[\begin{tikzpicture}
+                            \begin{axis}[ymin=-5,ymax=5,xmin=-5,xmax=5,
+                                        ytick={-4,-2,...,4},
+                                        minor ytick={-4,-2,...,4},
+                                        xtick={-4,-2,...,4},
+                                        minor xtick={-4,-2,...,4},
+                                        xlabel={x},ylabel={y}]
+                                \addplot [<->, domain=-5:-1.272, red] {2/(x+1)-3/x};
+                                \addplot [<->, domain=0.472:5, red] {2/(x+1)-3/x};
+                                \addplot [soliddot, color=red, above] coordinates {(-3, 0)} node{$(-3,0)$};
+                            \end{axis}
+                        \end{tikzpicture}
+                        ]]>
+                        </latex-image>
+                    </image>
+                </figure>
+
+                <p>After the conversion, it's easier to see the solution <m>x=-3</m>.</p> -->
+      </solution>
+    </example>
+  </subsection>
+
+  <exercises permid="ukK">
+    <exercisegroup permid="arT" cols="3">
+      <title>Review and Warmup</title>
+      <exercise permid="UCH">
+        <webwork source="BasicAlgebra/SolveLinearEquations/solveLinearEqnMultiSteps110.pg" />
+      </exercise>
+
+      <exercise permid="AJQ">
+        <webwork source="BasicAlgebra/SolveLinearEquations/solveLinearEqnMultiSteps110.pg" />
+      </exercise>
+
+      <exercise permid="gQZ">
+        <webwork source="BasicAlgebra/SolveLinearEquations/SolveLinearEquationParentheses120.pg" />
+      </exercise>
+
+      <exercise permid="MYi">
+        <webwork source="BasicAlgebra/SolveLinearEquations/SolveLinearEquationParentheses120.pg" />
+      </exercise>
+
+      <exercise permid="tfr">
+        <webwork source="BasicAlgebra/SolveLinearEquations/SolveLinearEquationParentheses160.pg" />
+      </exercise>
+
+      <exercise permid="ZmA">
+        <webwork source="BasicAlgebra/SolveLinearEquations/SolveLinearEquationParentheses160.pg" />
+      </exercise>
+
+      <exercise permid="FtJ">
+        <webwork source="BasicAlgebra/QuadraticEquations/solveQuad80.pg" />
+      </exercise>
+
+      <exercise permid="lAS">
+        <webwork source="BasicAlgebra/QuadraticEquations/solveQuad80.pg" />
+      </exercise>
+
+      <exercise permid="RIb">
+        <webwork source="BasicAlgebra/QuadraticEquations/solveQuad100.pg" />
+      </exercise>
+
+      <exercise permid="xPk">
+        <webwork source="BasicAlgebra/QuadraticEquations/solveQuad100.pg" />
+      </exercise>
+
+      <exercise permid="dWt">
+        <webwork source="BasicAlgebra/QuadraticEquations/solveQuad105.pg" />
+      </exercise>
+
+      <exercise permid="KdC">
+        <webwork source="BasicAlgebra/QuadraticEquations/solveQuad105.pg" />
+      </exercise>
+
+    </exercisegroup>
+    <exercisegroup permid="Gzc" cols="3">
+      <title>Solving Rational Equations</title>
+      <exercise permid="qkL">
+        <webwork source="BasicAlgebra/RationalEquations/solveRationalEquations1.pg" />
+      </exercise>
+
+      <exercise permid="WrU">
+        <webwork source="BasicAlgebra/RationalEquations/solveRationalEquations1.pg" />
+      </exercise>
+
+      <exercise permid="Czd">
+        <webwork source="BasicAlgebra/RationalEquations/solveRationalEquations2.pg" />
+      </exercise>
+
+      <exercise permid="iGm">
+        <webwork source="BasicAlgebra/RationalEquations/solveRationalEquations2.pg" />
+      </exercise>
+
+      <exercise permid="ONv">
+        <webwork source="BasicAlgebra/RationalEquations/solveRationalEquations3.pg" />
+      </exercise>
+
+      <exercise permid="uUE">
+        <webwork source="BasicAlgebra/RationalEquations/solveRationalEquations3.pg" />
+      </exercise>
+
+      <exercise permid="bbN">
+        <webwork source="BasicAlgebra/RationalEquations/solveRationalEquations4.pg" />
+      </exercise>
+
+      <exercise permid="HiW">
+        <webwork source="BasicAlgebra/RationalEquations/solveRationalEquations4.pg" />
+      </exercise>
+
+      <exercise permid="nqf">
+        <webwork source="BasicAlgebra/RationalEquations/solveRationalEquations10.pg" />
+      </exercise>
+
+      <exercise permid="Txo">
+        <webwork source="BasicAlgebra/RationalEquations/solveRationalEquations10.pg" />
+      </exercise>
+
+      <exercise permid="zEx">
+        <webwork source="BasicAlgebra/RationalEquations/solveRationalEquations20.pg" />
+      </exercise>
+
+      <exercise permid="fLG">
+        <webwork source="BasicAlgebra/RationalEquations/solveRationalEquations20.pg" />
+      </exercise>
+
+      <exercise permid="LSP">
+        <webwork source="BasicAlgebra/RationalEquations/solveRationalEquations25.pg" />
+      </exercise>
+
+      <exercise permid="rZY">
+        <webwork source="BasicAlgebra/RationalEquations/solveRationalEquations25.pg" />
+      </exercise>
+
+      <exercise permid="Yhh">
+        <webwork source="BasicAlgebra/RationalEquations/solveRationalEquations30.pg" />
+      </exercise>
+
+      <exercise permid="Eoq">
+        <webwork source="BasicAlgebra/RationalEquations/solveRationalEquations30.pg" />
+      </exercise>
+
+      <exercise permid="kvz">
+        <webwork source="BasicAlgebra/RationalEquations/solveRationalEquations40.pg" />
+      </exercise>
+
+      <exercise permid="QCI">
+        <webwork source="BasicAlgebra/RationalEquations/solveRationalEquations40.pg" />
+      </exercise>
+
+      <exercise permid="wJR">
+        <webwork source="BasicAlgebra/RationalEquations/solveRationalEquations50.pg" />
+      </exercise>
+
+      <exercise permid="cRa">
+        <webwork source="BasicAlgebra/RationalEquations/solveRationalEquations50.pg" />
+      </exercise>
+
+      <exercise permid="IYj">
+        <webwork source="BasicAlgebra/RationalEquations/solveRationalEquations55.pg" />
+      </exercise>
+
+      <exercise permid="pfs">
+        <webwork source="BasicAlgebra/RationalEquations/solveRationalEquations55.pg" />
+      </exercise>
+
+      <exercise permid="VmB">
+        <webwork source="BasicAlgebra/RationalEquations/solveRationalEquations60.pg" />
+      </exercise>
+
+      <exercise permid="BtK">
+        <webwork source="BasicAlgebra/RationalEquations/solveRationalEquations60.pg" />
+      </exercise>
+
+      <exercise permid="hAT">
+        <webwork source="BasicAlgebra/RationalEquations/solveRationalEquations61.pg" />
+      </exercise>
+
+      <exercise permid="NIc">
+        <webwork source="BasicAlgebra/RationalEquations/solveRationalEquations61.pg" />
+      </exercise>
+
+      <exercise permid="tPl">
+        <webwork source="BasicAlgebra/RationalEquations/solveRationalEquations70.pg" />
+      </exercise>
+
+      <exercise permid="ZWu">
+        <webwork source="BasicAlgebra/RationalEquations/solveRationalEquations70.pg" />
+      </exercise>
+
+    </exercisegroup>
+    <exercisegroup permid="mGl" cols="2">
+
+      <exercise permid="GdD">
+        <webwork source="BasicAlgebra/RationalEquations/solveRationalEquations27.pg" />
+      </exercise>
+
+      <exercise permid="mkM">
+        <webwork source="BasicAlgebra/RationalEquations/solveRationalEquations27.pg" />
+      </exercise>
+
+      <exercise permid="SrV">
+        <webwork source="BasicAlgebra/RationalEquations/solveRationalEquations28.pg" />
+      </exercise>
+
+      <exercise permid="yze">
+        <webwork source="BasicAlgebra/RationalEquations/solveRationalEquations28.pg" />
+      </exercise>
+
+      <exercise permid="eGn">
+        <webwork source="BasicAlgebra/RationalEquations/solveRationalEquations65.pg" />
+      </exercise>
+
+      <exercise permid="KNw">
+        <webwork source="BasicAlgebra/RationalEquations/solveRationalEquations65.pg" />
+      </exercise>
+
+      <exercise permid="qUF">
+        <webwork source="BasicAlgebra/RationalEquations/solveRationalEquations66.pg" />
+      </exercise>
+
+      <exercise permid="XbO">
+        <webwork source="BasicAlgebra/RationalEquations/solveRationalEquations66.pg" />
+      </exercise>
+            <!-- More like the above, but unclear that they add variety -->
+            <!-- <exercise>
+                <webwork source="Math95/RationalEquations/RationalEquations1.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="Math95/RationalEquations/RationalEquations2.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="Math95/RationalEquations/RationalEquations3.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="Math95/RationalEquations/RationalEquations4.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="Math95/RationalEquations/RationalEquations5.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="Math95/RationalEquations/RationalEquations6.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="Math95/RationalEquations/RationalEquations7.pg" />
+            </exercise>
+
+            <exercise>
+                <webwork source="Math95/MoreRationalEquations/MoreRationalEquations1.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="Math95/MoreRationalEquations/MoreRationalEquations2.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="Math95/MoreRationalEquations/MoreRationalEquations3.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="Math95/MoreRationalEquations/MoreRationalEquations4.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="Math95/MoreRationalEquations/MoreRationalEquations5.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="Math95/MoreRationalEquations/MoreRationalEquations6.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="Math95/MoreRationalEquations/MoreRationalEquations7.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="Math95/MoreRationalEquations/MoreRationalEquations8.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="Math95/MoreRationalEquations/MoreRationalEquations9.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="Math95/MoreRationalEquations/MoreRationalEquations10.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="Math95/MoreRationalEquations/MoreRationalEquations11.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="Math95/MoreRationalEquations/MoreRationalEquations12.pg" />
+            </exercise> -->
+    </exercisegroup>
+    <exercisegroup permid="SNu" cols="3">
+      <title>Solving Rational Equations for a Specific Variable</title>
+      <exercise permid="DiX">
+        <webwork source="BasicAlgebra/RationalLiteralEquations/LiteralEquation260.pg" />
+      </exercise>
+
+      <exercise permid="jqg">
+        <webwork source="BasicAlgebra/RationalLiteralEquations/LiteralEquation260.pg" />
+      </exercise>
+
+      <exercise permid="Pxp">
+        <webwork source="BasicAlgebra/RationalLiteralEquations/LiteralEquation270.pg" />
+      </exercise>
+
+      <exercise permid="vEy">
+        <webwork source="BasicAlgebra/RationalLiteralEquations/LiteralEquation270.pg" />
+      </exercise>
+
+      <exercise permid="bLH">
+        <webwork source="BasicAlgebra/RationalLiteralEquations/LiteralEquation280.pg" />
+      </exercise>
+
+      <exercise permid="HSQ">
+        <webwork source="BasicAlgebra/RationalLiteralEquations/LiteralEquation280.pg" />
+      </exercise>
+
+      <exercise permid="nZZ">
+        <webwork source="BasicAlgebra/RationalLiteralEquations/LiteralEquation290.pg" />
+      </exercise>
+
+      <exercise permid="Uhi">
+        <webwork source="BasicAlgebra/RationalLiteralEquations/LiteralEquation290.pg" />
+      </exercise>
+            <!-- Ugly multiple choice qustions -->
+            <!-- <exercise>
+                <webwork source="BasicAlgebra/RationalLiteralEquations/LiteralEquation220.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/RationalLiteralEquations/LiteralEquation230.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/RationalLiteralEquations/LiteralEquation240.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/RationalLiteralEquations/LiteralEquation250.pg" />
+            </exercise> -->
+    </exercisegroup>
+    <exercisegroup permid="yUD" cols="3">
+      <title>Solving Rational Equations Using Technology</title>
+            <!-- These are WeBWorK now, but not randomized. Randomization could be done, but it would be challenging to algorithmicaally determine the solution sets. -->
+      <exercise permid="Aor">
+        <webwork>
+        <setup>
+        <pg-code>Context("FiniteSolutionSets");
+        Context()->flags->remove("NumberCheck");
+        $solution = List(Formula("3.89506117471740"));</pg-code>
+        </setup>
+        <statement>
+          <p permid="BIf">
+            Use technology to solve the equation
+            <me permid="LLL">
+              \frac{10}{x^2+3}=\frac{x+1}{x+5}
+            </me>.
+          </p>
+
+          <instruction>Round answers to at least four significant digits.</instruction>
+
+          <p permid="hPo">
+            <var name="$solution" width="20" />
+          </p>
+        </statement>
+        <solution permid="AYl">
+          <p permid="Hxr">
+            The point of intersection is approximately <m>(3.895, 0.5503)</m>.
+            The solution set is approximately <m>\{3.895\ldots\}</m>.
+          </p>
+            <!--https://www.desmos.com/calculator/fihhy9qsof-->
+        </solution></webwork>
+      </exercise>
+
+      <exercise permid="gvA">
+        <webwork>
+        <setup>
+        <pg-code>Context("FiniteSolutionSets");
+        Context()->flags->remove("NumberCheck");
+        $solution = Formula("-2.3833269449737245193715124,0.45787182648030800079935498");</pg-code>
+        </setup>
+        <statement>
+          <p permid="NWx">
+            Use technology to solve the equation
+            <me permid="rSU">
+              \frac{x-9}{x^5+1}=-3x-7
+            </me>.
+          </p>
+
+          <instruction>Round answers to at least four significant digits.</instruction>
+
+          <p permid="udG">
+            <var name="$solution" width="20" />
+          </p>
+        </statement>
+        <solution permid="hfu">
+          <p permid="nEA">
+            The points of intersection are approximately
+            <m>(-2.383,0.1500)</m> and <m>(0.4579,-8.374)</m>.
+            The solution set is approximately <m>\{-2.383\ldots, 0.4579\ldots\}</m>.
+          </p>
+            <!-- https://www.desmos.com/calculator/ab2gi84eyt-->
+        </solution></webwork>
+      </exercise>
+
+      <exercise permid="MCJ">
+        <webwork>
+        <setup>
+        <pg-code>Context("FiniteSolutionSets");
+        Context()->flags->remove("NumberCheck");
+        $solution = Formula("-1.61803398874989, 0.61803398874989");</pg-code>
+        </setup>
+        <statement>
+          <p permid="akP">
+            Use technology to solve the equation
+            <me permid="Yad">
+              \frac{1}{x}+\frac{1}{x^2}=\frac{1}{x^3}
+            </me>.
+          </p>
+
+          <instruction>Round answers to at least four significant digits.</instruction>
+
+          <p permid="GrY">
+            <var name="$solution" width="20" />
+          </p>
+        </statement>
+        <solution permid="NmD">
+          <p permid="TLJ">
+            The points of intersection are approximately
+            <m>(-1.618,-0.2361)</m> and <m>(0.6180,4.236)</m>.
+            The solution set is approximately <m>\{-1.618\ldots,0.6180\ldots\}</m>.
+          </p>
+            <!-- https://www.desmos.com/calculator/pajgalmdwg-->
+        </solution></webwork>
+      </exercise>
+
+      <exercise permid="sJS">
+        <webwork>
+        <setup>
+        <pg-code>Context("FiniteSolutionSets");
+        Context()->flags->remove("NumberCheck");
+        $solution = Formula("-1.5367656770392080358971582, 1.2218659968751737501705682");</pg-code>
+        </setup>
+        <statement>
+          <p permid="mzh">
+            Use technology to solve the equation
+            <me permid="Ehm">
+              \frac{12x}{x-5}+\frac{3}{x+1}=\frac{x-5}{x^2}
+            </me>.
+          </p>
+
+          <instruction>Round answers to at least four significant digits.</instruction>
+
+          <p permid="SGq">
+            <var name="$solution" width="20" />
+          </p>
+        </statement>
+        <solution permid="ttM">
+          <p permid="zSS">
+            The points of intersection are approximately
+            <m>(-1.537,-2.768)</m> and <m>(1.222,-2.531)</m>.
+            The solution set is approximately <m>\{-1.537\ldots, 1.222\ldots\}</m>.
+          </p>
+            <!--https://www.desmos.com/calculator/g71kr53eu7-->
+        </solution></webwork>
+      </exercise>
+
+      <exercise permid="YRb">
+        <webwork>
+        <setup>
+        <pg-code>Context("FiniteSolutionSets");
+        Context()->flags->remove("NumberCheck");
+        $solution = Formula("-6.2488979294408989928222523, -4.1021955169551566999786258, 0.35109344639605569280087808");</pg-code>
+        </setup>
+        <statement>
+          <p permid="yNz">
+            Use technology to solve the equation
+            <me permid="kov">
+              2x-\frac{1}{x+4}=\frac{3}{x+6}
+            </me>.
+          </p>
+
+          <instruction>Round answers to at least four significant digits.</instruction>
+
+          <p permid="eUI">
+            <var name="$solution" width="20" />
+          </p>
+        </statement>
+        <solution permid="ZAV">
+          <p permid="gab">
+            The points of intersection are approximately <m>(-6.249,-12.05)</m>,
+            <m>(-4.102,1.581)</m> and <m>(0.3511,0.4724)</m>.
+            The solution set is approximately <m>\{-6.249\ldots, -4.102\ldots, 0.3511\ldots\}</m>.
+          </p>
+            <!--https://www.desmos.com/calculator/6zjmf9ip9e -->
+        </solution></webwork>
+      </exercise>
+
+      <exercise permid="EYk">
+        <webwork>
+        <setup>
+        <pg-code>Context("FiniteSolutionSets");
+        Context()->flags->remove("NumberCheck");
+        $solution = Formula("-0.60740935095773971711606959, 0.82867509557516993781158201, 3.1787342553825697793044876");</pg-code>
+        </setup>
+        <statement>
+          <p permid="LbR">
+            Use technology to solve the equation
+            <me permid="QvE">
+              \frac{1}{x^2-1}-\frac{2}{x-4}=\frac{3}{x-2}
+            </me>.
+          </p>
+
+          <instruction>Round answers to at least four significant digits.</instruction>
+
+          <p permid="rja">
+            <var name="$solution" width="20" />
+          </p>
+        </statement>
+        <solution permid="FIe">
+          <p permid="Mhk">
+            The points of intersection are approximately <m>(-0.6074,-1.151)</m>,
+            <m>(0.8287,-2.561)</m> and <m>(3.179,2.545)</m>.
+            The solution set is approximately <m>\{-0.6074\ldots, 0.8287\ldots, 3.179\ldots\}</m>.
+          </p>
+            <!--https://www.desmos.com/calculator/oeg49xnofj -->
+        </solution></webwork>
+      </exercise>
+
+    </exercisegroup>
+    <exercisegroup permid="fbM">
+      <title>Application Problems</title>
+      <exercise permid="lft">
+        <webwork source="BasicAlgebra/RationalEquations/rationalEquationApplication10.pg" />
+      </exercise>
+
+      <exercise permid="RmC">
+        <webwork source="BasicAlgebra/RationalEquations/rationalEquationApplication15.pg" />
+      </exercise>
+
+      <exercise permid="xtL">
+        <webwork source="BasicAlgebra/RationalEquations/rationalEquationApplication20.pg" />
+      </exercise>
+
+      <exercise permid="dAU">
+        <webwork source="BasicAlgebra/RationalEquations/rationalEquationApplication25.pg" />
+      </exercise>
+
+      <exercise permid="JId">
+        <webwork source="BasicAlgebra/RationalEquations/rationalEquationApplication30.pg" />
+      </exercise>
+
+      <exercise permid="pPm">
+        <webwork source="BasicAlgebra/RationalEquations/rationalEquationApplication35.pg" />
+      </exercise>
+
+      <exercise permid="VWv">
+        <webwork source="BasicAlgebra/RationalEquations/rationalEquationApplication40.pg" />
+      </exercise>
+
+      <exercise permid="CdE">
+        <webwork source="BasicAlgebra/RationalEquations/rationalEquationApplication44.pg" />
+      </exercise>
+
+      <exercise permid="ikN">
+        <webwork source="BasicAlgebra/RationalEquations/rationalEquationApplication45.pg" />
+      </exercise>
+
+      <exercise permid="OrW">
+        <webwork source="BasicAlgebra/RationalEquations/rationalEquationApplication50.pg" />
+      </exercise>
+
+      <exercise permid="uzf">
+        <webwork source="BasicAlgebra/RationalEquations/rationalEquationApplication60.pg" />
+      </exercise>
+
+      <exercise permid="aGo">
+        <webwork source="Math95/RatEqApplications/RatEqApplications1.pg" />
+      </exercise>
+
+      <exercise permid="GNx">
+        <webwork source="Math95/RatEqApplications/RatEqApplications2.pg" />
+      </exercise>
+
+      <exercise permid="mUG">
+        <webwork source="Math95/RatEqApplications/RatEqApplications3.pg" />
+      </exercise>
+
+      <exercise permid="TbP">
+        <webwork source="Math95/RatEqApplications/RatEqApplications4.pg" />
+      </exercise>
+
+      <exercise permid="ziY">
+        <webwork source="Math95/RatEqApplications/RatEqApplications5.pg" />
+      </exercise>
+
+      <exercise permid="fqh">
+        <webwork source="Math95/RatEqApplications/RatEqApplications6.pg" />
+      </exercise>
+
+      <exercise permid="Lxq">
+        <webwork source="Math95/RatEqApplications/RatEqApplications7.pg" />
+      </exercise>
+
+    </exercisegroup>
+  </exercises>
+</section>
+

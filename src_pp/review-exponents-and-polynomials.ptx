@@ -1,0 +1,1835 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *********************************************************************-->
+<!-- Copyright 2016-2018                                                  -->
+<!-- Portland Community College                                           -->
+<!--                                                                      -->
+<!-- This file is part of Open Resources for Community College Algebra    -->
+<!-- (ORCCA).                                                             -->
+<!-- *********************************************************************-->
+<section permid="Kyj" xml:id="review-exponents-and-polynomials">
+  <title>Exponents and Polynomials Chapter Review</title>
+  <subsection permid="qFs">
+    <title>Exponent Rules</title>
+    <p permid="sgx">
+      In <xref ref="section-exponent-rules">Section</xref>
+      we covered the <xref ref="list-exponent-rules" text="title">exponent rules</xref> and how to use them.
+    </p>
+
+    <example permid="hVA">
+      <title>Quotients and Exponents</title>
+      <statement>
+        <p permid="oBX">
+          Let <m>t</m> and <m>q</m> be real numbers,
+          where <m>q \neq 0</m> and <m>t \neq 0</m>.
+          Find another way to write <m>\left(\frac{q^9}{t\cdot q^3}\right)^2</m>.
+        </p>
+      </statement>
+      <solution permid="TKR">
+        <p permid="ReG">
+          We first use the <xref ref="item-exponent-rules-quotient" text="title"></xref>,
+          then the <xref ref="item-exponent-rules-quotient-to-a-power" text="title"></xref>,
+          then the <xref ref="item-exponent-rules-power-to-a-power" text="title"></xref>.
+          <md permid="cXz">
+            <mrow>\left(\frac{q^9}{t\cdot q^3}\right)^2\amp=\left(\frac{q^{9-3}}{t}\right)^2</mrow>
+            <mrow>\amp=\left(\frac{q^{6}}{t}\right)^2</mrow>
+            <mrow>\amp=\frac{q^{6\cdot 2}}{t^2}</mrow>
+            <mrow>\amp=\frac{q^{12}}{t^2}</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <example permid="OcJ">
+      <title>The Zero Exponent</title>
+      <statement>
+        <p permid="UJg">
+          Recall that the <xref ref="item-exponent-rules-zero-exponent" text="title"></xref>
+          says that any real number raised to the <m>0</m>-power is <m>1</m>.
+          Using this, and the other exponent rules,
+          find another way to write <m>-9^0</m>.
+        </p>
+      </statement>
+      <solution permid="zSa">
+        <p permid="xlP">
+          Remember that in expressions like <m>-9^0</m>,
+          the exponent only applies to what it is directly next to!
+          In this case,
+          the <m>0</m> only applies to the <m>9</m> and not the negative sign.
+          So,
+          <me permid="JeI">
+            -9^0=-1
+          </me>
+        </p>
+      </solution>
+    </example>
+
+    <example permid="ujS">
+      <title>Negative Exponents</title>
+      <statement>
+        <p permid="AQp">
+          Write <m>5x^{-3}</m> without any negative exponents.
+        </p>
+      </statement>
+      <solution permid="fZj">
+        <p permid="dsY">
+          Recall that the <xref ref="item-exponent-rules-negative-exponent-definition" text="title"></xref>
+          says that a factor in the numerator with a negative exponent can be flipped into the denominator.
+          So
+          <me permid="plR">
+            5x^{-3}=\frac{5}{x^3}
+          </me>
+          Note that the <m>5</m> does not move to the denominator because the <m>-3</m> exponent <em>only applies</em>
+          to the <m>x</m> to which it is directly attached.
+        </p>
+      </solution>
+    </example>
+
+    <example permid="arb">
+      <title>Summary of Exponent Rules</title>
+      <statement>
+        <p permid="gXy">
+          Use the exponent rules in <xref ref="list-exponent-rules">List</xref>
+          to write the expressions in a different way.
+          Reduce and simplify when possible.
+          Always find a way to write your final simplification without any negative exponents.
+
+          <ol permid="LaZ" label="a." cols="4">
+            <li permid="PKS">
+              <p permid="QuM">
+                <m>\dfrac{24p^3}{20p^{12}}</m>
+              </p>
+            </li>
+
+            <li permid="vSb">
+              <p permid="wBV">
+                <m>\left(\dfrac{2v^5}{4g^{-2}}\right)^4</m>
+              </p>
+            </li>
+
+            <li permid="bZk">
+              <p permid="cJe">
+                <m>12n^7\left(m^0\cdot n^2\right)^2</m>
+              </p>
+            </li>
+
+            <li permid="Igt">
+              <p permid="IQn">
+                <m>\dfrac{k^5}{k^{-4}}</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution permid="Mgs">
+        <p permid="JAh">
+          <ol permid="Grg" label="a." cols="4">
+            <li permid="onC">
+              <p permid="oXw">
+                <m>\begin{aligned}[t]
+                \frac{24p^3}{20p^{12}}\amp=\frac{24}{20}\cdot\frac{p^3}{p^{12}}\\
+                \amp=\frac{6}{5}\cdot p^{3-12}\\
+                \amp=\frac{6}{5}\cdot p^{-9}\\
+                \amp=\frac{6}{5}\cdot\frac{1}{p^9}\\
+                \amp=\frac{6}{5p^9}\end{aligned}
+                </m>
+              </p>
+            </li>
+
+            <li permid="UuL">
+              <p permid="VeF">
+                <m>\begin{aligned}[t]
+                \left(\frac{2v^5}{4g^{-2}}\right)^4\amp=\left(\frac{v^5}{2g^{-2}}\right)^4\\
+                \amp=\left(\frac{v^5g^2}{2}\right)^4\\
+                \amp=\frac{v^{5\cdot4}g^{2\cdot4}}{2^4}\\
+                \amp=\frac{v^{20}g^{8}}{16}\end{aligned}
+                </m>
+              </p>
+            </li>
+
+            <li permid="ABU">
+              <p permid="BlO">
+                <m>\begin{aligned}[t]
+                \amp12n^7\left(m^0\cdot n^2\right)^2\\
+                \amp=12n^7\left(1\cdot n^2\right)^2\\
+                \amp=12n^7\left(n^2\right)^2\\
+                \amp=12n^7n^{2\cdot 2}\\
+                \amp=12n^7n^4\\
+                \amp=12n^{7+4}\\
+                \amp=12n^{11}\end{aligned}
+                </m>
+              </p>
+            </li>
+
+            <li permid="gJd">
+              <p permid="hsX">
+                <m>\begin{aligned}[t]
+                \frac{k^5}{k^{-4}}\amp=k^5\cdot k^{4}\\
+                \amp=k^{5+4}\\
+                \amp=k^9\end{aligned}
+                </m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection permid="WMB">
+    <title>Scientific Notation</title>
+    <p permid="YnG">
+      In <xref ref="section-scientific-notation">Section</xref>
+      we covered the definition of <xref ref="definition-scientific-notation" text="title">scientific notation</xref>,
+      how to convert to and from scientific notation,
+      and how to do some calculations in scientific notation.
+    </p>
+
+    <example permid="Gyk">
+      <title>Scientific Notation for Large Numbers</title>
+      <statement>
+        <p permid="NeH">
+          <ol permid="rii" label="a.">
+            <li permid="MQm">
+              <p permid="NAg">
+                The distance to the star Betelgeuse is about <m>3{,}780{,}000{,}000{,}000{,}000</m> miles.
+                Write this number in scientific notation.
+              </p>
+            </li>
+
+            <li permid="sXv">
+              <p permid="tHp">
+                The gross domestic product (GDP) of California in the year 2017 was about <m>\$2.746\times10^{13}</m>.
+                Write this number in standard notation.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution permid="snB">
+        <p permid="pHq">
+          <ol permid="myp" label="a." cols="2">
+            <li permid="ZeE">
+              <p permid="ZOy">
+                <m>3{,}780{,}000{,}000{,}000{,}000=3.78\times10^{15}</m>.
+              </p>
+            </li>
+
+            <li permid="FlN">
+              <p permid="FVH">
+                <m>\$2.746\times10^{13}=\$2{,}746{,}000{,}000{,}000</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <example permid="mFt">
+      <title>Scientific Notation for Small Numbers</title>
+      <statement>
+        <p permid="tlQ">
+          <ol permid="Xpr" label="a.">
+            <li permid="lsW">
+              <p permid="mcQ">
+                Human DNA forms a double helix with diameter <m>2\times10^{-9}</m> meters.
+                Write this number in standard notation.
+              </p>
+            </li>
+
+            <li permid="RAf">
+              <p permid="SjZ">
+                A single grain of Forget-me-not (Myosotis) pollen is about <m>0.00024</m> inches in diameter.
+                Write this number in scientific notation.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution permid="YuK">
+        <p permid="VOz">
+          <ol permid="SFy" label="a." cols="2">
+            <li permid="xHo">
+              <p permid="yri">
+                <m>2\times10^{-9}=0.000000002</m>.
+              </p>
+            </li>
+
+            <li permid="dOx">
+              <p permid="eyr">
+                <m>0.00024=2.4\times10^{-4}</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <example permid="SMC">
+      <title>Multiplying and Dividing Using Scientific Notation</title>
+      <statement>
+        <p permid="ZsZ">
+          The fastest spacecraft so far have traveled about <m>5\times10^6</m> miles per day.
+
+          <ol permid="DwA" label="a.">
+            <li permid="JVG">
+              <p permid="KFA">
+                If that spacecraft traveled at that same speed for <m>2\times10^4</m> days
+                (which is about <m>55</m> years),
+                how far would it have gone?
+                Write your answer in scientific notation.
+              </p>
+            </li>
+
+            <li permid="qcP">
+              <p permid="qMJ">
+                The nearest star to Earth, besides the Sun,
+                is Proxima Centauri, about <m>2.5\times10^{13}</m> miles from Earth.
+                How many days would you have to fly in that spacecraft at top speed to reach Proxima Centauri
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution permid="EBT">
+        <p permid="BVI">
+          <ol permid="yMH" label="a.">
+            <li permid="WjY">
+              <p permid="WTS">
+                Remember that you can find the distance traveled by multiplying the rate of travel times the time traveled:
+                <m>d=r\cdot t</m>.
+                So this problem turns into
+                <md permid="Vta">
+                  <mrow>d\amp=r\cdot t</mrow>
+                  <mrow>d\amp=\left(\highlight{5}\times10^6\right)\cdot \left(\highlight{2}\times10^4\right)</mrow>
+                  <intertext>Multiply coefficient with coefficient and power of <m>10</m> with power of <m>10</m>.</intertext>
+                  <mrow>\amp=\left(\highlight{5}\cdot\highlight{2}\right) \left(10^6\times10^4\right)</mrow>
+                  <mrow>\amp=\highlight{10}\times10^{10}</mrow>
+                  <intertext>Remember that this still isn't in scientific notation. So we convert like this:</intertext>
+                  <mrow>\amp=\highlight{1.0\times10^1}\times10^{10}</mrow>
+                  <mrow>\amp=1.0\times10^{11}</mrow>
+                </md>
+                So, after traveling for <m>2\times10^4</m> days (55 years),
+                we will have traveled about <m>1.0\times10^{11}</m> miles.
+                That's one-hundred million miles.
+                I hope someone remembered the snacks.
+              </p>
+            </li>
+
+            <li permid="Crh">
+              <p permid="Dbb">
+                Since we are looking for time,
+                let's solve the equation <m>d=r\cdot t</m> for <m>t</m> by dividing by <m>r</m> on both sides:
+                <m>t=\frac{d}{r}</m>.
+                So we have:
+                <md permid="BAj">
+                  <mrow>t\amp=\frac{d}{r}</mrow>
+                  <mrow>t\amp=\frac{2.5\times10^{13}}{5\times10^6}</mrow>
+                  <intertext>Now we can divide coefficient by coefficient and power of <m>10</m> with power of <m>10</m>.</intertext>
+                  <mrow>t\amp=\frac{2.5}{5}\times\frac{10^{13}}{10^6}</mrow>
+                  <mrow>t\amp=\highlight{0.5}\times10^7</mrow>
+                  <mrow>t\amp=\highlight{5\times10^{-1}}\times10^7</mrow>
+                  <mrow>t\amp=5\times10^6</mrow>
+                </md>
+                This means that to get to Proxima Centauri,
+                even in our fastest spacecraft,
+                would take <m>5\times10^6</m> years.
+                Converting to standard form, this is <m>5{,}000{,}000</m> years.
+                I think we're going to need a faster ship.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection permid="CTK">
+    <title>Adding and Subtracting Polynomials</title>
+    <p permid="EuP">
+      In <xref ref="section-adding-and-subtracting-polynomials">Section</xref>
+      we covered the definitions of a <xref ref="definition-polynomial" text="title">polynomial</xref>,
+      a <xref ref="definition-term-polynomial" text="title">term</xref> of a polynomial,
+      a <xref ref="definition-coefficient" text="title">coefficient</xref> of a term,
+      the <xref ref="definition-degree" text="title">degree</xref> of a term,
+      the <xref ref="definition-degree-polynomial" text="title">degree</xref> of a polynomial,
+      the<xref ref="definition-leading-term" text="title">leading term</xref> of a polynomial,
+      a <xref ref="definition-constant-term" text="title">constant term</xref>,
+      <xref ref="definition-monomial-binomial-trinomial" text="title">monomials,
+      binomials, and trinomials</xref>,
+      and how to write a polynomial in <xref ref="remark-standard-form" text="title">standard form</xref>.
+    </p>
+
+    <example permid="yTL">
+      <title>Polynomial Vocabulary</title>
+      <statement>
+        <p permid="FAi">
+          Decide if the following statements are true or false.
+
+          <ol permid="jDJ" label="a.">
+            <li permid="iyq">
+              <p permid="jik">
+                The expression <m>\frac{3}{5}x^2-\frac{1}{5}x^7+\frac{x}{2}-4</m> is a polynomial.
+              </p>
+            </li>
+
+            <li permid="OFz">
+              <p permid="Ppt">
+                The expression <m>4x^6-3x^{-2}-x+1</m> is a polynomial.
+              </p>
+            </li>
+
+            <li permid="uMI">
+              <p permid="vwC">
+                The degree of the polynomial <m>\frac{3}{5}x^2-\frac{1}{5}x^7+\frac{x}{2}-4</m> is <m>10</m>.
+              </p>
+            </li>
+
+            <li permid="aTR">
+              <p permid="bDL">
+                The degree of the term <m>5x^2y^4</m> is <m>6</m>.
+              </p>
+            </li>
+
+            <li permid="Hba">
+              <p permid="HKU">
+                The leading coefficient of
+                <m>\frac{3}{5}x^2-\frac{1}{5}x^7+\frac{x}{2}-4</m> is <m>\frac{3}{5}</m>.
+              </p>
+            </li>
+
+            <li permid="nij">
+              <p permid="nSd">
+                There are 4 terms in the polynomial <m>\frac{3}{5}x^2-\frac{1}{5}x^7+\frac{x}{2}-4</m>.
+              </p>
+            </li>
+
+            <li permid="Tps">
+              <p permid="TZm">
+                The polynomial <m>\frac{3}{5}x^2-\frac{1}{5}x^7+\frac{x}{2}-4</m> is in standard form.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution permid="kJc">
+        <p permid="icR">
+          <ol permid="eTQ" label="a.">
+            <li permid="zwB">
+              <p permid="Agv">
+                True.
+                The expression <m>\frac{3}{5}x^2-\frac{1}{5}x^7+\frac{x}{2}-4</m> is a polynomial.
+              </p>
+            </li>
+
+            <li permid="fDK">
+              <p permid="gnE">
+                False.
+                The expression <m>4x^6-3x^{-2}-x+1</m> is
+                <em>not</em> a polynomial.
+                Variables are only allowed to have whole number exponents in polynomials and the second term has a <m>-2</m> exponent.
+              </p>
+            </li>
+
+            <li permid="LKT">
+              <p permid="MuN">
+                False.
+                The degree of the polynomial
+                <m>\frac{3}{5}x^2-\frac{1}{5}x^7+\frac{x}{2}-4</m> is <em>not</em> <m>10</m>.
+                It is <m>7</m>,
+                which is the highest power of any variable in the expression.
+              </p>
+            </li>
+
+            <li permid="rSc">
+              <p permid="sBW">
+                True.
+                The degree of the term <m>5x^2y^4</m> is <m>6</m>.
+              </p>
+            </li>
+
+            <li permid="XZl">
+              <p permid="YJf">
+                False.
+                The leading coefficient of <m>\frac{3}{5}x^2-\frac{1}{5}x^7+\frac{x}{2}-4</m> is <em>not</em>
+                <m>\frac{3}{5}</m>.The leading coefficient comes from the degree <m>7</m> term which is <m>-\frac{1}{5}</m>.
+              </p>
+            </li>
+
+            <li permid="Egu">
+              <p permid="EQo">
+                True.
+                There are 4 terms in the polynomial <m>\frac{3}{5}x^2-\frac{1}{5}x^7+\frac{x}{2}-4</m>.
+              </p>
+            </li>
+
+            <li permid="knD">
+              <p permid="kXx">
+                False.
+                The polynomial <m>\frac{3}{5}x^2-\frac{1}{5}x^7+\frac{x}{2}-4</m> is
+                <em>not</em> in standard form.
+                The exponents have to be written from highest to lowest,
+                i.e. <m>-\frac{1}{5}x^7+\frac{3}{5}x^2+\frac{x}{2}-4</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <example permid="faU">
+      <title>Adding and Subtracting Polynomials</title>
+      <statement>
+        <p permid="lHr">
+          Simplify the expression <m>\left(\frac{2}{9}x-4x^2-5\right)+\left(6x^2-\frac{1}{6}x-3\right)</m>.
+        </p>
+      </statement>
+      <solution permid="QQl">
+        <p permid="Oka">
+          First identify like terms and group them either physically or mentally.
+          Then we will look for common denominators for these like terms and combine appropriately.
+          <md permid="hHs">
+            <mrow>\amp\left(\frac{2}{9}x-4x^2-5\right)+\left(6x^2-\frac{1}{6}x-3\right)</mrow>
+            <mrow>\amp=\highlight{\frac{2}{9}x}\mathbin{\lighthigh{-}}\mathbin{\lighthigh{4x^2}}-5\mathbin{\lighthigh{+}}\mathbin{\lighthigh{6x^2}}\mathbin{\highlight{-}}\mathbin{\highlight{\frac{1}{6}x}}-3</mrow>
+            <mrow>\amp=\lighthigh{\left(-4x^2+6x^2\right)}+\highlight{\left(\frac{2}{9}x-\frac{1}{6}x\right)}+\left(-3-5\right)</mrow>
+            <mrow>\amp=\lighthigh{2x^2}+\highlight{\left(\frac{4}{18}x-\frac{3}{18}x\right)}-8</mrow>
+            <mrow>\amp=\lighthigh{2x^2}+\highlight{\frac{1}{18}x}-8</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection permid="jaT">
+    <title>Multiplying Polynomials</title>
+    <p permid="kBY">
+      In <xref ref="section-multiplying-polynomials">Section</xref>
+      we covered how to multiply two polynomials together using distribution,
+      <acro>FOIL</acro>, and generic rectangles.
+    </p>
+
+    <example permid="Lid">
+      <title>Multiplying Binomials</title>
+      <statement>
+        <p permid="ROA">
+          Expand the expression <m>(5x-6)(3+2x)</m> using the binomial multiplication method of your choice:
+          distribution, <acro>FOIL</acro>, or generic rectangles.
+        </p>
+      </statement>
+      <solution permid="wXu">
+        <p permid="urj">
+          We will show work using the <acro>FOIL</acro> method.
+          <md permid="NOB">
+            <mrow>(5x-6)(3-2x)\amp=(5x\cdot3)+\left(5x\cdot(-2x)\right)+(-6\cdot3)+\left(-6\cdot(-2x)\right)</mrow>
+            <mrow>\amp=15x-10x^2-18+12x</mrow>
+            <mrow>\amp=-10x^2+27x-18</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <example permid="rpm">
+      <title>Multiplying Polynomials Larger than Binomials</title>
+      <statement>
+        <p permid="xVJ">
+          Expand the expression <m>(3x-2)\left(4x^2-2x+5\right)</m> by multiplying every term in the first factor with every term in the second factor.
+        </p>
+      </statement>
+      <solution permid="deD">
+        <p permid="ays">
+          <m>
+          \begin{aligned}[t]\amp(\highlight{3x}\mathbin{\lighthigh{-}}\mathbin{\lighthigh{2}})\left(4x^2-2x+5\right)\\
+          \amp=\highlight{3x}\cdot4x^2+\highlight{3x}\cdot(-2x)+\highlight{3x}\cdot5+(\mathbin{\lighthigh{-}}\mathbin{\lighthigh{2}})\cdot4x^2+(\mathbin{\lighthigh{-}}\mathbin{\lighthigh{2}})\cdot(-2x)+(\mathbin{\lighthigh{-}}\mathbin{\lighthigh{2}})\cdot5\\
+          \amp=12x^3-6x^2+15x-8x^2+4x-10\\
+          \amp=12x^3-14x^2+19x-10\end{aligned}
+          </m>
+        </p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection permid="Pic">
+    <title>Special Cases of Multiplying Polynomials</title>
+    <p permid="QJh">
+      In <xref ref="section-special-cases-of-multiplying-polynomials">Section</xref>
+      we covered how to <xref ref="fact-squaring-a-binomial" text="title">square a binomial</xref>
+      and how to find the <xref ref="fact-product-of-sum-and-difference" text="title">product of the sum or difference of two terms</xref>.
+    </p>
+
+    <example permid="Xwv">
+      <title>Squaring a Binomial</title>
+      <statement>
+        <p permid="ecS">
+          Recall that <xref ref="fact-squaring-a-binomial">Fact</xref>
+          gives formulas that help square a binomial.
+        </p>
+
+        <p permid="Kkb">
+          Simplify the expression <m>(2x+3)^2</m>.
+        </p>
+      </statement>
+      <solution permid="JlM">
+        <p permid="GFB">
+          Remember that you <em>can</em> use <acro>FOIL</acro> to do these problems,
+          but in the interest of understanding concepts at a higher level for use in later chapters,
+          we will use the relevant formula from <xref ref="fact-squaring-a-binomial">Fact</xref>.
+          In this case, since we have a sum of two terms being squared,
+          we will use <m>(a+b)^2 = a^2+2ab+b^2</m>.
+        </p>
+
+        <p permid="mMK">
+          First identify <m>\highlight{a}</m> and <m>\lighthigh{b}</m>.
+          In this case,
+          <m>\highlight{a=2x}</m> and <m>\lighthigh{b=3}</m>.
+          So, we have:
+          <md permid="tVK" alignment="alignat">
+            <mrow>(\mathbin{\highlight{a}}+\mathbin{\lighthigh{b}})^2 \amp= (\mathbin{\highlight{a}})^2\amp\amp+2(\mathbin{\highlight{a}})(\mathbin{\lighthigh{b}})\amp\amp+(\mathbin{\lighthigh{b}})^2</mrow>
+            <mrow>(\mathbin{\highlight{2x}}+\mathbin{\lighthigh{3}})^2 \amp= (\mathbin{\highlight{2x}})^2\amp\amp+2(\mathbin{\highlight{2x}})(\mathbin{\lighthigh{3}})\amp\amp+(\mathbin{\lighthigh{3}})^2</mrow>
+            <mrow>\amp=4x^2\amp\amp+12x\amp\amp+9</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <example permid="DDE">
+      <title>The Product of the Sum and Difference of Two Terms</title>
+      <statement>
+        <p permid="qrk">
+          Recall that <xref ref="fact-product-of-sum-and-difference">Fact</xref>
+          gives a formula to help multiply things that look like <m>(a+b)(a-b)</m>.
+        </p>
+
+        <p permid="Wyt">
+          Simplify the expression <m>(7x+4)(7x-4)</m>.
+        </p>
+      </statement>
+      <solution permid="psV">
+        <p permid="STT">
+          Remember that you <em>can</em> use <acro>FOIL</acro> to do these problems,
+          but in the interest of understanding concepts at a higher level for use in later chapters,
+          we will use the formula from <xref ref="fact-product-of-sum-and-difference">Fact</xref>.
+          In this case,
+          that means we will use <m>(a+b)(a-b) = a^2-b^2</m>.
+        </p>
+
+        <p permid="zbc">
+          First identify <m>\highlight{a}</m> and <m>\lighthigh{b}</m>.
+          In this case,
+          <m>\highlight{a=7x}</m> and <m>\lighthigh{b=4}</m>.
+          So, we have:
+          <md permid="acT" alignment="alignat">
+            <mrow>(\mathbin{\highlight{a}}+\mathbin{\lighthigh{b}})(\mathbin{\highlight{a}}-\mathbin{\lighthigh{b}}) \amp= (\mathbin{\highlight{a}})^2\amp\amp-(\mathbin{\lighthigh{b}})^2</mrow>
+            <mrow>(\mathbin{\highlight{7x}}+\mathbin{\lighthigh{4}})(\mathbin{\highlight{7x}}-\mathbin{\lighthigh{4}}) \amp= (\mathbin{\highlight{7x}})^2\amp\amp-(\mathbin{\lighthigh{4}})^2</mrow>
+            <mrow>\amp=49x^2\amp\amp-16</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <example permid="jKN">
+      <title>Binomials Raised to Other Powers</title>
+      <statement>
+        <p permid="CFC">
+          To raise binomials to powers higher than <m>2</m>,
+          we start by expanding the expression and multiplying all factors together from left to right.
+        </p>
+
+        <p permid="iML">
+          Expand the expression <m>(2x-5)^3</m>.
+        </p>
+      </statement>
+      <solution permid="VAe">
+        <p permid="fil">
+          <md permid="Gkc">
+            <mrow>\amp(2x-5)^3</mrow>
+            <mrow>\amp=\highlight{(2x-5)(2x-5)}(2x-5)</mrow>
+            <mrow>\amp=\highlight{\left[(2x)^2-2(2x)(5)+5^2\right]}(2x-5)</mrow>
+            <mrow>\amp=\highlight{\left[4x^2-20x+25\right]}(2x-5)</mrow>
+            <mrow>\amp=\highlight{\left[4x^2\right]}(2x)+\highlight{\left[4x^2\right]}(-5)+\highlight{\left[-20x\right]}(2x)+\highlight{\left[-20x\right]}(-5)+\highlight{\left[25\right]}(2x)+\highlight{\left[25\right]}(-5)</mrow>
+            <mrow>\amp=8x^3-20x^2-40x^2+100x+50x-125</mrow>
+            <mrow>\amp=8x^3-60x^2+150x-125</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection permid="vpl">
+    <title>Dividing by a Monomial</title>
+    <p permid="wQq">
+      In <xref ref="section-dividing-by-a-monomial">Section</xref> we covered
+      how you can split a fraction up into multiple terms if there is a sum or difference in the numerator.
+      Mathematically,
+      this happens using the rule <m>\frac{a+b}{c}=\frac{a}{c}+\frac{b}{c}</m>.
+      This formula can be used for any number of terms in the numerator,
+      and for both sums and differences.
+    </p>
+
+    <example permid="PRW">
+      <statement>
+        <p permid="OTU">
+          Expand the expression <m>\frac{12x^5+2x^3-4x^2}{4x^2}</m>.
+        </p>
+      </statement>
+      <solution permid="BHn">
+        <p permid="Lpu">
+          <md permid="mrl">
+            <mrow>\frac{12x^5+2x^3-4x^2}{4x^2}\amp=\frac{12x^5}{4x^2}+\frac{2x^3}{4x^2}-\frac{4x^2}{4x^2}</mrow>
+            <mrow>\amp=3x^3+\frac{x}{2}-1</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+  </subsection>
+
+  <exercises permid="bwu">
+    <exercisegroup permid="HDD" cols="4">
+      <title>Exponent Rules</title>
+      <exercise permid="vZf">
+        <webwork source="BasicAlgebra/Exponents/exponentsMultiplication25.pg" />
+      </exercise>
+
+      <exercise permid="cgo">
+        <webwork source="BasicAlgebra/Exponents/exponentsMultiplication25.pg" />
+      </exercise>
+
+      <exercise permid="Inx">
+        <webwork source="BasicAlgebra/Exponents/exponentsMultiplication30.pg" />
+      </exercise>
+
+      <exercise permid="ouG">
+        <webwork source="BasicAlgebra/Exponents/exponentsMultiplication30.pg" />
+      </exercise>
+
+      <exercise permid="UBP">
+        <webwork source="BasicAlgebra/Exponents/exponentsMultiplication35.pg" />
+      </exercise>
+
+      <exercise permid="AIY">
+        <webwork source="BasicAlgebra/Exponents/exponentsMultiplication35.pg" />
+      </exercise>
+
+      <exercise permid="gQh">
+        <webwork source="BasicAlgebra/Exponents/exponentDivision0.pg" />
+      </exercise>
+
+      <exercise permid="MXq">
+        <webwork source="BasicAlgebra/Exponents/exponentDivision0.pg" />
+      </exercise>
+
+      <exercise permid="tez">
+        <webwork source="BasicAlgebra/Exponents/exponentDivision5.pg" />
+      </exercise>
+
+      <exercise permid="ZlI">
+        <webwork source="BasicAlgebra/Exponents/exponentDivision5.pg" />
+      </exercise>
+
+      <exercise permid="FsR">
+        <webwork source="BasicAlgebra/Exponents/exponentDivision50.pg" />
+      </exercise>
+
+      <exercise permid="lAa">
+        <webwork source="BasicAlgebra/Exponents/exponentDivision50.pg" />
+      </exercise>
+
+      <exercise permid="RHj">
+        <webwork source="BasicAlgebra/Exponents/exponentDivision65.pg" />
+      </exercise>
+
+      <exercise permid="xOs">
+        <webwork source="BasicAlgebra/Exponents/exponentDivision65.pg" />
+      </exercise>
+            <!-- <exercise>
+                <webwork source="BasicAlgebra/Exponents/exponentDivision70.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/exponentDivision70.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/exponentDivision75.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/exponentDivision75.pg" />
+            </exercise> -->
+      <exercise permid="dVB">
+        <webwork source="BasicAlgebra/Exponents/exponentDivision80.pg" />
+      </exercise>
+
+      <exercise permid="KcK">
+        <webwork source="BasicAlgebra/Exponents/exponentDivision80.pg" />
+      </exercise>
+            <!-- <exercise>
+                <webwork source="BasicAlgebra/Exponents/exponentDivision85.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/exponentDivision85.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/exponentDivision95.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/exponentDivision95.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/exponentDivision100.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/exponentDivision100.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/exponentDivision105.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/exponentDivision105.pg" />
+            </exercise> -->
+    </exercisegroup>
+    <exercisegroup permid="nKM" cols="3">
+            <!-- <p>Simplify and write your answer without using negative exponents.  All variables represent non-zero real numbers.</p> -->
+      <exercise permid="qjT">
+        <webwork source="BasicAlgebra/Exponents/negExp0.pg" />
+      </exercise>
+
+      <exercise permid="Wrc">
+        <webwork source="BasicAlgebra/Exponents/negExp0.pg" />
+      </exercise>
+            <!-- <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp5.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp5.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp10.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp10.pg" />
+            </exercise> -->
+      <exercise permid="Cyl">
+        <webwork source="Math95/NegativeExponents/NegativeExponents1.pg" />
+      </exercise>
+
+      <exercise permid="iFu">
+        <webwork source="Math95/NegativeExponents/NegativeExponents1.pg" />
+      </exercise>
+
+      <exercise permid="OMD">
+        <webwork source="Math95/NegativeExponents/NegativeExponents2.pg" />
+      </exercise>
+
+      <exercise permid="uTM">
+        <webwork source="Math95/NegativeExponents/NegativeExponents2.pg" />
+      </exercise>
+            <!-- <exercise>
+                <webwork source="Math95/NegativeExponents/NegativeExponents3.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="Math95/NegativeExponents/NegativeExponents3.pg" />
+            </exercise> -->
+      <exercise permid="baV">
+        <webwork source="Math95/NegativeExponents/NegativeExponents4.pg" />
+      </exercise>
+
+      <exercise permid="Hie">
+        <webwork source="Math95/NegativeExponents/NegativeExponents4.pg" />
+      </exercise>
+            <!-- <exercise>
+                <webwork source="Math95/NegativeExponents/NegativeExponents5.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="Math95/NegativeExponents/NegativeExponents5.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp15.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp15.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp20.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp20.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp25.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp25.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp30.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp30.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp35.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp35.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp36.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp36.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp40.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp40.pg" />
+            </exercise> -->
+      <exercise permid="npn">
+        <webwork source="BasicAlgebra/Exponents/negExp41.pg" />
+      </exercise>
+
+      <exercise permid="Tww">
+        <webwork source="BasicAlgebra/Exponents/negExp41.pg" />
+      </exercise>
+
+      <exercise permid="zDF">
+        <webwork source="BasicAlgebra/Exponents/negExp45.pg" />
+      </exercise>
+
+      <exercise permid="fKO">
+        <webwork source="BasicAlgebra/Exponents/negExp45.pg" />
+      </exercise>
+
+      <exercise permid="LRX">
+        <webwork source="BasicAlgebra/Exponents/negExp50.pg" />
+      </exercise>
+
+      <exercise permid="rZg">
+        <webwork source="BasicAlgebra/Exponents/negExp50.pg" />
+      </exercise>
+            <!-- <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp55.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp55.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp60.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp60.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp65.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp65.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp70.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp70.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp75.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp75.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp80.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp80.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp85.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp85.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp90.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp90.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp95.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp95.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp100.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp100.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp105.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp105.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp110.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp110.pg" />
+            </exercise> -->
+      <exercise permid="Ygp">
+        <webwork source="BasicAlgebra/Exponents/negExp115.pg" />
+      </exercise>
+
+      <exercise permid="Eny">
+        <webwork source="BasicAlgebra/Exponents/negExp115.pg" />
+      </exercise>
+            <!-- <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp120.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp120.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp125.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp125.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp130.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp130.pg" />
+            </exercise> -->
+      <exercise permid="kuH">
+        <webwork source="BasicAlgebra/Exponents/negExp135.pg" />
+      </exercise>
+
+      <exercise permid="QBQ">
+        <webwork source="BasicAlgebra/Exponents/negExp135.pg" />
+      </exercise>
+            <!-- <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp140.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp140.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp145.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp145.pg" />
+            </exercise> -->
+      <exercise permid="wIZ">
+        <webwork source="BasicAlgebra/Exponents/negExp150.pg" />
+      </exercise>
+
+      <exercise permid="cQi">
+        <webwork source="BasicAlgebra/Exponents/negExp150.pg" />
+      </exercise>
+
+      <exercise permid="IXr">
+        <webwork source="BasicAlgebra/Exponents/negExp155.pg" />
+      </exercise>
+
+      <exercise permid="peA">
+        <webwork source="BasicAlgebra/Exponents/negExp155.pg" />
+      </exercise>
+
+      <exercise permid="VlJ">
+        <webwork source="BasicAlgebra/Exponents/negExp160.pg" />
+      </exercise>
+
+      <exercise permid="BsS">
+        <webwork source="BasicAlgebra/Exponents/negExp160.pg" />
+      </exercise>
+            <!-- <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp165.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp165.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp170.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp170.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp175.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp175.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp180.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/negExp180.pg" />
+            </exercise> -->
+    </exercisegroup>
+    <exercisegroup permid="TRV" cols="2">
+      <title>Scientific Notation</title>
+<!--             <introduction>
+                <p>Convert the numbers into scientific notation.</p>
+            </introduction> -->
+      <exercise permid="hAb">
+        <webwork source="BasicAlgebra/NumberBasics/ScientificNotation60.pg" />
+      </exercise>
+
+      <exercise permid="NHk">
+        <webwork source="BasicAlgebra/NumberBasics/ScientificNotation60.pg" />
+      </exercise>
+            <!--  <exercise>
+                 <webwork source="BasicAlgebra/NumberBasics/ScientificNotation60.pg" />
+             </exercise>
+             <exercise>
+                 <webwork source="BasicAlgebra/NumberBasics/ScientificNotation60.pg" />
+             </exercise> -->
+      <exercise permid="tOt">
+        <webwork source="BasicAlgebra/NumberBasics/ScientificNotation70.pg" />
+      </exercise>
+
+      <exercise permid="ZVC">
+        <webwork source="BasicAlgebra/NumberBasics/ScientificNotation70.pg" />
+      </exercise>
+
+    </exercisegroup>
+            <!-- <exercise>
+                <webwork source="BasicAlgebra/NumberBasics/ScientificNotation70.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/NumberBasics/ScientificNotation70.pg" />
+            </exercise> -->
+  <!--           <introduction>
+                <p>Convert the numbers into decimals not in scientific notation.</p>
+            </introduction> -->
+<!--             <exercise>
+                <webwork source="BasicAlgebra/NumberBasics/ScientificNotation10.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/NumberBasics/ScientificNotation10.pg" />
+            </exercise> -->
+    <exercisegroup permid="zZe" cols="3">
+
+      <exercise permid="GcL">
+        <webwork source="BasicAlgebra/NumberBasics/ScientificNotation20.pg" />
+      </exercise>
+
+      <exercise permid="mjU">
+        <webwork source="BasicAlgebra/NumberBasics/ScientificNotation20.pg" />
+      </exercise>
+
+      <exercise permid="Srd">
+        <webwork source="BasicAlgebra/NumberBasics/ScientificNotation30.pg" />
+      </exercise>
+
+      <exercise permid="yym">
+        <webwork source="BasicAlgebra/NumberBasics/ScientificNotation30.pg" />
+      </exercise>
+            <!-- <exercise>
+                <webwork source="BasicAlgebra/NumberBasics/ScientificNotation40.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/NumberBasics/ScientificNotation40.pg" />
+            </exercise> -->
+      <exercise permid="eFv">
+        <webwork source="BasicAlgebra/NumberBasics/ScientificNotation50.pg" />
+      </exercise>
+
+      <exercise permid="KME">
+        <webwork source="BasicAlgebra/NumberBasics/ScientificNotation50.pg" />
+      </exercise>
+
+    </exercisegroup>
+            <!--  <introduction>
+                 <p>Perform the indicated operation.  Write your answers using scientific notation.</p>
+             </introduction> -->
+    <exercisegroup permid="ggn" cols="2">
+
+      <exercise permid="qTN">
+        <webwork source="BasicAlgebra/NumberBasics/ScientificNotation80.pg" />
+      </exercise>
+
+      <exercise permid="XaW">
+        <webwork source="BasicAlgebra/NumberBasics/ScientificNotation80.pg" />
+      </exercise>
+
+    </exercisegroup>
+    <exercisegroup permid="Mnw" cols="2">
+            <!-- <exercise>
+                <webwork source="BasicAlgebra/NumberBasics/ScientificNotation90.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/NumberBasics/ScientificNotation90.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/NumberBasics/ScientificNotation95.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/NumberBasics/ScientificNotation95.pg" />
+            </exercise> -->
+      <exercise permid="Dif">
+        <webwork source="BasicAlgebra/NumberBasics/ScientificNotation100.pg" />
+      </exercise>
+
+      <exercise permid="jpo">
+        <webwork source="BasicAlgebra/NumberBasics/ScientificNotation100.pg" />
+      </exercise>
+            <!-- <exercise>
+                <webwork source="BasicAlgebra/NumberBasics/ScientificNotation105.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/NumberBasics/ScientificNotation105.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/NumberBasics/ScientificNotation110.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/NumberBasics/ScientificNotation110.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/NumberBasics/ScientificNotation115.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/NumberBasics/ScientificNotation115.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/NumberBasics/ScientificNotation120.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/NumberBasics/ScientificNotation120.pg" />
+            </exercise> -->
+    </exercisegroup>
+    <exercisegroup permid="suF" cols="2">
+      <title>Adding and Subtracting Polynomials</title>
+      <exercise permid="Pwx">
+        <webwork source="BasicAlgebra/PolynomialBasics/PolyAddSubtract0.pg" />
+      </exercise>
+
+      <exercise permid="vDG">
+        <webwork source="BasicAlgebra/PolynomialBasics/PolyAddSubtract0.pg" />
+      </exercise>
+
+      <exercise permid="bKP">
+        <webwork source="BasicAlgebra/PolynomialBasics/PolyAddSubtract10.pg" />
+      </exercise>
+
+      <exercise permid="HRY">
+        <webwork source="BasicAlgebra/PolynomialBasics/PolyAddSubtract10.pg" />
+      </exercise>
+
+    </exercisegroup>
+    <exercisegroup permid="YBO" cols="2">
+
+      <exercise permid="nZh">
+        <webwork source="BasicAlgebra/PolynomialBasics/polyMultVar10.pg" />
+      </exercise>
+
+      <exercise permid="Ugq">
+        <webwork source="BasicAlgebra/PolynomialBasics/polyMultVar10.pg" />
+      </exercise>
+
+    </exercisegroup>
+    <exercisegroup permid="EIX" cols="2">
+
+      <exercise permid="Anz">
+        <webwork source="BasicAlgebra/PolynomialBasics/PolyAddSubtract35.pg" />
+      </exercise>
+
+      <exercise permid="guI">
+        <webwork source="BasicAlgebra/PolynomialBasics/PolyAddSubtract35.pg" />
+      </exercise>
+
+      <exercise permid="MBR">
+        <webwork source="BasicAlgebra/PolynomialBasics/PolyAddSubtract45.pg" />
+      </exercise>
+
+      <exercise permid="sJa">
+        <webwork source="BasicAlgebra/PolynomialBasics/PolyAddSubtract45.pg" />
+      </exercise>
+
+      <exercise permid="YQj" width="wide">
+        <webwork source="BasicAlgebra/PolynomialBasics/PolyAddSubtract55.pg" />
+      </exercise>
+
+      <exercise permid="EXs" width="wide">
+        <webwork source="BasicAlgebra/PolynomialBasics/PolyAddSubtract55.pg" />
+      </exercise>
+
+    </exercisegroup>
+    <exercisegroup permid="kQg" cols="2">
+
+      <exercise permid="leB">
+        <webwork source="BasicAlgebra/PolynomialBasics/PolyAddSubtract85.pg" />
+      </exercise>
+
+      <exercise permid="RlK">
+        <webwork source="BasicAlgebra/PolynomialBasics/PolyAddSubtract85.pg" />
+      </exercise>
+
+      <exercise permid="xsT">
+        <webwork source="BasicAlgebra/PolynomialBasics/PolyAddSubtract100.pg" />
+      </exercise>
+
+      <exercise permid="dAc">
+        <webwork source="BasicAlgebra/PolynomialBasics/PolyAddSubtract100.pg" />
+      </exercise>
+
+      <exercise permid="JHl">
+        <webwork source="BasicAlgebra/PolynomialBasics/PolyAddSubtract105.pg" />
+      </exercise>
+
+      <exercise permid="pOu">
+        <webwork source="BasicAlgebra/PolynomialBasics/PolyAddSubtract105.pg" />
+      </exercise>
+
+    </exercisegroup>
+    <exercisegroup permid="QXp" cols="2">
+
+      <exercise permid="VVD">
+        <webwork source="BasicAlgebra/PolynomialBasics/polyMultVar30.pg" />
+      </exercise>
+
+      <exercise permid="CcM">
+        <webwork source="BasicAlgebra/PolynomialBasics/polyMultVar30.pg" />
+      </exercise>
+
+      <exercise permid="ijV">
+        <webwork source="BasicAlgebra/PolynomialBasics/PolyAddSubtractApplication20.pg" />
+      </exercise>
+
+      <exercise permid="Ore">
+        <webwork source="BasicAlgebra/PolynomialBasics/PolyAddSubtractApplication20.pg" />
+      </exercise>
+
+    </exercisegroup>
+    <exercisegroup permid="xey" cols="3">
+      <title>Multiplying Polynomials</title>
+  <!--           <introduction>
+                <p>Multiplying Monomials with Binomials</p>
+            </introduction> -->
+      <exercise permid="uyn">
+        <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication0.pg" />
+      </exercise>
+
+      <exercise permid="aFw">
+        <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication0.pg" />
+      </exercise>
+
+      <exercise permid="GMF">
+        <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication20.pg" />
+      </exercise>
+
+      <exercise permid="mTO">
+        <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication20.pg" />
+      </exercise>
+
+      <exercise permid="TaX">
+        <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication30.pg" />
+      </exercise>
+
+      <exercise permid="zig">
+        <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication30.pg" />
+      </exercise>
+
+      <exercise permid="fpp">
+        <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication35.pg" />
+      </exercise>
+
+      <exercise permid="Lwy">
+        <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication35.pg" />
+      </exercise>
+
+      <exercise permid="rDH">
+        <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication65.pg" />
+      </exercise>
+
+      <exercise permid="XKQ">
+        <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication65.pg" />
+      </exercise>
+
+      <exercise permid="DRZ">
+        <webwork seed="2">
+        <setup>
+        <pg-code>Context("Numeric");
+        Context()->noreduce('(-x)-y','(-x)+y');
+        $var = RandomVariableName(type=>'variable');
+        Context()->variables->are($var=>'Real');
+
+        $a = random(2,5,1);
+        $b = non_zero_random(-10,10,1);
+        do {$c = non_zero_random(-10,10,1);} until ($b!=$c);
+        $bPlusC = $b+$c;
+        $bc = $b*$c;
+        $d = $a*$bPlusC;
+        $e = $a*$bc;
+
+        $binomial1 = Compute("$var+$b")->reduce;
+        $binomial2 = Compute("$var+$c")->reduce;
+        $s1 = Compute("$a*$var+$a*$b")->reduce;
+        $s2 = Compute("$var**2+$bPlusC*$var+$bc")->reduce;
+
+        $problem = Compute("$a*($var+$b)*($var+$c)")->reduce;
+        $ans = Compute("$a*$var**2+$d*$var+$e")->reduce;</pg-code>
+        </setup>
+        <statement>
+          <p permid="vbd">
+            Multiply the polynomials.
+          </p>
+
+          <p permid="bim">
+            <m><var name="$problem" />=</m><var name="$ans" width="10" />
+          </p>
+        </statement>
+        <solution permid="hOw">
+          <p permid="rwD">
+            We could first distribute <m><var name="$a" /></m> into <m><var name="$binomial1" /></m> to get <m><var name="$s1" /></m>,
+            and then multiply <m><var name="$s1" /></m> and <m><var name="$binomial2" /></m>:
+            <md permid="Syu">
+              <mrow><var name="$problem" />\amp=(<var name="$s1" />)(<var name="$binomial2" />)</mrow>
+              <mrow>\amp=<var name="$ans" /></mrow>
+            </md>
+          </p>
+
+          <p permid="XDM">
+            We could also first multiply <m><var name="$binomial1" /></m> and <m><var name="$binomial2" /></m> to get <m><var name="$s2" /></m>,
+            and then distribute <m><var name="$a" /></m> into <m><var name="$s2" /></m>:
+            <md permid="yFD">
+              <mrow><var name="$problem" />\amp=<var name="$a" />(<var name="$s2" />)</mrow>
+              <mrow>\amp=<var name="$ans" /></mrow>
+            </md>
+          </p>
+        </solution></webwork>
+      </exercise>
+
+      <exercise permid="jZi">
+        <webwork seed="2">
+        <setup>
+        <pg-code>Context("Numeric");
+        Context()->noreduce('(-x)-y','(-x)+y');
+        $var = RandomVariableName(type=>'variable');
+        Context()->variables->are($var=>'Real');
+
+        $a = -random(1,5,1);
+        $b = non_zero_random(-10,10,1);
+        do {$c = non_zero_random(-10,10,1);} until ($b!=$c);
+        $bPlusC = $b+$c;
+        $bc = $b*$c;
+        $d = $a*$bPlusC;
+        $e = $a*$bc;
+
+        $binomial1 = Compute("$var+$b")->reduce;
+        $binomial2 = Compute("$var+$c")->reduce;
+        $s1 = Compute("$a*$var+$a*$b")->reduce;
+        $s2 = Compute("$var**2+$bPlusC*$var+$bc")->reduce;
+        $s3 = Compute("$a*($var**2+$bPlusC*$var+$bc)")->reduce;
+
+        $problem = Compute("$a*($var+$b)*($var+$c)")->reduce;
+        $ans = Compute("$a*$var**2+$d*$var+$e")->reduce;</pg-code>
+        </setup>
+        <statement>
+          <p permid="Hpv">
+            Multiply the polynomials.
+          </p>
+
+          <p permid="nwE">
+            <m><var name="$problem" />=</m><var name="$ans" width="10" />
+          </p>
+        </statement>
+        <solution permid="NVF">
+          <p permid="DKV">
+            We could first distribute <m><var name="$a" /></m> into <m><var name="$binomial1" /></m> to get <m><var name="$s1" /></m>,
+            and then multiply <m><var name="$s1" /></m> and <m><var name="$binomial2" /></m>:
+            <md permid="eMM">
+              <mrow><var name="$problem" />\amp=(<var name="$s1" />)(<var name="$binomial2" />)</mrow>
+              <mrow>\amp=<var name="$ans" /></mrow>
+            </md>
+          </p>
+
+          <p permid="jSe">
+            We could also first multiply <m><var name="$binomial1" /></m> and <m><var name="$binomial2" /></m> to get <m><var name="$s2" /></m>,
+            and then distribute <m><var name="$a" /></m> into <m><var name="$s2" /></m>:
+            <md permid="KTV">
+              <mrow><var name="$problem" />\amp=<var name="$s3" /></mrow>
+              <mrow>\amp=<var name="$ans" /></mrow>
+            </md>
+          </p>
+        </solution></webwork>
+      </exercise>
+
+      <exercise permid="Qgr">
+        <webwork seed="2">
+        <setup>
+        <pg-code>Context("Numeric");
+        Context()->noreduce('(-x)-y','(-x)+y');
+        $var = RandomVariableName(type=>'variable');
+        Context()->variables->are($var=>'Real');
+
+        $b = non_zero_random(-10,10,1);
+        do {$c = non_zero_random(-10,10,1);} until ($b!=$c);
+        $bPlusC = $b+$c;
+        $bc = $b*$c;
+
+        $binomial1 = Compute("$var+$b")->reduce;
+        $binomial2 = Compute("$var+$c")->reduce;
+        $s1 = Compute("$var**2+$b*$var")->reduce;
+        $s2 = Compute("$var**2+$bPlusC*$var+$bc")->reduce;
+
+        $problem = Compute("$var*($var+$b)*($var+$c)")->reduce;
+        $ans = Compute("$var**3+$bPlusC*$var**2+$bc*$var")->reduce;</pg-code>
+        </setup>
+        <statement>
+          <p permid="TDN">
+            Multiply the polynomials.
+          </p>
+
+          <p permid="zKW">
+            <m><var name="$problem" />=</m><var name="$ans" width="10" />
+          </p>
+        </statement>
+        <solution permid="ucO">
+          <p permid="PZn">
+            We could first distribute <m><var name="$var" /></m> into <m><var name="$binomial1" /></m> to get <m><var name="$s1" /></m>,
+            and then multiply <m><var name="$s1" /></m> and <m><var name="$binomial2" /></m>:
+            <md permid="rbe">
+              <mrow><var name="$problem" />\amp=(<var name="$s1" />)(<var name="$binomial2" />)</mrow>
+              <mrow>\amp=<var name="$ans" /></mrow>
+            </md>
+          </p>
+
+          <p permid="wgw">
+            We could also first multiply <m><var name="$binomial1" /></m> and <m><var name="$binomial2" /></m> to get <m><var name="$s2" /></m>,
+            and then distribute <m><var name="$var" /></m> into <m><var name="$s2" /></m>:
+            <md permid="Xin">
+              <mrow><var name="$problem" />\amp=<var name="$var" />(<var name="$s2" />)</mrow>
+              <mrow>\amp=<var name="$ans" /></mrow>
+            </md>
+          </p>
+        </solution></webwork>
+      </exercise>
+
+      <exercise permid="wnA">
+        <webwork seed="2">
+        <setup>
+        <pg-code>Context("Numeric");
+        Context()->noreduce('(-x)-y','(-x)+y');
+        $var = RandomVariableName(type=>'variable');
+        Context()->variables->are($var=>'Real');
+
+        do {$a = random(-5,5,1);} until ($a!=1);
+        $b = non_zero_random(-10,10,1);
+        do {$c = non_zero_random(-10,10,1);} until ($b!=$c);
+        $bPlusC = $b+$c;
+        $bc = $b*$c;
+        $d = $a*$bPlusC;
+        $e = $a*$bc;
+
+        $binomial1 = Compute("$var+$b")->reduce;
+        $binomial2 = Compute("$var+$c")->reduce;
+        $s1 = Compute("$a*$var**2+$a*$b*$var")->reduce;
+        $s2 = Compute("$var**2+$bPlusC*$var+$bc")->reduce;
+        $s3 = Compute("$a*($var**2+$bPlusC*$var+$bc)")->reduce;
+        $s4 = Compute("$a*$var")->reduce;
+
+        $problem = Compute("$a*$var*($var+$b)*($var+$c)")->reduce;
+        $ans = Compute("$a*$var**3+$d*$var**2+$e*$var")->reduce;</pg-code>
+        </setup>
+        <statement>
+          <p permid="fSf">
+            Multiply the polynomials.
+          </p>
+
+          <p permid="LZo">
+            <m><var name="$problem" />=</m><var name="$ans" width="10" />
+          </p>
+        </statement>
+        <solution permid="ajX">
+          <p permid="cnF">
+            We could first distribute <m><var name="$s4" /></m> into <m><var name="$binomial1" /></m> to get <m><var name="$s1" /></m>,
+            and then multiply <m><var name="$s1" /></m> and <m><var name="$binomial2" /></m>:
+            <md permid="Dpw">
+              <mrow><var name="$problem" />\amp=(<var name="$s1" />)(<var name="$binomial2" />)</mrow>
+              <mrow>\amp=<var name="$ans" /></mrow>
+            </md>
+          </p>
+
+          <p permid="IuO">
+            We could also first multiply <m><var name="$binomial1" /></m> and <m><var name="$binomial2" /></m> to get <m><var name="$s2" /></m>,
+            and then distribute <m><var name="$a" /><var name="$var" /></m> into <m><var name="$s2" /></m>:
+            <md permid="jwF">
+              <mrow><var name="$problem" />\amp=<var name="$s3" /></mrow>
+              <mrow>\amp=<var name="$ans" /></mrow>
+            </md>
+          </p>
+        </solution></webwork>
+      </exercise>
+
+      <exercise permid="cuJ">
+        <webwork source="BasicAlgebra/PolynomialMultiplication/polyMultVar145.pg" />
+      </exercise>
+
+      <exercise permid="IBS">
+        <webwork source="BasicAlgebra/PolynomialMultiplication/polyMultVar145.pg" />
+      </exercise>
+
+    </exercisegroup>
+    <exercisegroup permid="dlH" cols="2">
+
+      <exercise permid="oJb">
+        <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplicationApplication10.pg" />
+      </exercise>
+
+      <exercise permid="UQk">
+        <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplicationApplication10.pg" />
+      </exercise>
+
+    </exercisegroup>
+    <exercisegroup permid="JsQ" cols="3">
+      <title>Special Cases of Multiplying Polynomials</title>
+<!--             <introduction>
+                <p>Perfect Square Trinomial Formula</p>
+            </introduction> -->
+            <!-- <exercise>
+                <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication190.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication190.pg" />
+            </exercise> -->
+      <exercise permid="AXt">
+        <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication195.pg" />
+      </exercise>
+
+      <exercise permid="heC">
+        <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication195.pg" />
+      </exercise>
+
+      <exercise permid="NlL">
+        <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication200.pg" />
+      </exercise>
+
+      <exercise permid="tsU">
+        <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication200.pg" />
+      </exercise>
+            <!-- <exercise>
+                <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication205.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication205.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication210.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication210.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication215.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication215.pg" />
+            </exercise> -->
+      <exercise permid="ZAd">
+        <webwork source="BasicAlgebra/PolynomialMultiplication/polyMultVar100.pg" />
+      </exercise>
+
+      <exercise permid="FHm">
+        <webwork source="BasicAlgebra/PolynomialMultiplication/polyMultVar100.pg" />
+      </exercise>
+
+    </exercisegroup>
+    <exercisegroup permid="pzZ" cols="3">
+            <!-- <exercise>
+                <webwork source="BasicAlgebra/PolynomialMultiplication/polyMultVar105.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/PolynomialMultiplication/polyMultVar105.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/PolynomialMultiplication/polyMultVar110.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/PolynomialMultiplication/polyMultVar110.pg" />
+            </exercise> -->
+<!--         </exercisegroup>
+
+        <exercisegroup cols="2">
+            <introduction>
+                <p>Difference of Squares Formula</p>
+            </introduction> -->
+      <exercise permid="lOv">
+        <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication160.pg" />
+      </exercise>
+
+      <exercise permid="RVE">
+        <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication160.pg" />
+      </exercise>
+            <!-- <exercise>
+                <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication165.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication165.pg" />
+            </exercise> -->
+      <exercise permid="ycN">
+        <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication170.pg" />
+      </exercise>
+
+      <exercise permid="ejW">
+        <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication170.pg" />
+      </exercise>
+            <!--  <exercise>
+                 <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication175.pg" />
+             </exercise>
+             <exercise>
+                 <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication175.pg" />
+             </exercise> -->
+      <exercise permid="Krf">
+        <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication180.pg" />
+      </exercise>
+
+      <exercise permid="qyo">
+        <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication180.pg" />
+      </exercise>
+            <!-- <exercise>
+                <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication185.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication185.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/PolynomialMultiplication/polyMultVar115.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/PolynomialMultiplication/polyMultVar115.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/PolynomialMultiplication/polyMultVar120.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/PolynomialMultiplication/polyMultVar120.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/PolynomialMultiplication/polyMultVar125.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/PolynomialMultiplication/polyMultVar125.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/PolynomialMultiplication/polyMultVar130.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/PolynomialMultiplication/polyMultVar130.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/PolynomialMultiplication/polyMultVar135.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/PolynomialMultiplication/polyMultVar135.pg" />
+            </exercise> -->
+ <!--        </exercisegroup>
+
+        <exercisegroup cols="2">
+            <introduction>
+                <p>Binomials Raised to Other Powers</p>
+            </introduction> -->
+    </exercisegroup>
+    <exercisegroup permid="VHi" cols="2">
+
+      <exercise permid="WFx">
+        <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication230.pg" />
+      </exercise>
+
+      <exercise permid="CMG">
+        <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication230.pg" />
+      </exercise>
+            <!-- <exercise>
+                <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication235.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication235.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication240.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication240.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication245.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialMultiplication245.pg" />
+            </exercise> -->
+    </exercisegroup>
+    <exercisegroup permid="BOr" cols="3">
+      <title>Dividing by a Monomial</title>
+            <!--  <introduction>
+                 <p>Dividing Polynomials by Monomials</p>
+             </introduction> -->
+      <exercise permid="iTP">
+        <webwork source="BasicAlgebra/Exponents/exponentDivision115.pg" />
+      </exercise>
+
+      <exercise permid="PaY">
+        <webwork source="BasicAlgebra/Exponents/exponentDivision115.pg" />
+      </exercise>
+
+      <exercise permid="vih">
+        <webwork source="BasicAlgebra/Exponents/exponentDivision120.pg" />
+      </exercise>
+
+      <exercise permid="bpq">
+        <webwork source="BasicAlgebra/Exponents/exponentDivision120.pg" />
+      </exercise>
+
+      <exercise permid="Hwz">
+        <webwork source="BasicAlgebra/Exponents/exponentDivision125.pg" />
+      </exercise>
+
+      <exercise permid="nDI">
+        <webwork source="BasicAlgebra/Exponents/exponentDivision125.pg" />
+      </exercise>
+            <!-- <exercise>
+                <webwork source="BasicAlgebra/Exponents/exponentDivision130.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/exponentDivision130.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/exponentDivision140.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/exponentDivision140.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/exponentDivision145.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/exponentDivision145.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/exponentDivision150.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/Exponents/exponentDivision150.pg" />
+            </exercise>
+        </exercisegroup>
+        <exercisegroup>
+            <introduction>
+                <p>Application Problems</p>
+            </introduction>
+            <exercise>
+                <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialDivisionApplication10.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialDivisionApplication10.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialDivisionApplication20.pg" />
+            </exercise>
+            <exercise>
+                <webwork source="BasicAlgebra/PolynomialMultiplication/PolynomialDivisionApplication20.pg" />
+            </exercise> -->
+    </exercisegroup>
+  </exercises>
+</section>
+

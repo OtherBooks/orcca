@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *********************************************************************-->
+<!-- Copyright 2016-2018                                                  -->
+<!-- Portland Community College                                           -->
+<!--                                                                      -->
+<!-- This file is part of Open Resources for Community College Algebra    -->
+<!-- (ORCCA).                                                             -->
+<!-- *********************************************************************-->
+<section permid="QdN" xml:id="section-complex-fractions">
+  <title>Complex Fractions</title>
+  <introduction permid="bWG">
+    <p permid="WRo">
+      In this section, we will learn how to simplify complex fractions,
+      which have fractions in the numerator and/or denominator of another fraction.
+    </p>
+
+    <figure permid="CYx">
+      <caption>Alternative Video Lesson</caption>
+      <video youtubeplaylist="PL2qOxw8-rmqaDfcaElR-6aXCgl1UX0eFD" />
+    </figure>
+  </introduction>
+
+  <subsection permid="wkW">
+    <title>Simplifying Complex Fractions</title>
+    <p permid="jfG">
+      Consider the rational expression
+      <me permid="TWI">
+        \frac{\frac{6}{x-4}}{\frac{6}{x-4}+3}
+      </me>.
+      It's difficult to quickly evaluate this expression,
+      or determine the important information such as its domain.
+      This type of rational expression,
+      which contains a <q>fraction within a fraction,</q>
+      is referred to as a <term>complex fraction</term>.
+          <idx><h>complex fraction</h></idx>
+      Our goal is to simplify such a fraction so that it has a <em>single</em>
+      numerator and a <em>single</em> denominator,
+      neither of which contain any fractions themselves.
+    </p>
+
+    <sidebyside permid="yaj" widths="47% 47%" margins="0%">
+      <p permid="KCW">
+        A complex fraction may have fractions in its numerator and/or denominator.
+        Here is an example to show how we use division to simplify a complex fraction.
+      </p>
+
+      <p permid="qKf">
+        <md permid="AdR">
+          <mrow>\frac{\ \frac{1}{2}\ }{3}\amp=\frac{1}{2}\div3</mrow>
+          <mrow>\amp=\frac{1}{2}\div\frac{3}{1}</mrow>
+          <mrow>\amp=\frac{1}{2}\cdot\frac{1}{3}</mrow>
+          <mrow>\amp=\frac{1}{6}</mrow>
+        </md>
+      </p>
+    </sidebyside>
+        <!-- <sidebyside widths="47% 47%" margins="0%">
+            <p>A complex fraction can have fractions in its numerator and/or denominator, like <me>\frac{\frac{1}{2}}{3}</me>. We need to simplify this so that the main numerator and denominator no longer contain fractions themselves. Here is the standard method to simplify this fraction:</p>
+
+            <p><md>
+                <mrow>\frac{\frac{1}{2}}{3}\amp=\frac{1}{2}\div3</mrow>
+                <mrow>\amp=\frac{1}{2}\div\frac{3}{1}</mrow>
+                <mrow>\amp=\frac{1}{2}\cdot\frac{1}{3}</mrow>
+                <mrow>\amp=\frac{1}{6}</mrow>
+            </md></p>
+        </sidebyside> -->
+    <p permid="PmP">
+      What if the expression had something more complicated in the denominator,
+      like <m>\frac{\frac{1}{2}}{\frac{1}{3}+\frac{1}{4}}</m>?
+      We would no longer be able to simply multiply by the reciprocal of the denominator,
+      since we don't immediately know the reciprocal of that denominator.
+      Instead, we could multiply the <q>main</q>
+      numerator and denominator by something that eliminates all of the <q>internal</q>
+      denominators. (We'll use the LCD to determine this).
+      For example, with <m>\frac{\ \frac{1}{2}\ }{3}</m>,
+      we can multiply by <m>\frac{2}{2}</m>:
+      <md permid="gla">
+        <mrow>\frac{\ \frac{1}{2}\ }{3}\amp=\frac{\ \frac{1}{2}\ }{3}\multiplyright{\frac{2}{2}}</mrow>
+        <mrow>\amp=\frac{1}{6}</mrow>
+      </md>
+    </p>
+
+    <remark>
+      <p permid="vtY">
+        In the last example,
+        it's important to identify which fraction bar is the
+        <q>main</q> fraction bar,
+        and which fractions are <q>internal.</q>
+        Comparing the two expressions below,
+        both of which are <q>one over two over three</q>,
+        we see that they are not equivalent.
+        <md permid="Msj">
+          <mrow>\frac{\frac{1}{2}}{3}\amp=\frac{\frac{1}{2}}{3}\multiplyright{\frac{2}{2}}\amp\amp\text{versus}\amp\frac{1}{\frac{2}{3}}\amp=\frac{1}{\frac{2}{3}}\multiplyright{\frac{3}{3}}</mrow>
+          <mrow>\amp=\frac{1}{6}\amp\amp\amp\amp=\frac{3}{2}</mrow>
+        </md>
+        For the first of these, the <q>main</q>
+        fraction bar is above the <m>3</m>,
+        but for the second of these,
+        the <q>main</q> fraction bar is above the <m>\frac{2}{3}</m>.
+      </p>
+    </remark>
+
+    <p permid="bBh">
+      To attack multiple fractions in a complex fraction,
+      we need to multiply the numerator and denominator by the LCD of all the internal fractions,
+      as we will show in the next example.
+    </p>
+
+    <example permid="AUP">
+      <statement>
+        <p permid="NxC">
+          Simplify the complex fraction <m>\dfrac{\frac{1}{2}}{\frac{1}{3}+\frac{1}{4}}</m>.
+        </p>
+      </statement>
+      <solution permid="IdP">
+        <sidebyside permid="ehs" widths="47% 47%" margins="0%">
+          <p permid="rPy">
+            The internal denominators are <m>2</m>, <m>3</m>,
+            and <m>4</m>, so the LCD is <m>12</m>.
+            We will thus multiply the main numerator and denominator by <m>12</m> and simplify the result:
+          </p>
+
+          <p permid="XWH">
+            <md permid="szs">
+              <mrow>\frac{\frac{1}{2}}{\frac{1}{3}+\frac{1}{4}}\amp=\frac{\frac{1}{2}}{\frac{1}{3}+\frac{1}{4}}\multiplyright{\frac{12}{12}}</mrow>
+              <mrow>\amp=\frac{\frac{1}{2}\multiplyright{12}}{\left(\frac{1}{3}+\frac{1}{4}\right)\multiplyright{12}}</mrow>
+              <mrow>\amp=\frac{6}{4+3}</mrow>
+              <mrow>\amp=\frac{6}{7}</mrow>
+            </md>
+          </p>
+        </sidebyside>
+      </solution>
+    </example>
+
+    <p permid="HIq">
+      Next we will evaluate a function whose formula is a complex fraction and then simplify the result.
+    </p>
+
+    <example permid="hbY" xml:id="example-evaluate-complex-fraction-function-with-restrictions">
+      <statement>
+        <p permid="tEL">
+          Find each function value for <m>f(x)=\frac{\frac{x+2}{x+3}}{\frac{2}{x+3}-\frac{3}{x-1}}</m>.
+
+          <ol permid="lqs" label="a." cols="4">
+            <li permid="RxB">
+              <p permid="OCV">
+                <m>f(4)</m>
+              </p>
+            </li>
+
+            <li permid="xEK">
+              <p permid="uKe">
+                <m>f(0)</m>
+              </p>
+            </li>
+
+            <li permid="dLT">
+              <p permid="aRn">
+                <m>f(-3)</m>
+              </p>
+            </li>
+
+            <li permid="JTc">
+              <p permid="GYw">
+                <m>f(-11)</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution permid="okY">
+        <p permid="EdQ">
+          We will determine each function value by replacing <m>x</m> with the specified number and then simplify the complex fraction:
+
+          <ol permid="Fjj" label="a." cols="4">
+            <li permid="qal">
+              <p permid="nfF">
+                <m>\begin{aligned}[t]
+                f(\substitute{4})\amp=\frac{\frac{\substitute{4}+2}{\substitute{4}+3}}{\frac{2}{\substitute{4}+3}-\frac{3}{\substitute{4}-1}}\\
+                \amp=\frac{\frac{6}{7}}{\frac{2}{7}-\frac{3}{3}}\\
+                \amp=\frac{\frac{6}{7}}{\frac{2}{7}-1}\multiplyright{\frac{7}{7}}\\
+                \amp=\frac{6}{2-7}\\
+                \amp=-\frac{6}{5}
+                \end{aligned}
+                </m>
+              </p>
+            </li>
+
+            <li permid="Whu">
+              <p permid="TmO">
+                <m>\begin{aligned}[t]
+                f(\substitute{0})\amp=\frac{\frac{\substitute{0}+2}{\substitute{0}+3}}{\frac{2}{\substitute{0}+3}-\frac{3}{\substitute{0}-1}}\\
+                \amp=\frac{\frac{2}{3}}{\frac{2}{3}-\frac{3}{-1}}\\
+                \amp=\frac{\frac{2}{3}}{\frac{2}{3}+3}\multiplyright{\frac{3}{3}}\\
+                \amp=\frac{2}{2+9}\\
+                \amp=\frac{2}{11}
+                \end{aligned}
+                </m>
+              </p>
+            </li>
+
+            <li permid="CoD">
+              <p permid="ztX">
+                When evaluating <m>f</m> at <m>-3</m>,
+                we can quickly see that this results in division by zero:
+                <md permid="YGB">
+                  <mrow>f(\substitute{-3})\amp=\frac{\frac{\substitute{-3}+2}{\substitute{-3}+3}}{\frac{2}{\substitute{-3}+3}-\frac{3}{\substitute{-3}-1}}</mrow>
+                  <mrow>\amp=\frac{\frac{2}{0}}{\frac{2}{0}-\frac{3}{-4}}</mrow>
+                </md>
+                Thus <m>f(-3)</m> is undefined.
+              </p>
+            </li>
+
+            <li permid="ivM">
+              <p permid="fBg">
+                <m>\begin{aligned}[t]
+                f(\substitute{-11})\amp=\frac{\frac{\substitute{-11}+2}{\substitute{-11}+3}}{\frac{2}{\substitute{-11}+3}-\frac{3}{\substitute{-11}-1}}\\
+                \amp=\frac{\frac{-8}{-9}}{\frac{2}{-8}-\frac{3}{-12}}\\
+                \amp=\frac{\frac{8}{9}}{-\frac{1}{4}+\frac{1}{4}}\\
+                \amp=\frac{\frac{8}{9}}{0}
+                \end{aligned}</m>
+              </p>
+
+              <p permid="LIp">
+                Therefore <m>f(-11)</m> is undefined.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p permid="nPz">
+      We have simplified complex fractions involving numbers and now we will apply the same concept to complex fractions with variables.
+    </p>
+
+    <example permid="Njh" xml:id="example-simplify-complex-fraction-intro-example-with-restriction">
+      <statement>
+        <p permid="ZLU">
+          Simplify the complex fraction <m>\dfrac{3}{\frac{1}{y}+\frac{5}{y^2}}</m>.
+        </p>
+      </statement>
+      <solution permid="Ush">
+        <sidebyside permid="KoB" widths="47% 47%" margins="0%">
+          <p permid="kkZ">
+            To start, we look at the internal denominators and identify the LCD as <m>y^2</m>.
+            We'll multiply the main numerator and denominator by the LCD, and then simplify.
+            Since we are multiplying by <m>\frac{y^2}{y^2}</m>,
+            it is important to note that <m>y</m> cannot be <m>0</m>,
+            since <m>\frac{0}{0}</m> is undefined.
+          </p>
+
+          <p permid="Qsi">
+            <md permid="ENK">
+              <mrow>\frac{3}{\frac{1}{y}+\frac{5}{y^2}}\amp=\frac{3}{\frac{1}{y}+\frac{5}{y^2}}\multiplyright{\frac{y^2}{y^2}}</mrow>
+              <mrow>\amp=\frac{3\multiplyright{y^2}}{\frac{1}{y}\multiplyright{y^2}+\frac{5}{y^2}\multiplyright{y^2}}</mrow>
+              <mrow>\amp=\frac{3y^2}{y+5}, \text{ for }y\neq 0</mrow>
+            </md>
+          </p>
+        </sidebyside>
+      </solution>
+    </example>
+
+    <example permid="tqq">
+      <statement>
+        <p permid="FTd">
+          Simplify the complex fraction <m>\dfrac{\ \frac{5x-6}{2x+1}\ }{\frac{3x+2}{2x+1}}</m>.
+        </p>
+      </statement>
+      <solution permid="Azq">
+        <sidebyside permid="qvK" widths="47% 47%" margins="0%">
+          <p permid="wzr">
+            The internal denominators are both <m>2x+1</m>,
+            so this is the LCD and we will multiply the main numerator and denominator by this expression.
+            Since we are multiplying by <m>\frac{2x+1}{2x+1}</m>,
+            what <m>x</m>-value would cause <m>2x+1</m> to equal <m>0</m>?
+            Solving <m>2x+1=0</m> leads to <m>x=-\frac{1}{2}</m>.
+            So <m>x</m> cannot be <m>-\frac{1}{2}</m>,
+            since <m>\frac{0}{0}</m> is undefined.
+          </p>
+
+          <p permid="cGA">
+            <md permid="kUT">
+              <mrow>\frac{\ \frac{5x-6}{2x+1}\ }{\frac{3x+2}{2x+1}}\amp=\frac{\ \frac{5x-6}{2x+1}\ }{\frac{3x+2}{2x+1}}\multiplyright{\frac{2x+1}{2x+1}}</mrow>
+              <mrow>\amp=\frac{5x-6}{3x+2}, \text{ for }x\neq -\frac{1}{2}</mrow>
+            </md>
+          </p>
+        </sidebyside>
+      </solution>
+    </example>
+<!-- TODO: Should we bring this one back since it is the original example? -->
+<!--         <example>
+            <statement>
+                <p>Simplify the complex fraction <m>\frac{\frac{6}{x-4}}{\frac{6}{x-4}+3}</m>.</p>
+            </statement>
+            <solution>
+                <p>To start, we will look at the internal denominators and identify the LCD of <m>x-4</m>. Our first step will then be to multiply the main numerator and denominator by this. Then we will simplify the resulting expression.
+                <md>
+                    <mrow>\frac{\frac{6}{x-4}}{\frac{6}{x-4}+3}\amp=\frac{\frac{6}{x-4}}{\frac{6}{x-4}+3}\multiplyright{\frac{x-4}{x-4}}</mrow>
+                    <mrow>\amp=\frac{\frac{6}{x-4}\multiplyright{(x-4)}}{\left(\frac{6}{x-4}+3\right)\multiplyright{(x-4)}}</mrow>
+                    <mrow>\amp=\frac{\frac{6}{x-4}\multiplyright{(x-4)}}{\frac{6}{x-4}\multiplyright{(x-4)}+3\multiplyright{(x-4)}}</mrow>
+                    <mrow>\amp=\frac{6}{6+3(x-4)}, \text{ for }x\neq 4</mrow>
+                    <mrow>\amp=\frac{6}{6+3x-12}</mrow>
+                    <mrow>\amp=\frac{6}{3x-6}</mrow>
+                    <mrow>\amp=\frac{6}{3(x-2)}</mrow>
+                    <mrow>\amp=\frac{2}{x-2}, \text{ for }x\neq 4</mrow>
+                </md>
+                </p>
+            </solution>
+        </example> -->
+    <example permid="Zxz" xml:id="example-simplify-complex-fraction-function-with-restrictions">
+      <statement>
+        <p permid="mam">
+          Completely simplify the function defined by <m>f(x)=\frac{\frac{x+2}{x+3}}{\frac{2}{x+3}-\frac{3}{x-1}}</m>.
+          Then determine the domain of this function.
+        </p>
+      </statement>
+      <solution permid="gGz">
+        <p permid="INJ">
+          The LCD of the internal denominators is <m>(x+3)(x-1)</m>.
+          We will thus multiply the main numerator and denominator by the expression
+          <m>(x+3)(x-1)</m> and then simplify the resulting expression.
+          <md permid="Rcc">
+            <mrow>f(x)\amp=\frac{\frac{x+2}{x+3}}{\frac{2}{x+3}-\frac{3}{x-1}}</mrow>
+            <mrow>f(x)\amp=\frac{\frac{x+2}{x+3}}{\frac{2}{x+3}-\frac{3}{x-1}}\multiplyright{\frac{(x+3)(x-1)}{(x+3)(x-1)}}</mrow>
+            <mrow>f(x)\amp=\frac{\frac{x+2}{x+3}\multiplyright{(x+3)(x-1)}}{\left(\frac{2}{x+3}-\frac{3}{x-1}\right)\multiplyright{(x+3)(x-1)}}</mrow>
+            <mrow>f(x)\amp=\frac{\frac{x+2}{x+3}\multiplyright{(x+3)(x-1)}}{\frac{2}{x+3}\multiplyright{(x+3)(x-1)}-\frac{3}{x-1}\multiplyright{(x+3)(x-1)}}</mrow>
+            <mrow>f(x)\amp=\frac{(x+2)(x-1)}{2(x-1)-3(x+3)}, \text{ for }x\neq -3, x\neq 1</mrow>
+            <mrow>f(x)\amp=\frac{(x+2)(x-1)}{2x-2-3x-9}, \text{ for }x\neq -3, x\neq 1</mrow>
+            <mrow>f(x)\amp=\frac{(x+2)(x-1)}{-x-11}, \text{ for }x\neq -3, x\neq 1</mrow>
+            <mrow>f(x)\amp=\frac{(x+2)(x-1)}{-(x+11)}, \text{ for }x\neq -3, x\neq 1</mrow>
+          </md>
+          In the original (unsimplified) function,
+          we could see that <m>x\neq -3</m> and <m>x\neq 1</m>.
+          In the simplified function,
+          we need <m>x+11\neq 0</m>, so we can also see that <m>x\neq -11</m>.
+          Therefore the domain of the function <m>f</m> is <m>\{x\mid x\neq -11, -3, 1\}</m>.
+        </p>
+      </solution>
+    </example>
+
+    <example permid="FEI">
+      <statement>
+        <p permid="Shv">
+          Simplify the complex fraction <m>\dfrac{2\left(\frac{-4x+3}{x-2}\right)+3}{\frac{-4x+3}{x-2}+4}</m>.
+        </p>
+      </statement>
+      <solution permid="MNI">
+        <p permid="oUS">
+          The only internal denominator is <m>x-2</m>,
+          so we will begin by multiplying the main numerator and denominator by this.
+          Then we'll simplify the resulting expression.
+          <md permid="xjl">
+            <mrow>\frac{2\left(\frac{-4x+3}{x-2}\right)+3}{\frac{-4x+3}{x-2}+4}\amp=\frac{2\left(\frac{-4x+3}{x-2}\right)+3}{\frac{-4x+3}{x-2}+4}\multiplyright{\frac{x-2}{x-2}}</mrow>
+            <mrow>\amp=\frac{2\left(\frac{-4x+3}{x-2}\right)\multiplyright{(x-2)}+3\multiplyright{(x-2)}}{\left(\frac{-4x+3}{x-2}\right)\multiplyright{(x-2)}+4\multiplyright{(x-2)}}</mrow>
+            <mrow>\amp=\frac{2(-4x+3)+3(x-2)}{(-4x+3)+4(x-2)}, \text{ for }x\neq 2</mrow>
+            <mrow>\amp=\frac{-8x+6+3x-6}{-4x+3+4x-8}, \text{ for }x\neq 2</mrow>
+            <mrow>\amp=\frac{-5x}{-5}, \text{ for }x\neq 2</mrow>
+            <mrow>\amp=x, \text{ for } x\neq 2</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <example permid="lLR">
+      <statement>
+        <p permid="yoE">
+          Simplify the complex fraction <m>\dfrac{\frac{5}{x}+\frac{4}{y}}{\frac{3}{x}-\frac{2}{y}}</m>.
+          Recall that with a multivariable expression,
+          this textbook ignores domain restrictions.
+        </p>
+      </statement>
+      <solution permid="sUR">
+        <sidebyside permid="WCT" widths="47% 47%" margins="0%">
+          <p permid="Vcb">
+            We multiply the numerator and denominator by the common denominator of <m>x</m> and <m>y</m>,
+            which is <m>xy</m>:
+          </p>
+
+          <p permid="Bjk">
+            <md permid="dqu">
+              <mrow>\frac{\frac{5}{x}+\frac{4}{y}}{\frac{3}{x}-\frac{2}{y}}\amp=\frac{\frac{5}{x}+\frac{4}{y}}{\frac{3}{x}-\frac{2}{y}}\multiplyright{\frac{xy}{xy}}</mrow>
+              <mrow>\amp=\frac{\left(\frac{5}{x}+\frac{4}{y}\right)\multiplyright{xy}}{\left(\frac{3}{x}-\frac{2}{y}\right)\multiplyright{xy}}</mrow>
+              <mrow>\amp=\frac{\frac{5}{x}\multiplyright{xy}+\frac{4}{y}\multiplyright{xy}}{\frac{3}{x}\multiplyright{xy}-\frac{2}{y}\multiplyright{xy}}</mrow>
+              <mrow>\amp=\frac{5y+4x}{3y-2x}</mrow>
+            </md>
+          </p>
+        </sidebyside>
+      </solution>
+    </example>
+
+    <example permid="RTa">
+      <statement>
+        <p permid="evN">
+          Simplify the complex fraction <m>\dfrac{\frac{t}{t+3}+\frac{2}{t-3}}{1-\frac{t}{t^2-9}}</m>.
+        </p>
+      </statement>
+      <solution permid="Zca">
+        <p permid="hqt">
+          First, we check all quadratic polynomials to see if they can be factored and factor them:
+          <me permid="JxD">
+            \frac{\frac{t}{t+3}+\frac{2}{t-3}}{1-\frac{t}{t^2-9}}=\frac{\frac{t}{t+3}+\frac{2}{t-3}}{1-\frac{t}{(t-3)(t+3)}}
+          </me>
+          Next, we identify the common denominator of the three fractions,
+          which is <m>(t+3)(t-3)</m>.
+          We then multiply the main numerator and denominator by that expression:
+          <md permid="pEM">
+            <mrow>\frac{\frac{t}{t+3}+\frac{2}{t-3}}{1-\frac{t}{t^2-9}}\amp=\frac{\frac{t}{t+3}+\frac{2}{t-3}}{1-\frac{t}{(t-3)(t+3)}}\multiplyright{\frac{(t+3)(t-3)}{(t+3)(t-3)}}</mrow>
+            <mrow>\amp=\frac{\frac{t}{t+3}\multiplyright{(t+3)(t-3)}+\frac{2}{t-3}\multiplyright{(t+3)(t-3)}}{1\multiplyright{(t+3)(t-3)}-\frac{t}{(t-3)(t+3)}\multiplyright{(t+3)(t-3)}}</mrow>
+            <mrow>\amp=\frac{t(t-3)+2(t+3)}{(t+3)(t-3)-t} \text{ for }t\neq -3, t\neq 3</mrow>
+            <mrow>\amp=\frac{t^2-3t+2t+6}{t^2-9-t} \text{ for }t\neq -3, t\neq 3</mrow>
+            <mrow>\amp=\frac{t^2-t+6}{t^2-t-9} \text{ for }t\neq -3, t\neq 3</mrow>
+          </md>
+          Note that since both the numerator and denominator are prime trinomials,
+          this expression can neither factor nor simplify any further.
+        </p>
+      </solution>
+    </example>
+  </subsection>
+
+  <exercises permid="csf">
+    <exercisegroup permid="Izo" cols="4">
+      <title>Review and Warmup</title>
+      <exercise permid="CKc">
+        <webwork source="BasicAlgebra/RationalExpressionAlgebraSkills/complexFractions10.pg" />
+      </exercise>
+
+      <exercise permid="iRl">
+        <webwork source="BasicAlgebra/RationalExpressionAlgebraSkills/complexFractions10.pg" />
+      </exercise>
+
+      <exercise permid="OYu">
+        <webwork source="BasicAlgebra/RationalExpressionAlgebraSkills/complexFractions11.pg" />
+      </exercise>
+
+      <exercise permid="vfD">
+        <webwork source="BasicAlgebra/RationalExpressionAlgebraSkills/complexFractions11.pg" />
+      </exercise>
+
+      <exercise permid="bmM">
+        <webwork source="BasicAlgebra/RationalExpressionAlgebraSkills/complexFractions20.pg" />
+      </exercise>
+
+      <exercise permid="HtV">
+        <webwork source="BasicAlgebra/RationalExpressionAlgebraSkills/complexFractions20.pg" />
+      </exercise>
+
+      <exercise permid="nBe">
+        <webwork source="BasicAlgebra/RationalExpressionAlgebraSkills/complexFractions30.pg" />
+      </exercise>
+
+      <exercise permid="TIn">
+        <webwork source="BasicAlgebra/RationalExpressionAlgebraSkills/complexFractions30.pg" />
+      </exercise>
+
+    </exercisegroup>
+    <exercisegroup permid="oGx" cols="3">
+      <title>Simplifying Complex Fractions with One Variable</title>
+      <exercise permid="zPw">
+        <webwork source="Math95/ComplexFractions/ComplexFractions3.pg" />
+      </exercise>
+
+      <exercise permid="fWF">
+        <webwork source="Math95/ComplexFractions/ComplexFractions3.pg" />
+      </exercise>
+
+      <exercise permid="MdO">
+        <webwork source="Math95/ComplexFractions/ComplexFractions4.pg" />
+      </exercise>
+
+      <exercise permid="skX">
+        <webwork source="Math95/ComplexFractions/ComplexFractions4.pg" />
+      </exercise>
+
+      <exercise permid="Ysg">
+        <webwork source="Math95/ComplexFractions/ComplexFractions5.pg" />
+      </exercise>
+
+      <exercise permid="Ezp">
+        <webwork source="Math95/ComplexFractions/ComplexFractions5.pg" />
+      </exercise>
+
+      <exercise permid="kGy">
+        <webwork source="BasicAlgebra/RationalExpressionAlgebraSkills/complexFractions60.pg" />
+      </exercise>
+
+      <exercise permid="QNH">
+        <webwork source="BasicAlgebra/RationalExpressionAlgebraSkills/complexFractions60.pg" />
+      </exercise>
+
+      <exercise permid="wUQ">
+        <webwork source="Math95/ComplexFractions/ComplexFractions6.pg" />
+      </exercise>
+
+      <exercise permid="dbZ">
+        <webwork source="Math95/ComplexFractions/ComplexFractions6.pg" />
+      </exercise>
+
+      <exercise permid="Jji">
+        <webwork source="Math95/ComplexFractions/ComplexFractions7.pg" />
+      </exercise>
+
+      <exercise permid="pqr">
+        <webwork source="Math95/ComplexFractions/ComplexFractions7.pg" />
+      </exercise>
+
+      <exercise permid="VxA">
+        <webwork source="Math95/ComplexFractions/ComplexFractions8.pg" />
+      </exercise>
+
+      <exercise permid="BEJ">
+        <webwork source="Math95/ComplexFractions/ComplexFractions8.pg" />
+      </exercise>
+
+      <exercise permid="hLS">
+        <webwork source="Math95/ComplexFractions/ComplexFractions9.pg" />
+      </exercise>
+
+      <exercise permid="NTb">
+        <webwork source="Math95/ComplexFractions/ComplexFractions9.pg" />
+      </exercise>
+
+      <exercise permid="uak">
+        <webwork source="BasicAlgebra/RationalExpressionAlgebraSkills/complexFractions70.pg" />
+      </exercise>
+
+      <exercise permid="aht">
+        <webwork source="BasicAlgebra/RationalExpressionAlgebraSkills/complexFractions70.pg" />
+      </exercise>
+
+      <exercise permid="GoC">
+        <webwork source="Math95/ComplexFractions/ComplexFractions10.pg" />
+      </exercise>
+
+      <exercise permid="mvL">
+        <webwork source="Math95/ComplexFractions/ComplexFractions10.pg" />
+      </exercise>
+
+    </exercisegroup>
+    <exercisegroup permid="UNG" cols="3">
+      <title>Simplifying Complex Fractions with More Than One Variable</title>
+      <exercise permid="SCU">
+        <webwork source="Math95/ComplexFractions/ComplexFractions1.pg" />
+      </exercise>
+
+      <exercise permid="yKd">
+        <webwork source="Math95/ComplexFractions/ComplexFractions1.pg" />
+      </exercise>
+
+      <exercise permid="eRm">
+        <webwork source="Math95/ComplexFractions/ComplexFractions2.pg" />
+      </exercise>
+
+      <exercise permid="KYv">
+        <webwork source="Math95/ComplexFractions/ComplexFractions2.pg" />
+      </exercise>
+
+      <exercise permid="rfE">
+        <webwork source="BasicAlgebra/RationalExpressionAlgebraSkills/complexFractions12.pg" />
+      </exercise>
+
+      <exercise permid="XmN">
+        <webwork source="BasicAlgebra/RationalExpressionAlgebraSkills/complexFractions12.pg" />
+      </exercise>
+
+      <exercise permid="DtW">
+        <webwork source="BasicAlgebra/RationalExpressionAlgebraSkills/complexFractions50.pg" />
+      </exercise>
+
+      <exercise permid="jBf">
+        <webwork source="BasicAlgebra/RationalExpressionAlgebraSkills/complexFractions50.pg" />
+      </exercise>
+
+      <exercise permid="PIo">
+        <webwork source="BasicAlgebra/RationalExpressionAlgebraSkills/complexFractions40.pg" />
+      </exercise>
+
+      <exercise permid="vPx">
+        <webwork source="BasicAlgebra/RationalExpressionAlgebraSkills/complexFractions40.pg" />
+      </exercise>
+
+    </exercisegroup>
+  </exercises>
+</section>
+

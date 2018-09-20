@@ -1,0 +1,919 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *********************************************************************-->
+<!-- Copyright 2016-2018                                                  -->
+<!-- Portland Community College                                           -->
+<!--                                                                      -->
+<!-- This file is part of Open Resources for Community College Algebra    -->
+<!-- (ORCCA).                                                             -->
+<!-- *********************************************************************-->
+<section permid="hXn" xml:id="review-rational-functions-and-equations">
+  <title>Rational Functions and Equations Chapter Review</title>
+  <subsection permid="Oew">
+    <title>Introduction to Rational Functions</title>
+    <p permid="jFw">
+      In <xref ref="section-introduction-to-rational-functions">Section</xref>
+      we learned about <xref ref="definition-rational-function" text="title">rational functions</xref>
+      and explored them with tables and graphs.
+    </p>
+
+    <example permid="PTJ">
+      <title>Graphs of Rational Functions</title>
+      <statement>
+        <p permid="puI">
+          In an apocalypse,
+          a zombie infestation begins with <m>1</m> zombie and spreads rapidly.
+          The population of zombies can be modeled by <m>Z(x)=\frac{200000x+100}{5x+100}</m>,
+          where <m>x</m> is the number of days after the apocalypse began.
+          Use technology to graph the function and answer these questions:
+
+          <ol permid="frc" label="a.">
+            <li permid="rFu">
+              <p permid="AZg">
+                How many zombies are there <m>2</m> days after the apocalypse began?
+              </p>
+            </li>
+
+            <li permid="XMD">
+              <p permid="hgp">
+                After how many days will the zombie population be <m>20{,}000</m>?
+              </p>
+            </li>
+
+            <li permid="DTM">
+              <p permid="Nny">
+                As time goes on,
+                the population will level off at about how many zombies?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution permid="lgo">
+        <p permid="KsS">
+          We will graph the function with technology.
+          After adjusting window settings, we have:
+        </p>
+
+        <figure permid="WHk">
+          <caption>Graph of <m>y=Z(x)=\frac{200000x+100}{5x+100}</m></caption>
+          <image permid="qeC" width="47%">
+            <description></description>
+
+            <latex-image>
+            <![CDATA[\begin{tikzpicture}
+                \begin{axis}[
+                            ymin=-100,
+                            ymax=500,
+                            xmin=-10,
+                            xmax=110,
+                            xtick={10,20,...,100},
+                            minor xtick={-10,0,...,110},
+                            ytick={100,200,300,400},
+                            yticklabels={10000,20000,30000,40000},
+                            minor ytick=,
+                            xlabel={$x$, days},ylabel={$y$, number of zombies}]
+                                \addplot [primarycurve,-,domain=-4:110, samples=150] {(200000*x+100)/(5*x+100)/100};
+                                \addplot [soliddot] coordinates {(2,36.3727)} node[right] {$(2,3637.27)$};
+                                \addplot [soliddot] coordinates {(19.999,200)} node[right] {$(19.999,20000)$};
+                            \end{axis}
+            \end{tikzpicture}
+            ]]>
+            </latex-image>
+          </image>
+
+        </figure>
+
+        <p permid="qAb">
+          <ol permid="TcK" label="a.">
+            <li permid="kaV">
+              <p permid="tuH">
+                To find the number of zombies after <m>2</m> days,
+                we locate the point <m>(2,3637.27)</m>.
+                Since we can only have a whole number of zombies,
+                we round to <m>3{,}637</m> zombies.
+              </p>
+            </li>
+
+            <li permid="Qie">
+              <p permid="ZBQ">
+                To find the number of days it will take for the zombie population reach <m>20{,}000</m>,
+                we locate the point <m>(19.999,20000)</m> so it will take about 20 days.
+              </p>
+            </li>
+
+            <li permid="wpn">
+              <p permid="FIZ">
+                When we look far to the right on the graph using technology we can see that the population will level off at about <m>40{,}000</m> zombies.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection permid="ulF">
+    <title>Multiplication and Division of Rational Expressions</title>
+    <p permid="PMF">
+      In <xref ref="section-multiplication-and-division-of-rational-expressions">Section</xref>
+      we covered how to simplify rational expressions.
+      It is very important to list any domain restrictions from factors that are canceled.
+      We also multiplied and divided rational expressions.
+    </p>
+
+    <example permid="waS">
+      <title>Simplifying Rational Expressions</title>
+      <statement>
+        <p permid="VBR">
+          Simplify the expression <m>\frac{8t+4t^2-12t^3}{1-t}</m>.
+        </p>
+      </statement>
+      <solution permid="Rnx">
+        <p permid="COt">
+          To begin simplifying this expression,
+          we will rewrite each polynomial in descending order.
+          Then we'll factor out the GCF, including the constant <m>-1</m> from both the numerator and denominator because their leading terms are negative.
+          <md permid="opp">
+            <mrow>\frac{8t+4t^2-12t^3}{1-t}\amp=\frac{-12t^3+4t^2+8t}{-t+1}</mrow>
+            <mrow>\amp=\frac{-4t(3t^2-t-2)}{-(t-1)}</mrow>
+            <mrow>\amp=\frac{-4t(3t+2)(t-1)}{-(t-1)}</mrow>
+            <mrow>\amp=\frac{-4t(3t+2)\cancelhighlight{(t-1)}}{-\cancelhighlight{(t-1)}}</mrow>
+            <mrow>\amp=\frac{-4t(3t+2)}{-1}, \text{ for } t\neq 1</mrow>
+            <mrow>\amp=4t(3t+2), \text{ for } t\neq 1</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <example permid="cib">
+      <title>Multiplication of Rational Functions and Expressions</title>
+      <statement>
+        <p permid="BJa">
+          Multiply the rational expressions:
+          <m>\frac{r^3s}{4t}\cdot\frac{2t^2}{r^2s^3}</m>.
+        </p>
+      </statement>
+      <solution permid="xuG">
+        <p permid="iVC">
+          Note that we won't need to factor anything in this problem,
+          and can simply multiply across and then simplify.
+          With multivariable expressions,
+          this textbook ignores domain restrictions.
+          <md permid="Uwy">
+            <mrow>\frac{r^3s}{4t}\cdot\frac{2t^2}{r^2s^3}\amp=\frac{r^3s\cdot2t^2}{4t\cdot r^2s^3}</mrow>
+            <mrow>\amp=\frac{2r^3st^2}{4r^2s^3t}</mrow>
+            <mrow>\amp=\frac{rt}{2s^2}</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <example permid="Ipk">
+      <title>Division of Rational Functions and Expressions</title>
+      <statement>
+        <p permid="hQj">
+          Divide the rational expressions:
+          <m>\frac{2x^2+8xy}{x^2-4x+3}\div\frac{x^3+4x^2y}{x^2+4x-5}</m>.
+        </p>
+      </statement>
+      <solution permid="dBP">
+        <p permid="PcL">
+          To divide rational expressions,
+          we multiply by the reciprocal of the second fraction.
+          Then we will factor and cancel any common factors.
+          With multivariable expressions,
+          this textbook ignores domain restrictions.
+          <md permid="ADH">
+            <mrow>\frac{2x^2+8xy}{x^2-4x+3}\div\frac{x^3+4x^2y}{x^2+4x-5}\amp=\frac{2x^2+8xy}{x^2-4x+3}\cdot\frac{x^2+4x-5}{x^3+4x^2y}</mrow>
+            <mrow>\amp=\frac{2x\cancelhighlight{(x+4y)}}{\cancelhighlight{(x-1)}(x-3)}\cdot\frac{\cancelhighlight{(x-1)}(x+5)}{x^2\cancelhighlight{(x+4y)}}</mrow>
+            <mrow>\amp=\frac{2x}{x-3}\cdot\frac{x+5}{x^2}</mrow>
+            <mrow>\amp=\frac{2(x+5)}{x(x-3)}</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection permid="asO">
+    <title>Addition and Subtraction of Rational Expressions</title>
+    <p permid="vTO">
+      In <xref ref="section-addition-and-subtraction-of-rational-expressions">Section</xref>
+      we covered how to <xref ref="list-add-subtract-rational-expressions" text="title">add and subtract rational expressions</xref>.
+    </p>
+
+    <example permid="owt">
+      <title>Addition and Subtraction of Rational Expressions with the Same Denominator</title>
+      <statement>
+        <p permid="NXs">
+          Add the rational expressions:
+          <m>\dfrac{5x}{x+5}+\dfrac{25}{x+5}</m>.
+        </p>
+      </statement>
+      <solution permid="JIY">
+        <p permid="vjU">
+          These expressions already have a common denominator:
+          <md permid="gKQ">
+            <mrow>\frac{5x}{x+5}+\frac{25}{x+5}\amp=\frac{5x+25}{x+5}</mrow>
+            <mrow>\amp=\frac{5\cancelhighlight{(x+5)}}{\cancelhighlight{x+5}}</mrow>
+            <mrow>\amp=\frac{5}{1}, \text{ for } x\neq -5</mrow>
+            <mrow>\amp=5, \text{ for } x\neq -5</mrow>
+          </md>
+          Note that we didn't stop at <m>\frac{5x+25}{x+5}</m>.
+          If possible, we must simplify the numerator and denominator.
+        </p>
+      </solution>
+    </example>
+
+    <example permid="UDC">
+      <title>Addition and Subtraction of Rational Expressions with Different Denominators</title>
+      <statement>
+        <p permid="ueB">
+          Add and subtract the rational expressions:
+          <m>\dfrac{6y}{y+2}+\dfrac{y}{y-2}-7</m>
+        </p>
+      </statement>
+      <solution permid="pQh">
+        <p permid="brd">
+          The denominators can't be factored,
+          so we'll find the least common denominator and build each expression to that denominator.
+          Then we will be able to combine the numerators and simplify the expression.
+          <md permid="MRZ">
+            <mrow>\frac{6y}{y+2}+\frac{y}{y-2}-7\amp=\frac{6y}{y+2}\multiplyright{\frac{y-2}{y-2}}+\frac{y}{y-2}\multiplyright{\frac{y+2}{y+2}}-7\multiplyright{\frac{(y-2)(y+2)}{(y-2)(y+2)}}</mrow>
+            <mrow>\amp=\frac{6y(y-2)}{(y-2)(y+2)}+\frac{y(y+2)}{(y-2)(y+2)}-\frac{7(y-2)(y+2)}{(y-2)(y+2)}</mrow>
+            <mrow>\amp=\frac{6y^2-12y+y^2+2y-\highlight{\attention{(}}7(y^2-4)\highlight{\attention{)}}}{(y-2)(y+2)}</mrow>
+            <mrow>\amp=\frac{6y^2-12y+y^2+2y-7y^2+28}{(y-2)(y+2)}</mrow>
+            <mrow>\amp=\frac{-10y+28}{(y-2)(y+2)}</mrow>
+            <mrow>\amp=\frac{-2(5y-14)}{(y-2)(y+2)}</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection permid="GzX">
+    <title>Complex Fractions</title>
+    <p permid="caX">
+      In <xref ref="section-complex-fractions">Section</xref>
+      we covered how to simplify a rational expression that has fractions in the numerator and/or denominator.
+    </p>
+
+    <example permid="AKL">
+      <title>Simplifying Complex Fractions</title>
+      <statement>
+        <p permid="alK">
+          Simplify the complex fraction <m>\dfrac{\frac{2t}{t^2-9}+3}{\frac{6}{t+3}+\frac{1}{t-3}}</m>.
+        </p>
+      </statement>
+      <solution permid="VXq">
+        <p permid="Hym">
+          First, we check all quadratic polynomials to see if they can be factored and factor them:
+          <me permid="sZi">
+            \frac{\frac{2t}{t^2-9}+3}{\frac{6}{t+3}+\frac{1}{t-3}}=\frac{\frac{2t}{(t-3)(t+3)}+3}{\frac{6}{t+3}+\frac{1}{t-3}}
+          </me>
+          Next, we identify the common denominator of the three fractions,
+          which is <m>(t+3)(t-3)</m>.
+          We then multiply the main numerator and denominator by that expression:
+          <md permid="Zgr">
+            <mrow>\frac{\frac{2t}{(t-3)(t+3)}+3}{\frac{6}{t+3}+\frac{1}{t-3}}\amp=\frac{\frac{2t}{(t-3)(t+3)}+3}{\frac{6}{t+3}+\frac{1}{t-3}}\multiplyright{\frac{(t-3)(t+3)}{(t-3)(t+3)}}</mrow>
+            <mrow>\amp=\frac{\frac{2t}{\highlight{\xcancel{(t-3)(t+3)}}}\highlight{\xcancel{(t-3)(t+3)}}+3(t-3)(t+3)}{\frac{6}{\highlight{\cancel{t+3}}}(t-3)\highlight{\cancel{(t+3)}}+\frac{1}{\lighthigh{\bcancel{t-3}}}\lighthigh{\bcancel{(t-3)}(t+3)}}</mrow>
+            <mrow>\amp=\frac{2t+3(t-3)(t+3)}{6(t-3)+1(t+3)} \text{ for }t\neq -3, t\neq 3</mrow>
+            <mrow>\amp=\frac{2t+3(t^2-9)}{6t-18+t+3} \text{ for }t\neq -3, t\neq 3</mrow>
+            <mrow>\amp=\frac{2t+3t^2-27}{7t-15} \text{ for }t\neq -3, t\neq 3</mrow>
+            <mrow>\amp=\frac{3t^2+2t-27}{7t-15} \text{ for }t\neq -3, t\neq 3</mrow>
+          </md>
+          Both the numerator and denominator are prime polynomials so this expression can neither factor nor simplify any further.
+        </p>
+      </solution>
+    </example>
+  </subsection>
+
+  <subsection permid="mHg">
+    <title>Solving Rational Equations</title>
+    <p permid="Iig">
+      In <xref ref="section-solving-rational-equations">Section</xref>
+      we covered how to solve rational equations.
+      We looked at rate problems,
+      solved for a specified variable and used technology to solve rational equations.
+    </p>
+
+    <example permid="gRU">
+      <title>Solving Rational Equations</title>
+      <statement>
+        <p permid="GsT">
+          Two pipes are being used to fill a large tank.
+          Pipe B can fill the tank twice as fast as Pipe A can.
+          When both pipes are turned on,
+          it takes 12 hours to fill the tank.
+          Write and solve a rational equation to answer the following questions:
+
+          <ol permid="Lyl" label="a.">
+            <li permid="cww">
+              <p permid="lQi">
+                If only Pipe A is turned on, how many hours would it take to fill the tank?
+              </p>
+            </li>
+
+            <li permid="IDF">
+              <p permid="RXr">
+                If only Pipe B is turned on, how many hours would it take to fill the tank?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution permid="Cez">
+        <p permid="nFv">
+          Since both pipes can fill the tank in <m>12</m> hours,
+          they fill <m>\frac{1}{12}</m> of the tank together each hour.
+          We will let <m>a</m> represent the number of hours it takes pipe A to fill the tank alone,
+          so pipe A will fill <m>\frac{1}{a}</m> of the tank each hour.
+          Pipe B can fill the tank twice as fast so it fills
+          <m>2\cdot \frac{1}{a}</m> of the tank each hour or <m>\frac{2}{a}</m>.
+          When they are both turned on,
+          they fill <m>\frac{1}{a}+\frac{2}{a}</m> of the tank each hour.
+        </p>
+
+        <p permid="TME">
+          Now we can write this equation:
+          <me permid="FnA">
+            \frac{1}{a}+\frac{2}{a}=\frac{1}{12}
+          </me>
+        </p>
+
+        <p permid="zTN">
+          To clear away denominators,
+          we multiply both sides of the equation by the common denominator of <m>12</m> and <m>a</m>,
+          which is <m>12a</m>:
+          <md permid="luJ">
+            <mrow>\frac{1}{a}+\frac{2}{a}\amp=\frac{1}{12}</mrow>
+            <mrow>\multiplyleft{12a}\left(\frac{1}{a}+\frac{2}{a}\right)\amp=\multiplyleft{12a}\frac{1}{12}</mrow>
+            <mrow>12a\cdot\frac{1}{a}+12a\cdot\frac{2}{a}\amp=12a\cdot\frac{1}{12}</mrow>
+            <mrow>12+24\amp=a</mrow>
+            <mrow>36\amp=a</mrow>
+            <mrow>a\amp=36</mrow>
+          </md>
+          The possible solution <m>a=36</m> should be checked
+          <md permid="RBS">
+            <mrow>\frac{1}{\substitute{36}}+\frac{2}{\substitute{36}}\amp\stackrel{?}{=}\frac{1}{12}</mrow>
+            <mrow>\frac{3}{36}\amp\stackrel{\checkmark}{=}\frac{1}{12}</mrow>
+          </md>
+          So it is a solution.
+
+          <ol permid="zjT" label="a.">
+            <li permid="oKO">
+              <p permid="yeA">
+                If only Pipe A is turned on, it would take <m>36</m> hours to fill the tank.
+              </p>
+            </li>
+
+            <li permid="URX">
+              <p permid="elJ">
+                Since Pipe B can fill the tank twice as fast,
+                it would take half the time, or <m>18</m> hours to fill the tank.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <example permid="MZd">
+      <title>Solving Rational Equations for a Specific Variable</title>
+      <statement>
+        <p permid="mAc">
+          Solve the rational equation <m>y=\frac{2x+5}{3x-1}</m> for <m>x</m>.
+        </p>
+      </statement>
+      <solution permid="ilI">
+        <p permid="gaW">
+          To get the <m>x</m> out of the denominator,
+          our first step will be to multiply each side by the LCD, which is <m>3x-1</m>.
+          Then we'll isolate all terms containing <m>x</m>,
+          factor out <m>x</m>, and then finish solving for that variable.
+          <md permid="xJb">
+            <mrow>y\amp=\frac{2x+5}{3x-1}</mrow>
+            <mrow>y\multiplyright{(3x-1)}\amp=\frac{2x+5}{\highlight{\cancel{3x-1}}}\multiplyright{\highlight{\cancel{(3x-1)}}}</mrow>
+            <mrow>3xy-y\amp=2x+5</mrow>
+            <mrow>3xy\amp=2x+5+y</mrow>
+            <mrow>3xy-2x\amp=y+5</mrow>
+            <mrow>x(3y-2)\amp=y+5</mrow>
+            <mrow>\divideunder{x(3y-2)}{3y-2}\amp=\divideunder{y+5}{3y-2}</mrow>
+            <mrow>x\amp=\frac{y+5}{3y-2}</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+
+    <example permid="tgm">
+      <title>Solving Rational Equations Using Technology</title>
+      <statement>
+        <p permid="SHl">
+          Solve the equation <m>\frac{1}{x+2}+1=\frac{10x}{x^2+5}</m> using graphing technology.
+        </p>
+      </statement>
+      <solution permid="OsR">
+        <sidebyside permid="Znv" widths="47% 47%" margins="0%">
+
+          <stack>
+            <p permid="Mif">
+              We will define <m>f(x)=\frac{1}{x+2}+1</m> and <m>g(x)=\frac{10x}{x^2+5}</m>,
+              and then find a window where we can see all of the points of intersection.
+            </p>
+
+            <p permid="spo">
+              Since the two functions intersect at approximately <m>(-2.309,-2.235)</m>,
+              <m>(0.76,1.362)</m> and <m>(8.549,1.095)</m>,
+              the solutions to <m>\frac{1}{x+2}+1=\frac{10x}{x^2+5}</m> are approximately <m>-2.309</m>,
+              <m>0.76</m> and <m>8.549</m>.
+              The solution set is approximately <m>\{-2.309\ldots, 0.76\ldots, 8.549\ldots\}</m>.
+            </p>
+          </stack>
+
+          <figure permid="Ywx">
+            <caption>Graph of <m>f(x)=\frac{1}{x+2}+1</m> and <m>g(x)=\frac{10x}{x^2+5}</m></caption>
+            <image permid="WlL" width="47%">
+              <description></description>
+
+            <latex-image>
+            <![CDATA[\begin{tikzpicture}
+                \begin{axis}[ymin=-10,ymax=10,xmin=-10,xmax=10,
+                            ytick={-8,-6,...,8},
+                            minor ytick={-9,-8,...,9},
+                            xtick={-8,-6,...,8},
+                            minor xtick={-9,-8,...,9},
+                            xlabel={$x$},ylabel={$y$},
+                            clip=false]
+                    \addplot [primarycurve, domain=-10:-2.091,samples=50] {1/(x+2)+1};
+                    \addplot [primarycurve, domain=-1.889:10,samples=50] {1/(x+2)+1)};
+                    \addplot [secondarycurve, domain=-10:10] {10*x/(x^2+5)};
+                    \addplot [soliddot, above] coordinates {(-2.309,-2.235)} node[below left] {$(-2.309,-2.235)$};
+                    \addplot [soliddot, above] coordinates {(0.76,1.362)} node[above right] {$(0.76,1.362)$};
+                    \addplot [soliddot, above] coordinates {(8.549,1.095)} node[below left] {$(8.549,1.095)$};
+                \end{axis}
+            \end{tikzpicture}
+            ]]>
+            </latex-image>
+            </image>
+
+          </figure>
+        </sidebyside>
+      </solution>
+    </example>
+  </subsection>
+
+  <exercises permid="SOp">
+    <exercisegroup permid="yVy" cols="2">
+      <title>Introduction to Rational Functions</title>
+      <exercise permid="RIW">
+        <webwork source="BasicAlgebra/FunctionBasics/FunctionDomainRangeByGraph50.pg" />
+      </exercise>
+
+      <exercise permid="xQf">
+        <webwork source="BasicAlgebra/FunctionBasics/FunctionDomainRangeByGraph50.pg" />
+      </exercise>
+
+      <exercise permid="dXo">
+        <webwork source="BasicAlgebra/RationalFunctions/rationalFunctionApplication10.pg" />
+      </exercise>
+
+      <exercise permid="Kex">
+        <webwork source="BasicAlgebra/RationalFunctions/rationalFunctionApplication10.pg" />
+      </exercise>
+
+      <exercise permid="qlG">
+        <webwork source="BasicAlgebra/RationalFunctions/rationalFunctionApplication20.pg" />
+      </exercise>
+
+      <exercise permid="WsP">
+        <webwork source="BasicAlgebra/RationalFunctions/rationalFunctionApplication20.pg" />
+      </exercise>
+
+      <exercise permid="CzY">
+        <webwork>
+        <pg-macros><macro-file>PCCgraphMacros.pl</macro-file></pg-macros>
+        <setup>
+        <pg-code>Context("Numeric");
+        Context()->variables->add(t => 'Real');
+        Context()->flags->set(showExtraParens=>0, reduceConstants=>0);
+        Context()->noreduce("(-x)-y","(-x)+y");
+        Context()->flags->set(
+        tolerance => 0.005,
+        tolType => "absolute",
+        );
+
+        $a = random(2,9,1);
+        do {$b = random(4,9,1);} until ($a!=$b);
+
+        $func = Compute("($a*t)/(t**2+$b)")->reduce;
+        $funcX = Compute("($a*x)/(x**2+$b)")->reduce;
+
+        $tMax = sqrt($b);
+        $fMax = $func->eval(t=>$tMax);
+        $tMaxR = int($tMax*100+0.5)/100;
+        $fMaxR = int($fMax*100+0.5)/100;
+
+        $alt="This picture shows the graph of a rational function C(t)=$func. The point with the maximum y-value, ($tMax,$fMax), is labeled.";
+
+        ($min[0], $max[0], $min[1], $max[1], $ticknum[0], $ticknum[1], $xticks_ref, $yticks_ref, $marksep[0], $marksep[1]) = NiceGraphParameters([0,$tMax*2.5],[$fMax,0,0.5]);
+
+        @xticks = @$xticks_ref;
+        @yticks = @$yticks_ref;
+
+        $gr = init_graph($min[0],$min[1],$max[0],$max[1],
+        axes=>[0,0],
+        grid=>[$ticknum[0],$ticknum[1]],
+        size=>[xPixels(),yPixels()]
+        );
+        $gr->lb('reset');
+        for my $j (@xticks) {
+        if (abs($j) &lt; 10**(-10)) {next;}
+        $gr->lb( new Label($j, -$marksep[1]/8, $j,'black','center','top'));
+        }
+        $gr->lb( new Label($max[0]-$marksep[0]/2, $marksep[1]/8, t,'black','center','bottom'));
+        $gr->lb( new Label($marksep[0]/8, $max[1]-$marksep[1]/2, C,'black','left','middle'));
+
+        for my $j (@yticks) {
+        if (Real($j) == 0) {next;}
+        $gr->lb( new Label(-$marksep[0]/8, $j, $j,'black','right','middle'));
+        }
+
+        add_functions($gr, "$funcX for x in &lt; 0,$max[0]> using color:red and weight:1");
+
+        $hx = ($tMax+$max[0])/2;
+        $hy = $func->eval(t=>$hx);
+        $gr->lb( new Label($hx-$marksep[0]/8, $hy, "C(t)",'red','right','middle'));
+
+        $gr->stamps( closed_circle($tMax,$fMax,'red') );
+        $gr->lb( new Label($tMax-$marksep[0]/8, $fMax+$marksep[1]/8, "($tMaxR,$fMaxR)",'red','center','bottom'));</pg-code>
+        </setup>
+        <statement>
+          <p permid="yOu">
+            The concentration of a drug in a patient's blood stream,
+            in milligrams per liter,
+            can be modeled by the function <m>C(t)=<var name="$func"/></m>,
+            where <m>t</m> is the number of hours since the drug is injected.
+            Answer the following question with technology.
+            Round your answer to two decimal places if needed.
+          </p>
+
+          <p permid="eVD">
+            <var name="$tMaxR" width="10" /> hours since injection,
+            the drug's concentration is at the maximum value of <var name="$fMaxR" width="10"/> milligrams per liter.
+          </p>
+        </statement>
+        <solution permid="uAa">
+          <p permid="EDG">
+            To locate the points on <m>C(t)</m> where the <m>y</m>-value is maximum,
+            we use technology to graph the function <m>C(t)=<var name="$func"/></m>,
+            and then locate its maximum value.
+          </p>
+
+          <sidebyside permid="FuE">
+
+            <image permid="CsU" pg-name="$gr">
+              <description><var name="$alt" /></description>
+            </image>
+
+          </sidebyside>
+
+          <p permid="kKP">
+            The point with the maximum <m>y</m>-value is <m>(<var name="$tMaxR"/>,<var name="$fMaxR"/>)</m>.
+            It implies the drug concentration in the blood stream will reach the maximum value of <m><var name="$fMaxR"/></m> milligrams per liter approximately <m><var name="$tMaxR"/></m> hours since injection.
+          </p>
+        </solution></webwork>
+      </exercise>
+
+      <exercise permid="iHh">
+        <webwork>
+        <pg-macros><macro-file>PCCgraphMacros.pl</macro-file></pg-macros>
+        <setup>
+        <pg-code>Context("Numeric");
+        Context()->variables->add(t => 'Real');
+        Context()->flags->set(showExtraParens=>0, reduceConstants=>0);
+        Context()->noreduce("(-x)-y","(-x)+y");
+        Context()->flags->set(
+        tolerance => 0.005,
+        tolType => "absolute",
+        );
+
+        $a = random(2,9,1);
+        do {$b = random(4,9,1);} until ($a!=$b);
+
+        $func = Compute("($a*t)/(t**2+$b)")->reduce;
+        $funcX = Compute("($a*x)/(x**2+$b)")->reduce;
+
+        $tMax = sqrt($b);
+        $fMax = $func->eval(t=>$tMax);
+        $tMaxR = int($tMax*100+0.5)/100;
+        $fMaxR = int($fMax*100+0.5)/100;
+
+        $alt="This picture shows the graph of a rational function C(t)=$func. The point with the maximum y-value, ($tMax,$fMax), is labeled.";
+
+        ($min[0], $max[0], $min[1], $max[1], $ticknum[0], $ticknum[1], $xticks_ref, $yticks_ref, $marksep[0], $marksep[1]) = NiceGraphParameters([0,$tMax*2.5],[$fMax,0,0.5]);
+
+        @xticks = @$xticks_ref;
+        @yticks = @$yticks_ref;
+
+        $gr = init_graph($min[0],$min[1],$max[0],$max[1],
+        axes=>[0,0],
+        grid=>[$ticknum[0],$ticknum[1]],
+        size=>[xPixels(),yPixels()]
+        );
+        $gr->lb('reset');
+        for my $j (@xticks) {
+        if (abs($j) &lt; 10**(-10)) {next;}
+        $gr->lb( new Label($j, -$marksep[1]/8, $j,'black','center','top'));
+        }
+        $gr->lb( new Label($max[0]-$marksep[0]/2, $marksep[1]/8, t,'black','center','bottom'));
+        $gr->lb( new Label($marksep[0]/8, $max[1]-$marksep[1]/2, C,'black','left','middle'));
+
+        for my $j (@yticks) {
+        if (Real($j) == 0) {next;}
+        $gr->lb( new Label(-$marksep[0]/8, $j, $j,'black','right','middle'));
+        }
+
+        add_functions($gr, "$funcX for x in &lt; 0,$max[0]> using color:red and weight:1");
+
+        $hx = ($tMax+$max[0])/2;
+        $hy = $func->eval(t=>$hx);
+        $gr->lb( new Label($hx-$marksep[0]/8, $hy, "C(t)",'red','right','middle'));
+
+        $gr->stamps( closed_circle($tMax,$fMax,'red') );
+        $gr->lb( new Label($tMax-$marksep[0]/8, $fMax+$marksep[1]/8, "($tMaxR,$fMaxR)",'red','center','bottom'));</pg-code>
+        </setup>
+        <statement>
+          <p permid="LcM">
+            The concentration of a drug in a patient's blood stream,
+            in milligrams per liter,
+            can be modeled by the function <m>C(t)=<var name="$func"/></m>,
+            where <m>t</m> is the number of hours since the drug is injected.
+            Answer the following question with technology.
+            Round your answer to two decimal places if needed.
+          </p>
+
+          <p permid="rjV">
+            <var name="$tMaxR" width="10" /> hours since injection,
+            the drug's concentration is at the maximum value of <var name="$fMaxR" width="10"/> milligrams per liter.
+          </p>
+        </statement>
+        <solution permid="aHj">
+          <p permid="QRY">
+            To locate the points on <m>C(t)</m> where the <m>y</m>-value is maximum,
+            we use technology to graph the function <m>C(t)=<var name="$func"/></m>,
+            and then locate its maximum value.
+          </p>
+
+          <sidebyside permid="lBN">
+
+            <image permid="iAd" pg-name="$gr">
+              <description><var name="$alt" /></description>
+            </image>
+
+          </sidebyside>
+
+          <p permid="wZh">
+            The point with the maximum <m>y</m>-value is <m>(<var name="$tMaxR"/>,<var name="$fMaxR"/>)</m>.
+            It implies the drug concentration in the blood stream will reach the maximum value of <m><var name="$fMaxR"/></m> milligrams per liter approximately <m><var name="$tMaxR"/></m> hours since injection.
+          </p>
+        </solution></webwork>
+      </exercise>
+
+    </exercisegroup>
+    <exercisegroup permid="fcH" cols="2">
+      <title>Multiplication and Division of Rational Expressions</title>
+      <exercise permid="OOq">
+        <webwork source="BasicAlgebra/RationalExpressionAlgebraSkills/simplifyRationalExpressions141.pg" />
+      </exercise>
+
+      <exercise permid="uVz">
+        <webwork source="BasicAlgebra/RationalExpressionAlgebraSkills/simplifyRationalExpressions141.pg" />
+      </exercise>
+
+      <exercise permid="bcI">
+        <webwork source="BasicAlgebra/RationalFunctions/reduceRationalFunction30.pg" />
+      </exercise>
+
+      <exercise permid="HjR">
+        <webwork source="BasicAlgebra/RationalFunctions/reduceRationalFunction30.pg" />
+      </exercise>
+
+      <exercise permid="nra">
+        <webwork source="BasicAlgebra/RationalExpressionAlgebraSkills/multiplyRationalExpressions53.pg" />
+      </exercise>
+
+      <exercise permid="Tyj">
+        <webwork source="BasicAlgebra/RationalExpressionAlgebraSkills/multiplyRationalExpressions53.pg" />
+      </exercise>
+
+      <exercise permid="zFs">
+        <webwork source="BasicAlgebra/RationalExpressionAlgebraSkills/divideRationalExpressions40.pg" />
+      </exercise>
+
+      <exercise permid="fMB">
+        <webwork source="BasicAlgebra/RationalExpressionAlgebraSkills/divideRationalExpressions40.pg" />
+      </exercise>
+
+      <exercise permid="LTK">
+        <webwork source="BasicAlgebra/RationalExpressionAlgebraSkills/divideRationalExpressions56.pg" />
+      </exercise>
+
+      <exercise permid="saT">
+        <webwork source="BasicAlgebra/RationalExpressionAlgebraSkills/divideRationalExpressions56.pg" />
+      </exercise>
+
+    </exercisegroup>
+    <exercisegroup permid="LjQ" cols="2">
+      <title>Addition and Subtraction of Rational Expressions</title>
+      <exercise permid="Yic">
+        <webwork source="BasicAlgebra/RationalExpressionAlgebraSkills/addSubtractRationalExpressions70.pg" />
+      </exercise>
+
+      <exercise permid="Epl">
+        <webwork source="BasicAlgebra/RationalExpressionAlgebraSkills/addSubtractRationalExpressions70.pg" />
+      </exercise>
+
+      <exercise permid="kwu">
+        <webwork source="BasicAlgebra/RationalExpressionAlgebraSkills/addSubtractRationalExpressions100.pg" />
+      </exercise>
+
+      <exercise permid="QDD">
+        <webwork source="BasicAlgebra/RationalExpressionAlgebraSkills/addSubtractRationalExpressions100.pg" />
+      </exercise>
+
+      <exercise permid="wKM">
+        <webwork source="BasicAlgebra/RationalExpressionAlgebraSkills/addSubtractRationalExpressions130.pg" />
+      </exercise>
+
+      <exercise permid="cRV">
+        <webwork source="BasicAlgebra/RationalExpressionAlgebraSkills/addSubtractRationalExpressions130.pg" />
+      </exercise>
+
+    </exercisegroup>
+            <!-- expressions with more than one variable  -->
+    <exercisegroup permid="rqZ" cols="2">
+
+      <exercise permid="IZe">
+        <webwork source="BasicAlgebra/RationalExpressionAlgebraSkills/addSubtractRationalExpressions60.pg" />
+      </exercise>
+
+      <exercise permid="pgn">
+        <webwork source="BasicAlgebra/RationalExpressionAlgebraSkills/addSubtractRationalExpressions60.pg" />
+      </exercise>
+
+      <exercise permid="Vnw">
+        <webwork source="BasicAlgebra/RationalExpressionAlgebraSkills/addSubtractRationalExpressions101.pg" />
+      </exercise>
+
+      <exercise permid="BuF">
+        <webwork source="BasicAlgebra/RationalExpressionAlgebraSkills/addSubtractRationalExpressions101.pg" />
+      </exercise>
+
+    </exercisegroup>
+    <exercisegroup permid="Xyi" cols="2">
+      <title>Complex Fractions</title>
+      <exercise permid="hBO">
+        <webwork source="BasicAlgebra/RationalExpressionAlgebraSkills/complexFractions10.pg" />
+      </exercise>
+
+      <exercise permid="NIX">
+        <webwork source="BasicAlgebra/RationalExpressionAlgebraSkills/complexFractions10.pg" />
+      </exercise>
+            <!-- <p>Simplifying Complex Fractions with One Variable</p> -->
+      <exercise permid="tQg">
+        <webwork source="Math95/ComplexFractions/ComplexFractions9.pg" />
+      </exercise>
+
+      <exercise permid="ZXp">
+        <webwork source="Math95/ComplexFractions/ComplexFractions9.pg" />
+      </exercise>
+
+      <exercise permid="Gey">
+        <webwork source="BasicAlgebra/RationalExpressionAlgebraSkills/complexFractions70.pg" />
+      </exercise>
+
+      <exercise permid="mlH">
+        <webwork source="BasicAlgebra/RationalExpressionAlgebraSkills/complexFractions70.pg" />
+      </exercise>
+            <!-- <p>Simplifying Complex Fractions with More Than One Variable</p> -->
+      <exercise permid="SsQ">
+        <webwork source="Math95/ComplexFractions/ComplexFractions1.pg" />
+      </exercise>
+
+      <exercise permid="yzZ">
+        <webwork source="Math95/ComplexFractions/ComplexFractions1.pg" />
+      </exercise>
+
+      <exercise permid="eHi">
+        <webwork source="BasicAlgebra/RationalExpressionAlgebraSkills/complexFractions50.pg" />
+      </exercise>
+
+      <exercise permid="KOr">
+        <webwork source="BasicAlgebra/RationalExpressionAlgebraSkills/complexFractions50.pg" />
+      </exercise>
+
+    </exercisegroup>
+    <exercisegroup permid="DFr" cols="2">
+      <title>Solving Rational Equations</title>
+      <exercise permid="qVA">
+        <webwork source="BasicAlgebra/RationalEquations/solveRationalEquations28.pg" />
+      </exercise>
+
+      <exercise permid="XcJ">
+        <webwork source="BasicAlgebra/RationalEquations/solveRationalEquations28.pg" />
+      </exercise>
+
+      <exercise permid="DjS">
+        <webwork source="BasicAlgebra/RationalEquations/solveRationalEquations60.pg" />
+      </exercise>
+
+      <exercise permid="jrb">
+        <webwork source="BasicAlgebra/RationalEquations/solveRationalEquations60.pg" />
+      </exercise>
+
+      <exercise permid="Pyk">
+        <webwork source="BasicAlgebra/RationalEquations/solveRationalEquations66.pg" />
+      </exercise>
+
+      <exercise permid="vFt">
+        <webwork source="BasicAlgebra/RationalEquations/solveRationalEquations66.pg" />
+      </exercise>
+
+      <exercise permid="bMC">
+        <webwork source="BasicAlgebra/RationalEquations/solveRationalEquations70.pg" />
+      </exercise>
+
+      <exercise permid="HTL">
+        <webwork source="BasicAlgebra/RationalEquations/solveRationalEquations70.pg" />
+      </exercise>
+
+    </exercisegroup>
+            <!-- solving for a variable -->
+    <exercisegroup permid="jMA" cols="2">
+
+      <exercise permid="oaU">
+        <webwork source="BasicAlgebra/RationalLiteralEquations/LiteralEquation290.pg" />
+      </exercise>
+
+      <exercise permid="Uid">
+        <webwork source="BasicAlgebra/RationalLiteralEquations/LiteralEquation290.pg" />
+      </exercise>
+            <!-- solving using technology -->
+    <!-- TODO: these solutions are showing -->
+      <exercise permid="Apm">
+        <statement>
+          <p permid="Xre">
+            Use technology to solve the equation
+            <me permid="dQk">
+              2x-\frac{1}{x+4}=\frac{3}{x+6}
+            </me>.
+          </p>
+        </statement>
+        <solution permid="GOs">
+          <p permid="dgq">
+            The points of intersection are approximately <m>(-6.249,-12.053)</m>,
+            <m>(-4.102,1.581)</m> and <m>(0.351,0.472)</m>.
+            The solution set is <m>\{x\mid x\approx -6.249, -4.102, 0.351\}</m>.
+          </p>
+            <!--https://www.desmos.com/calculator/6zjmf9ip9e -->
+        </solution>
+      </exercise>
+
+      <exercise permid="gwv">
+        <statement>
+          <p permid="Dyn">
+            Use technology to solve the equation
+            <me permid="JXt">
+              \frac{1}{x^2-1}-\frac{2}{x-4}=\frac{3}{x-2}
+            </me>.
+          </p>
+        </statement>
+        <solution permid="mVB">
+          <p permid="Jnz">
+            The points of intersection are approximately <m>(-0.607,1.151)</m>,
+            <m>(0.829,-2.561)</m> and <m>(3.179,2.545)</m>.
+            The solution set is <m>\{x\mid x\approx -0.607, 0.829, 3.179\}</m>.
+          </p>
+            <!--https://www.desmos.com/calculator/oeg49xnofj -->
+        </solution>
+      </exercise>
+            <!-- Applications -->
+      <exercise permid="MDE">
+        <webwork source="BasicAlgebra/RationalEquations/rationalEquationApplication25.pg" seed="43"/>
+      </exercise>
+
+      <exercise permid="sKN">
+        <webwork source="BasicAlgebra/RationalEquations/rationalEquationApplication25.pg" seed="44"/>
+      </exercise>
+
+      <exercise permid="YRW">
+        <webwork source="BasicAlgebra/RationalEquations/rationalEquationApplication40.pg" />
+      </exercise>
+
+      <exercise permid="EZf">
+        <webwork source="BasicAlgebra/RationalEquations/rationalEquationApplication40.pg" />
+      </exercise>
+
+    </exercisegroup>
+  </exercises>
+</section>
+

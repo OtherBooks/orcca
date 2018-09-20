@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *********************************************************************-->
+<!-- Copyright 2016-2018                                                  -->
+<!-- Portland Community College                                           -->
+<!--                                                                      -->
+<!-- This file is part of Open Resources for Community College Algebra    -->
+<!-- (ORCCA).                                                             -->
+<!-- *********************************************************************-->
+<section permid="RnC" xml:id="section-strategies-for-solving-quadratic-equations">
+  <title>Strategies for Solving Quadratic Equations</title>
+  <introduction permid="dgv">
+    <p permid="RBX">
+      In this section,
+      we will review how to solve quadratic equations using three different methods: The square root method,
+      factoring and the quadratic formula.
+    </p>
+
+    <figure permid="xJg">
+      <caption>Alternative Video Lessons</caption>
+      <video youtubeplaylist="PLmuZCPhWPt-eVIrCxdYjliZQqpjPvciLS" />
+    </figure>
+  </introduction>
+
+  <subsection permid="xuL">
+    <title >How to Choose a Method for Solving a Quadratic Equation</title >
+
+    <algorithm permid="ilN" xml:id="list-methods-for-solving-quadratic-equations">
+      <statement>
+        <p permid="UwD">
+          So far, we have learned three methods for solving quadratic equations in standard form,
+          <m>ax^2+bx+c=0</m>:
+
+          <ol permid="alP">
+            <li permid="GsY">
+              <p permid="yOz">
+                When <m>b=0</m>, as in <m>x^2-4=0</m>,
+                we can use the square root property,
+                <xref ref="fact-square-root-property">Property</xref>.
+              </p>
+            </li>
+
+            <li permid="mAh">
+              <p permid="eVI">
+                If we can easily factor the polynomial, as in <m>x^2-4x-12=0</m>,
+                we will solve the equation by factoring and use the zero product property,
+                <xref ref="fact-zero-product-property">Property</xref>.
+              </p>
+            </li>
+
+            <li permid="SHq">
+              <p permid="LcR">
+                If we cannot solve the equation by the first two methods,
+                we must use the Quadratic Formula,
+                <xref ref="fact-the-quadratic-formula">Property</xref>.
+                This formula works for any quadratic equation,
+                but the first two methods are usually easier.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </algorithm>
+
+    <p permid="dQp">
+      Let's look at a few examples for how to choose which method to use.
+    </p>
+
+    <example permid="OsW">
+      <statement>
+        <p permid="ADM">
+          Solve for <m>y</m> in <m>y^2-49=0</m>.
+        </p>
+      </statement>
+      <solution permid="JnE">
+        <p permid="rka">
+          In this equation, <m>b=0</m>,
+          so it is easiest to use the square root method.
+          We isolate the squared quantity and then use the square root property.
+          <md permid="aVJ">
+            <mrow>y^2-49\amp=0</mrow>
+            <mrow>y^2\amp=49</mrow>
+          </md>
+          <md permid="HcS">
+            <mrow>y\amp=-\sqrt{49} \amp\text{ or }\amp\amp y\amp=\sqrt{49}</mrow>
+            <mrow>y\amp=-7\amp\text{ or }\amp\amp y\amp=7</mrow>
+          </md>
+          The solution set is <m>\{-7,7\}</m>.
+        </p>
+
+        <p permid="Xrj">
+          Because <m>49</m> is a perfect square,
+          we could also solve this equation by factoring.
+          <md permid="nkb">
+            <mrow>y^2-49\amp=0</mrow>
+            <mrow>(y+7)(y-7)\amp=0</mrow>
+          </md>
+          <md permid="Trk">
+            <mrow>y+7\amp=0\amp\text{ or }\amp\amp y-7\amp=0</mrow>
+            <mrow>y\amp=-7\amp\text{ or }\amp\amp y\amp=7</mrow>
+          </md>
+          We get the same solution set, <m>\{-7,7\}</m>.
+        </p>
+      </solution>
+    </example>
+
+    <p permid="JXy">
+      We can also use the square root method when a binomial is squared,
+      like <m>(p-1)^2</m>, as we will see in the next example.
+    </p>
+
+    <example permid="uAf">
+      <statement>
+        <p permid="gKV">
+          Solve for <m>p</m> in <m>-40=10-2(p-1)^2</m>.
+        </p>
+      </statement>
+      <solution permid="puN">
+        <p permid="Dys">
+          We isolate the squared binomial and then use the square root property.
+          <md permid="zyt">
+            <mrow>-40\amp=10-2(p-1)^2</mrow>
+            <mrow>-50\amp=-2(p-1)^2</mrow>
+            <mrow>25\amp=(p-1)^2</mrow>
+          </md>
+          <md permid="fFC">
+            <mrow>p-1\amp=-5\amp\text{ or }\amp\amp p-1\amp=5</mrow>
+            <mrow>p\amp=-4\amp\text{ or }\amp\amp p\amp=6</mrow>
+          </md>
+          The solution set is <m>\{-4,6\}</m>
+        </p>
+
+        <p permid="jFB">
+          Let's check the solution <m>p=-4</m>:
+          <md permid="LML">
+            <mrow>-40\amp=10-2(p-1)^2</mrow>
+            <mrow>-40\amp\stackrel{?}{=}10-2(\substitute{-4}-1)^2</mrow>
+            <mrow>-40\amp\stackrel{?}{=}10-2(-5)^2</mrow>
+            <mrow>-40\amp\stackrel{?}{=}10-2(25)</mrow>
+            <mrow>-40\amp\stackrel{\checkmark}{=}10-50</mrow>
+          </md>
+          The solution <m>p=-4</m> is verified.
+          Checking <m>p=6</m> is left as an exercise.
+        </p>
+      </solution>
+    </example>
+
+    <p permid="qeH">
+      When we have a middle term in <m>ax^2+bx+c=0</m>,
+      we cannot use the square root property.
+      We look first to see if we can solve the equation by factoring.
+      Here are some examples.
+    </p>
+
+    <example permid="aHo" xml:id="example-quadratic-equation-by-factoring-x2-4x-12">
+      <statement>
+        <p permid="MSe">
+          Solve for <m>x</m> in <m>x^2-4x-12=0</m>.
+        </p>
+      </statement>
+      <solution permid="VBW">
+        <p permid="PMK">
+          The equation is already in standard form and we can factor the polynomial on the left side of the equation.
+          We will factor it and then use the zero product property to solve the equation.
+          <md permid="rTU">
+            <mrow>x^2-4x-12\amp=0</mrow>
+            <mrow>(x-6)(x+2)\amp=0</mrow>
+          </md>
+          <md permid="Ybd">
+            <mrow>x-6\amp=0\amp\text{ or }\amp\amp x+2\amp=0</mrow>
+            <mrow>x\amp=6\amp\text{ or }\amp\amp x\amp=-2</mrow>
+          </md>
+          The solution set is <m>\{-2,6\}</m>.
+        </p>
+      </solution>
+    </example>
+
+    <example permid="GOx">
+      <statement>
+        <p permid="sZn">
+          Solve for <m>t</m> in <m>2t^2-30t+28=0</m>.
+        </p>
+      </statement>
+      <solution permid="BJf">
+        <p permid="vTT">
+          First we factor out the common factor of <m>2</m>.
+          Then we can see that the polynomial is factorable.
+          We solve it using the zero product property.
+          <md permid="Eim">
+            <mrow>2t^2-30t+28\amp=0</mrow>
+            <mrow>2(t^2-15t+14)\amp=0</mrow>
+            <mrow>2(t-1)(t-14)\amp=0</mrow>
+          </md>
+          <md permid="kpv">
+            <mrow>t-1\amp=0\amp\text{ or }\amp\amp t-14\amp=0</mrow>
+            <mrow>t\amp=1\amp\text{ or }\amp\amp t\amp=14</mrow>
+          </md>
+          The solution set is <m>\{1,14\}</m>.
+        </p>
+      </solution>
+    </example>
+
+    <p permid="WlQ">
+      If the equation is not in standard form,
+      we must rewrite it before we can solve it.
+      Let's look at the next example.
+    </p>
+
+    <example permid="mVG">
+      <statement>
+        <p permid="Zgw">
+          Solve for <m>x</m> in <m>(x+4)(x-3)=18</m>.
+        </p>
+      </statement>
+      <solution permid="hQo">
+        <p permid="cbc">
+          We need to have one side equal to <m>0</m> in order to use the zero product property,
+          so we will multiply the left side and subtract <m>18</m> from both sides.
+          <md permid="QwE">
+            <mrow>(x+4)(x-3)\amp=18</mrow>
+            <mrow>x^2+x-12\amp=18</mrow>
+            <mrow>x^2+x-12\subtractright{18}\amp=18\subtractright{18}</mrow>
+            <mrow>x^2+x-30\amp=0</mrow>
+            <mrow>(x+6)(x-5)\amp=0</mrow>
+          </md>
+          <md permid="wDN">
+            <mrow>x+6\amp=0\amp\text{ or }\amp\amp x-5\amp=0</mrow>
+            <mrow>x\amp=-6\amp\text{ or }\amp\amp x\amp=5</mrow>
+          </md>
+          The solution set is <m>\{-6,5\}</m>.
+        </p>
+      </solution>
+    </example>
+
+    <p permid="CsZ">
+      When it's difficult or impossible to factor the trinomial in <m>ax^2+bx+c=0</m>,
+      we have to resort to the Quadratic Formula:
+      <me permid="cKW">
+        x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}
+      </me>
+      Here is an example.
+    </p>
+
+    <example permid="TcP">
+      <statement>
+        <p permid="FnF">
+          Solve for <m>x</m> in <m>x^2-10x+3=0</m>.
+        </p>
+      </statement>
+      <solution permid="NXx">
+        <p permid="Iil">
+          We identify that <m>a=1</m>,
+          <m>b=-10</m> and <m>c=3</m> and substitute them into the Quadratic Formula:
+          <md permid="ISf">
+            <mrow>x\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}</mrow>
+            <mrow>x\amp=\frac{-(-10)\pm\sqrt{(-10)^2-4(1)(3)}}{2(1)}</mrow>
+            <mrow>x\amp=\frac{10\pm\sqrt{100-12}}{2}</mrow>
+            <mrow>x\amp=\frac{10\pm\sqrt{88}}{2}</mrow>
+            <mrow>x\amp=\frac{10\pm2\sqrt{22}}{2}</mrow>
+            <mrow>x\amp=5\pm\sqrt{22}</mrow>
+          </md>
+          The solution set is <m>\left\{5-\sqrt{22}, 5+\sqrt{22}\right\}</m>.
+        </p>
+      </solution>
+    </example>
+
+    <p permid="iAi">
+      If a quadratic equation is not in standard form we need to rewrite it to identify the values of <m>a</m>,
+      <m>b</m> and <m>c</m>.
+      Let's look at an example.
+    </p>
+
+    <example permid="zjY">
+      <statement>
+        <p permid="luO">
+          Solve for <m>x</m> in <m>-3x^2-1=-8x</m>.
+        </p>
+      </statement>
+      <solution permid="ueG">
+        <p permid="opu">
+          First, we convert the equation into standard form:
+          <md permid="oZo">
+            <mrow>-3x^2-1\amp=-8x</mrow>
+            <mrow>-3x^2+8x-1\amp=0</mrow>
+          </md>
+          Now we can identify that <m>a=-3</m>,
+          <m>b=8</m> and <m>c=-1</m>.
+          We will substitute them into the Quadratic Formula:
+          <md permid="Vgx">
+            <mrow>x\amp=\frac{-b\pm\sqrt{b^2-4ac}}{2a}</mrow>
+            <mrow>x\amp=\frac{-8\pm\sqrt{8^2-4(-3)(-1)}}{2(-3)}</mrow>
+            <mrow>x\amp=\frac{-8\pm\sqrt{64-12}}{-6}</mrow>
+            <mrow>x\amp=\frac{-8\pm\sqrt{52}}{-6}</mrow>
+            <mrow>x\amp=\frac{-8\pm2\sqrt{13}}{-6}</mrow>
+            <mrow>x\amp=\frac{4\pm\sqrt{13}}{3}</mrow>
+          </md>
+          The solution set is <m>\left\{\frac{4-\sqrt{13}}{3}, \frac{4+\sqrt{13}}{3}\right\}</m>
+        </p>
+      </solution>
+    </example>
+
+    <p permid="OHr">
+      Also recall that if the radicand is negative,
+      there is no real solution to the equation.
+    </p>
+
+    <p permid="uOA">
+      This was a brief review of solving quadratic equations.
+      If you would like the full explanation of solving using the square root method,
+      you can go to <xref ref="section-solving-quadratic-equations-by-using-a-square-root">Section</xref>.
+      For solving by factoring,
+      you can go to <xref ref="section-solving-quadratic-equations-by-factoring">Section</xref>.
+      If you want more on the quadratic formula,
+      you can go to <xref ref="section-the-quadratic-formula">Section</xref>.
+    </p>
+  </subsection>
+<!--Review and Warmup intentionally omitted-->
+  <exercises permid="dBU">
+    <exercisegroup permid="JJd" cols="3">
+      <title>Solving Quadratic Equations Using the Square Root Method</title>
+      <exercise permid="frh">
+        <webwork source="BasicAlgebra/QuadraticEquations/solveQuad30.pg" />
+      </exercise>
+
+      <exercise permid="Lyq">
+        <webwork source="BasicAlgebra/QuadraticEquations/solveQuad30.pg" />
+      </exercise>
+
+      <exercise permid="rFz">
+        <webwork source="BasicAlgebra/QuadraticEquations/solveQuad50.pg" />
+      </exercise>
+
+      <exercise permid="XMI">
+        <webwork source="BasicAlgebra/QuadraticEquations/solveQuad50.pg" />
+      </exercise>
+
+      <exercise permid="DTR">
+        <webwork source="BasicAlgebra/QuadraticEquations/solveQuad75.pg" />
+      </exercise>
+
+      <exercise permid="kba">
+        <webwork source="BasicAlgebra/QuadraticEquations/solveQuad75.pg" />
+      </exercise>
+
+      <exercise permid="Qij">
+        <webwork source="BasicAlgebra/QuadraticEquations/solveQuad81.pg" />
+      </exercise>
+
+      <exercise permid="wps">
+        <webwork source="BasicAlgebra/QuadraticEquations/solveQuad81.pg" />
+      </exercise>
+
+    </exercisegroup>
+    <exercisegroup permid="pQm" cols="3">
+      <title>Solving Quadratic Equations by Factoring</title>
+      <exercise permid="cwB">
+        <webwork source="BasicAlgebra/QuadraticEquations/solveQuad235.pg" />
+      </exercise>
+
+      <exercise permid="IDK">
+        <webwork source="BasicAlgebra/QuadraticEquations/solveQuad235.pg" />
+      </exercise>
+
+      <exercise permid="oKT">
+        <webwork source="BasicAlgebra/QuadraticEquations/solveQuad250.pg" />
+      </exercise>
+
+      <exercise permid="USc">
+        <webwork source="BasicAlgebra/QuadraticEquations/solveQuad250.pg" />
+      </exercise>
+
+      <exercise permid="AZl">
+        <webwork source="BasicAlgebra/QuadraticEquations/solveQuad265.pg" />
+      </exercise>
+
+      <exercise permid="hgu">
+        <webwork source="BasicAlgebra/QuadraticEquations/solveQuad265.pg" />
+      </exercise>
+
+      <exercise permid="NnD">
+        <webwork source="BasicAlgebra/QuadraticEquations/solveQuad285.pg" />
+      </exercise>
+
+      <exercise permid="tuM">
+        <webwork source="BasicAlgebra/QuadraticEquations/solveQuad285.pg" />
+      </exercise>
+
+      <exercise permid="ZBV">
+        <webwork source="BasicAlgebra/QuadraticEquations/solveQuad330.pg" />
+      </exercise>
+
+      <exercise permid="FJe">
+        <webwork source="BasicAlgebra/QuadraticEquations/solveQuad330.pg" />
+      </exercise>
+
+      <exercise permid="lQn">
+        <webwork source="BasicAlgebra/QuadraticEquations/solveQuad335.pg" />
+      </exercise>
+
+      <exercise permid="RXw">
+        <webwork source="BasicAlgebra/QuadraticEquations/solveQuad335.pg" />
+      </exercise>
+
+    </exercisegroup>
+    <exercisegroup permid="VXv" cols="3">
+      <title>Solving Quadratic Equations Using the Quadratic Formula</title>
+      <exercise permid="yeF">
+        <webwork source="BasicAlgebra/QuadraticEquations/solveQuad155.pg" />
+      </exercise>
+
+      <exercise permid="elO">
+        <webwork source="BasicAlgebra/QuadraticEquations/solveQuad155.pg" />
+      </exercise>
+
+      <exercise permid="KsX">
+        <webwork source="BasicAlgebra/QuadraticEquations/solveQuad150.pg" seed="709"/>
+      </exercise>
+
+      <exercise permid="qAg">
+        <webwork source="BasicAlgebra/QuadraticEquations/solveQuad150.pg" seed="710"/>
+      </exercise>
+
+      <exercise permid="WHp">
+        <webwork source="BasicAlgebra/QuadraticEquations/solveQuad176.pg" />
+      </exercise>
+
+      <exercise permid="COy">
+        <webwork source="BasicAlgebra/QuadraticEquations/solveQuad176.pg" />
+      </exercise>
+
+    </exercisegroup>
+    <exercisegroup permid="CeE" cols="3">
+      <title>Choosing Which Method to Use</title>
+      <exercise permid="iVH">
+        <webwork source="BasicAlgebra/QuadraticEquations/solveQuad260.pg" />
+      </exercise>
+
+      <exercise permid="PcQ">
+        <webwork source="BasicAlgebra/QuadraticEquations/solveQuad260.pg" />
+      </exercise>
+
+      <exercise permid="vjZ">
+        <webwork source="BasicAlgebra/QuadraticEquations/solveQuad50.pg" />
+      </exercise>
+
+      <exercise permid="bri">
+        <webwork source="BasicAlgebra/QuadraticEquations/solveQuad50.pg" />
+      </exercise>
+
+      <exercise permid="Hyr">
+        <webwork source="BasicAlgebra/QuadraticEquations/solveQuad176.pg" />
+      </exercise>
+
+      <exercise permid="nFA">
+        <webwork source="BasicAlgebra/QuadraticEquations/solveQuad176.pg" />
+      </exercise>
+
+      <exercise permid="TMJ">
+        <webwork source="BasicAlgebra/QuadraticEquations/solveQuad75.pg" />
+      </exercise>
+
+      <exercise permid="zTS">
+        <webwork source="BasicAlgebra/QuadraticEquations/solveQuad75.pg" />
+      </exercise>
+
+      <exercise permid="gbb">
+        <webwork source="BasicAlgebra/QuadraticEquations/solveQuad305.pg" />
+      </exercise>
+
+      <exercise permid="Mik">
+        <webwork source="BasicAlgebra/QuadraticEquations/solveQuad305.pg" />
+      </exercise>
+
+      <exercise permid="spt">
+        <webwork source="BasicAlgebra/QuadraticEquations/solveQuad155.pg" />
+      </exercise>
+
+      <exercise permid="YwC">
+        <webwork source="BasicAlgebra/QuadraticEquations/solveQuad155.pg" />
+      </exercise>
+
+      <exercise permid="EDL">
+        <webwork source="BasicAlgebra/QuadraticEquations/solveQuad81.pg" />
+      </exercise>
+
+      <exercise permid="kKU">
+        <webwork source="BasicAlgebra/QuadraticEquations/solveQuad81.pg" />
+      </exercise>
+
+      <exercise permid="QSd">
+        <webwork source="BasicAlgebra/QuadraticEquations/solveQuad255.pg" />
+      </exercise>
+
+      <exercise permid="wZm">
+        <webwork source="BasicAlgebra/QuadraticEquations/solveQuad255.pg" />
+      </exercise>
+
+    </exercisegroup>
+  </exercises>
+</section>
+
